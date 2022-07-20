@@ -1,5 +1,8 @@
 :root {
     --text-color: rgb(82 82 82);
+    --old-color-13: #f1c40f;
+    --old-color-16: #FF9A00;
+    --old-color-p: #27ae60; 
 }
 
 * {
@@ -8,8 +11,25 @@
     box-sizing: border-box;
 }
 
+.old-13 {
+    background-color: var(--old-color-13); 
+}
+
+.old-16 {
+    background-color: var(--old-color-16); 
+}
+
+.old-p {
+    background-color: var(--old-color-p);
+}
+
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 62.5%;
+}
+
+.hidden {
+    display: none;
 }
 
 .grid {
@@ -23,17 +43,19 @@ html {
     margin: 0 auto;
 }
 
-@keyframes rotate-arrow {
-    20% {
-        transform: rotate(20deg);
-    }
-    50% {
-        transform: rotate(90def);
-    }
-    75% {
-        transform: rotate(140deg);
-    }
-    100% {
-        transform: rotate(180deg);
-    }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
+
+.col {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.l-2-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+} 
