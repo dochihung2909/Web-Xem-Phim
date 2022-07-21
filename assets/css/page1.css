@@ -1,12 +1,12 @@
 .content {
-    margin-top: 7.0rem;
+    margin-top: var(--header-height);
     /* position: relative; */
     width: 100%; 
 }
 
 .content-video-wrapped { 
     position: relative; 
-    margin-top: -11.0rem;
+    margin-top: -11rem;
     filter: brightness(60%); 
     width: 100%;    
 }
@@ -66,8 +66,7 @@
 
 .infor__about-old {
     margin-top: .2rem;
-    padding: .2rem .6rem;
-    background-color: orange;
+    padding: .2rem .6rem; 
     width: 3.8rem;
     border-radius: .4rem;
     color: var(--white-color);
