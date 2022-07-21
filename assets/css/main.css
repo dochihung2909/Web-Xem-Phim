@@ -51,6 +51,7 @@
     text-decoration: none;
     padding: 8px 16px;
     color: var(--navbar-color);  
+    font-size: 1.6rem;
 }
 
 .navbar__menu-item-link:hover.navbar__menu-item-link > i { 
@@ -100,4 +101,102 @@
 
 .slider-img__link {
     width: 100%;
+}
+
+/* Body content */
+.container {
+    padding-top: 70px;
+}
+.now-showing{
+    padding: 56px;
+    background-color: #000;
+    background-image: url("https://static.mservice.io/img/momo-upload-api-210701105436-637607336767432408.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slider-tittle {
+    color: white; 
+    font-size: 1.6rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.film__item {
+
+}
+
+.film__item-img-wrapped {
+    display: block;
+    width: 100%;
+    text-decoration: none;  
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+} 
+
+.film__item-img-wrapped:hover .film__item-img {
+    transform: scale(105%);
+}
+
+.film__item-img {
+    transition: transform 0.2s linear; 
+    width: 100%;  
+    border-radius: 4px;
+}
+
+.film__item-rank,
+.film__item-tag-top {
+    color: white;
+    position: absolute; 
+}
+
+.film__item-rank {
+    bottom: 0px;
+    left: 0;
+    font-size: 5rem;
+    font-weight: bold;
+} 
+
+.film__item-tag-top {
+    top: 12px;
+    left: 10px;  
+}
+
+.film__item-old,
+.film__item-reserve {
+    font-size: 1.4rem; 
+    padding: 4px 8px; 
+    border-radius: 2px;
+}
+
+.film__item-old {  
+    
+}
+
+.film__item-reserve {
+    margin-left: 6px;
+    background-color: #f25f4c; 
+    font-weight: bold; 
+}
+
+.film__item-reserve > i {
+    margin-right: 6px;
+}
+
+.film__item-info { 
+    margin-top: 6px; 
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.film__item-info-type {
+    padding: 4px 0;
+    color: #999;
+    font-size: 1.4rem;
 }
