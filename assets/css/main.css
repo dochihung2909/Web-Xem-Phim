@@ -81,6 +81,7 @@
 }
 
 .navbar__search-bar-icon {  
+    font-size: 1.6rem;
     padding: 1.2rem 1.6rem;
     cursor: pointer;
 }
