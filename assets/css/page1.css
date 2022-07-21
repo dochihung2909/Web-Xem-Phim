@@ -1,0 +1,145 @@
+.content {
+    margin-top: 70px;
+    /* position: relative; */
+    width: 100%; 
+}
+
+.content-video-wrapped { 
+    position: relative; 
+    margin-top: -140px;
+    filter: brightness(60%); 
+    width: 100%;    
+}
+
+.content-video {  
+    min-width: 100%;
+    min-height: 100%;  
+}
+
+.content-info {
+    width: 100%;
+    position: absolute;  
+    top: 20%;
+    /* top: 0; */
+    z-index: 100;    
+}
+
+.info__img-wrapped {
+    position: relative;
+    width: 100%;
+}
+
+.info__img {
+    border-radius: 4px;
+    width: 100%;
+}
+
+.info__img-play-btn {
+    position: absolute;     
+    top: 45%; 
+    left: 50%;
+    font-size: 32px;
+    color: var(--white-color);    
+    transition: transform 0.1s linear;
+}
+
+.info__img-play-btn::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -22px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--white-color);
+    border-radius: 50%;
+}
+
+.info__img-play-btn:hover {
+    transform: scale(120%);
+}
+
+.infor__about { 
+    display:flex;
+    flex-direction: column;
+    width: 100%; 
+    height: 100%; 
+}
+
+.infor__about-old {
+    margin-top: 2px;
+    padding: 2px 6px;
+    background-color: orange;
+    width: 38px;
+    border-radius: 4px;
+    color: var(--white-color);
+    font-size: 14px;
+}
+
+.infor__about-title {
+    font-size: 42px;
+    color: var(--white-color); 
+    margin: 12px 0;
+}
+
+.infor__about-desc {
+    margin: 6px 0;
+    color: var(--text-color);
+    display: flex;  
+} 
+
+.infor__about-desc-dot {
+    font-size: 20px;
+    margin: 0 12px; 
+    line-height: 0.3;
+    text-align: center;
+} 
+
+.infor__about-unit {
+    font-style: italic;
+    margin: 24px 0;
+    color: var(--text-color);
+}
+
+.infor__about-content-title {
+    font-size: 24px;
+    color: var(--white-color);
+}
+
+.infor__about-content-desc {
+    margin: 12px 0; 
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.infor__about-footer { 
+    display:flex; 
+}
+
+.infor__about-footer-wrapped {
+    margin-right: 24px;
+}
+
+.infor__about-footer-title {
+    margin-bottom:6px;
+    color: var(--text-color);
+}
+
+.infor__about-footer-content {
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.infor__about-buy {
+    margin-top: auto; 
+    margin-bottom: 6px;
+}
+
+.infor__about-buy-btn {
+    cursor:pointer;
+    font-size: 22px;
+    padding: 16px 48px;
+    background-color: orange;
+    border:none;
+    border-radius: 4px;
+    color: var(--white-color);
+}

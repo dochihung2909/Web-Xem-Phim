@@ -1,5 +1,8 @@
 :root {
-    --text-color: rgb(82 82 82);
+    --navbar-color: rgb(82 82 82);
+    --text-color: #ccc;
+    --white-color:white;
+
 }
 
 * {
@@ -23,17 +26,27 @@ html {
     margin: 0 auto;
 }
 
-@keyframes rotate-arrow {
-    20% {
-        transform: rotate(20deg);
-    }
-    50% {
-        transform: rotate(90def);
-    }
-    75% {
-        transform: rotate(140deg);
-    }
-    100% {
-        transform: rotate(180deg);
-    }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+
+.col {
+    padding: 0 12px;
+}
+
+.l-4 {
+    flex: 0 0 33.33333333%;
+    width: 33.33333333%;
+}
+
+.l-6 {
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.l-8 {
+    flex: 0 0 66.66666667%;
+    width: 66.66666667%;
 }
