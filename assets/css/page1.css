@@ -1,12 +1,12 @@
 .content {
-    margin-top: 70px;
+    margin-top: 7.0rem;
     /* position: relative; */
     width: 100%; 
 }
 
 .content-video-wrapped { 
     position: relative; 
-    margin-top: -140px;
+    margin-top: -11.0rem;
     filter: brightness(60%); 
     width: 100%;    
 }
@@ -19,8 +19,7 @@
 .content-info {
     width: 100%;
     position: absolute;  
-    top: 20%;
-    /* top: 0; */
+    top: 15%; 
     z-index: 100;    
 }
 
@@ -30,7 +29,7 @@
 }
 
 .info__img {
-    border-radius: 4px;
+    border-radius: .4rem;
     width: 100%;
 }
 
@@ -38,7 +37,7 @@
     position: absolute;     
     top: 45%; 
     left: 50%;
-    font-size: 32px;
+    font-size: 3.2rem;
     color: var(--white-color);    
     transition: transform 0.1s linear;
 }
@@ -46,11 +45,11 @@
 .info__img-play-btn::after {
     content: "";
     position: absolute;
-    top: -15px;
-    left: -22px;
-    width: 60px;
-    height: 60px;
-    border: 2px solid var(--white-color);
+    top: -1.5rem;
+    left: -2.2rem;
+    width: 6.0rem;
+    height: 6.0rem;
+    border: .2rem solid var(--white-color);
     border-radius: 50%;
 }
 
@@ -66,61 +65,65 @@
 }
 
 .infor__about-old {
-    margin-top: 2px;
-    padding: 2px 6px;
+    margin-top: .2rem;
+    padding: .2rem .6rem;
     background-color: orange;
-    width: 38px;
-    border-radius: 4px;
+    width: 3.8rem;
+    border-radius: .4rem;
     color: var(--white-color);
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .infor__about-title {
-    font-size: 42px;
+    font-size: 4.2rem;
     color: var(--white-color); 
-    margin: 12px 0;
+    margin: 1.2rem 0;
 }
 
 .infor__about-desc {
-    margin: 6px 0;
+    font-size: 1.4rem;
+    margin: .6rem 0;
     color: var(--text-color);
     display: flex;  
 } 
 
 .infor__about-desc-dot {
-    font-size: 20px;
-    margin: 0 12px; 
-    line-height: 0.3;
+    font-size: 2.0rem;
+    margin: 0 1.2rem; 
+    line-height: 0.5rem;
     text-align: center;
 } 
 
 .infor__about-unit {
+    font-size: 1.4rem;
     font-style: italic;
-    margin: 24px 0;
+    margin: 2.4rem 0;
     color: var(--text-color);
 }
 
 .infor__about-content-title {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: var(--white-color);
 }
 
 .infor__about-content-desc {
-    margin: 12px 0; 
+    font-size: 1.4rem;
+    margin: 1.2rem 0; 
     line-height: 1.6;
     color: var(--text-color);
 }
 
 .infor__about-footer { 
+    font-size: 1.4rem;
     display:flex; 
 }
 
 .infor__about-footer-wrapped {
-    margin-right: 24px;
+    margin-right: 2.4rem;
 }
 
 .infor__about-footer-title {
-    margin-bottom:6px;
+    margin-bottom:.6rem;
     color: var(--text-color);
 }
 
@@ -131,15 +134,15 @@
 
 .infor__about-buy {
     margin-top: auto; 
-    margin-bottom: 6px;
+    margin-bottom: .6rem;
 }
 
 .infor__about-buy-btn {
     cursor:pointer;
-    font-size: 22px;
-    padding: 16px 48px;
+    font-size: 2.2rem;
+    padding: 1.6rem 4.8rem;
     background-color: orange;
     border:none;
-    border-radius: 4px;
+    border-radius: .4rem;
     color: var(--white-color);
 }
