@@ -6,6 +6,9 @@
     --old-color-16: #FF9A00;
     --old-color-p: #27ae60; 
     --header-height: 8rem;
+    --color-w: white;
+    --color-g: gray;
+    --paragraph-color:#2a2a2a;
 }
 
 * {
@@ -31,54 +34,19 @@ html {
     font-size: 62.5%;
 }
 
-.grid {
-    display: block;
-    width: 100%;
-    padding: 0;
+/* common */ 
+.center {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }
 
-.grid.wide {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+.clear {
+    clear: both;
+} 
 
-.row {
+.flex {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 -12px;
-}
-
-.col {
-    padding: 0 12px;
-}
-
-.l-3 {
-    flex: 0 0 25%;
-    width: 25%;
-}
-
-.l-4 {
-    flex: 0 0 33.33333333%;
-    width: 33.33333333%;
-}
-
-.l-2-4 {
-    flex: 0 0 20%;
-    max-width: 20%;
-} 
-
-.l-6 {
-    flex: 0 0 50%;
-    width: 50%;
-}
-
-.l-8 {
-    flex: 0 0 66.66666667%;
-    width: 66.66666667%;
-} 
-
-.l-9 {
-    flex: 0 0 75%;
-    width: 75%;
 }
 
