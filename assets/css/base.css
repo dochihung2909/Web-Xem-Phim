@@ -51,3 +51,27 @@ html {
     display: flex;
 }
 
+.buy-btn {
+    display: flex;
+    padding: 0.8rem 0;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--color-w); 
+    justify-content: center;
+    border-radius: 0.3rem;
+    background: rgb(255,154,0);
+    background: linear-gradient(90deg, rgba(255,154,0,1) 0%, rgba(255,22,93,1) 50%, rgba(62,193,211,1) 100%);
+    background-size: 300% 100%; 
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.buy-btn:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
