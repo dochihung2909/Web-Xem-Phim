@@ -2,10 +2,10 @@
 
 /* header */
 .header {
-    /* top: 0;
+    top: 0;
     left: 0;
     position: fixed;
-    z-index: 1900000; */
+    z-index: 1900000;
     /* opacity: 0; */
     background-color: white;
     width: 100%;
@@ -131,8 +131,8 @@
 /* Now showing slider */
 .now-showing{
     padding: 5.6rem;
-    /* background-color: #000; */
-    /* background-image: url("https://static.mservice.io/img/momo-upload-api-210701105436-637607336767432408.jpg"); */
+    background-color: #000;
+    background-image: url("https://static.mservice.io/img/momo-upload-api-210701105436-637607336767432408.jpg");
     /* background-image: url("../img/background.jpg"); */
     background-position: center;
     background-size: contain;
@@ -240,59 +240,45 @@
 }
 
 .trailer__content {
-    padding: 5.6rem;
+    padding: 5.6rem 0;
+    /* background: url("https://static.mservice.io/img/momo-upload-api-211001091715-637686766356856456.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+} 
+
+.trailer__content-films {  
+
 }
-.trailer__content-heading h1 {
-    text-align: center;
-    padding-bottom: 3rem;
-    color: var(--white-color);
-    font-weight: bold;
-    font-size: 3.4em;
-}
-.trailer__content-films {
-    justify-content: center;
-}
+ 
 .trailer__content-film-icon {
+    display: flex;
     border: .28rem solid white;
     color: white;
     position: absolute;
     font-size: 2rem;
-    padding: .5rem 1rem;
-    border-radius: 50%;
+    padding: .8rem 1rem;
+    border-radius: 50%; 
+    z-index: 10; 
     left: 1.5rem;
     bottom: 1.5rem;
 }
-.trailer__content-film a:hover img {
-    transform: scale(1.05);
+
+.trailer__content-film-icon i {
+    padding-left: .2rem;
+} 
+
+.trailer__content-film { 
+    font-size: 1.6rem;  
+}  
+
+.trailer__content-film-name { 
+
 }
-.trailer__content-film-img {
-    position: relative;
-}
-.trailer__content-film-img img {
-    width: 100%;
-    height: 14.5rem;
-    overflow: hidden;
-	transition: transform .3s ease;
-}
-.trailer__content-film {
-    padding: 0 3rem;
-}
-.trailer__content-film p {
-    padding: 0.4rem 0;
-    font-size: 1.7rem;
-    color: var(--white-color);
-}
-.trailer__content-film a {
-    text-decoration: none;
-}
-.trailer__content-film-name p {
-    
-}
-.trailer__content-film-type p{
+
+.trailer__content-film-type {
     color: #ccc;
-}
-
-
+} 
 
 /* footer */ 
 .footer {
