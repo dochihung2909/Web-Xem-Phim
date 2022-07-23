@@ -233,19 +233,80 @@
      
 }
 
+/* trailer */
+.trailer {
+
+}
+
+.trailer__content {
+    padding: 5.6rem;
+}
+.trailer__content-heading h1 {
+    text-align: center;
+    padding-bottom: 3rem;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 3.4em;
+}
+.trailer__content-films {
+    justify-content: center;
+}
+.trailer__content-film-icon {
+    border: .28rem solid white;
+    color: white;
+    position: absolute;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    border-radius: 50%;
+    left: 1.5rem;
+    bottom: 1.5rem;
+}
+.trailer__content-film a:hover img {
+    transform: scale(1.05);
+}
+.trailer__content-film-img {
+    position: relative;
+}
+.trailer__content-film-img img {
+    width: 100%;
+    height: 14.5rem;
+    overflow: hidden;
+	transition: transform .3s ease;
+}
+.trailer__content-film {
+    padding: 0 3rem;
+}
+.trailer__content-film p {
+    padding: 0.4rem 0;
+    font-size: 1.7rem;
+    color: var(--white-color);
+}
+.trailer__content-film a {
+    text-decoration: none;
+}
+.trailer__content-film-name p {
+    
+}
+.trailer__content-film-type p{
+    color: #ccc;
+}
+
+
+
 /* footer */ 
 .footer {
     margin-top: 3rem;
     font-size: 1.7rem;
     width: 100%;
     line-height: 1.4; 
-    color: var(--paragraph-color);
-
+    color: var(--color-brown);
+    font-weight: 410;
     background-color: #FF9A00;
 }
 
 .footer a {
     text-decoration: none;
+    color: #3e2917;
 }
 
 .footer ul {
@@ -255,17 +316,8 @@
     padding: 2.5rem 0; 
 }
 
-.footer__container a {
-    color: #cfcfcf;
-
-}
-
 .footer__container a:hover { 
     color: #ffe;
-}
-
-.footer__container__about-head {
-    color: var(--color-w);
 }
 
 .footer__container__about-head > li {
@@ -281,11 +333,6 @@
     padding: 0.5rem 0; 
 }
 
-
-.footer__container__about-head-box-lists li a {
-    color: var(--color-w);
-}
-
 .footer__container__about-head-box1 {
     width: 100%;
 }
@@ -297,7 +344,7 @@
 .footer__container__about-head-box1 p {
     font-weight: bold;
     align-items: center;
-    color: var(--color-w);
+    color: var(--white-color);
     padding-left: 0.8rem;
 }
 
@@ -310,11 +357,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-}   
-
-.footer__container__about-feet-box {
-    /* justify-content: center; */
-}
+}  
 
 .footer__container__about-feet-box a {
     padding: 0 0.5rem;
@@ -334,7 +377,6 @@
 
 .footer__container__about-feet-download a {
     display: flex;
-    /* width: 50%; */
 }
 
 .footer__container__about-feet-download a img {
