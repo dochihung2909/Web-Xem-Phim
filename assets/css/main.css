@@ -2,10 +2,11 @@
 
 /* header */
 .header {
-    position: fixed;
-    top: 0;
+    /* top: 0;
     left: 0;
-    z-index: 1900000;
+    position: fixed;
+    z-index: 1900000; */
+    /* opacity: 0; */
     background-color: white;
     width: 100%;
     height: var(--header-height);
@@ -256,12 +257,12 @@
 }
 
 .footer__container a {
-    color: #cfcfcf;
+    color: var(--color-w);
 
 }
 
 .footer__container a:hover { 
-    color: #ffe;
+    color: #ccc;
 }
 
 .footer__container__about-head {
@@ -282,8 +283,7 @@
 }
 
 
-.footer__container__about-head-box-lists li a {
-    color: var(--color-w);
+.footer__container__about-head-box-lists li a { 
 }
 
 .footer__container__about-head-box1 {

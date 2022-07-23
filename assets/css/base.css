@@ -75,3 +75,16 @@ html {
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
+
+.header.sticky {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1900000; 
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.header.sticky .navbar__search-bar-inp {
+    background-color: #ccc;
+}
