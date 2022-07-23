@@ -90,7 +90,8 @@ html {
     background-color: #ccc;
 } */
 .back-to-top {
-    opacity: 0; 
+    opacity: 0;  
+    position: absolute;
     background-color: var(--white-color);
     /* background-color: #ff8906; */
     /* transform: opacity .5s; */
@@ -107,5 +108,5 @@ html {
     right: 20px;
     z-index: 912931999; 
     transition: opacity ease-in .3s; 
-    opacity: 1;
+    opacity: 1; 
 }
