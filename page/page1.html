@@ -16,8 +16,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="../assets/js/main.js"> 
-    </script>
+    
     <!-- Back to top -->
     <a href="#" class="back-to-top">
         <i class="fa-solid fa-arrow-up"></i>
@@ -72,8 +71,8 @@
                         <div class="row">
                             <div class="col l-4">
                                 <div class="info__img-wrapped">
-                                    <img src="https://www.cgv.vn/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/t/h/thor-main-poster_1_.jpg" alt="" class="info__img">
-                                    <a href="" class="info__img-play-btn">
+                                    <img src="https://www.cgv.vn/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/t/h/thor-main-poster_1_.jpg" alt="" class="info__img ">
+                                    <a href="#product-pop-up" onclick="viewTrailerJs('Thor: Tình Yêu Và Sấm Sét', 'https://www.youtube.com/watch?v=UBgPypHGAqE');" class="info__img-play-btn film-trailer-item">
                                         <i class="fa-solid fa-play"></i>
                                     </a>
                                 </div>
@@ -218,5 +217,16 @@
             </div>
         </footer>
     </div>
+    <div id="product-pop-up" class="modal js-modal">
+        <div class="modal-js js-modal-container">
+            <div class="modal-title">TRAILER - <span id="film-name"></span></div>
+            <div id="trailer" class="film-link"> 
+            </div>
+            <div class="modal-close js-modal-close"><i class="fa-solid fa-xmark"></i></div>
+           
+        </div> 
+    </div>
+    <script src="../assets/js/main.js"> 
+    </script>
 </body>
 </html>

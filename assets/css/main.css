@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     position: fixed;
-    z-index: 1900000;
+    z-index: 190;
     /* opacity: 0; */
     background-color: white;
     width: 100%;
@@ -227,6 +227,11 @@
     color: var(--paragraph-color);
     font-size: 1.6rem;
     line-height: 2rem;
+    min-height: 7rem;
+}
+
+.film__item-info-name {
+    /* min-height: 4rem; */
 }
 
 .film__item-info-type {
