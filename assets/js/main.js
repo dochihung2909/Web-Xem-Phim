@@ -24,7 +24,7 @@ function resetViewTrailer() {
 
 
 // Modal
-    const buyBtns = document.querySelectorAll('.film__item-img-wrapped') 
+    const buyBtns = document.querySelectorAll('.film-trailer-item') 
     const modal = document.querySelector('.js-modal')
     const modalclose = document.querySelector('.js-modal-close')
     const modalcontainer = document.querySelector('.js-modal-container')
