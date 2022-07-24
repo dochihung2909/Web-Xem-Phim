@@ -140,7 +140,7 @@
 }
 
 .slider-tittle {
-    color: white; 
+    color: var(--main-color); 
     font-size: 1.6rem;
     line-height: 4rem;
     text-align: center;
@@ -223,7 +223,8 @@
     margin-top: .6rem; 
     display: block;
     text-decoration: none;
-    color: white;
+    /* color: white; */
+    color: var(--paragraph-color);
     font-size: 1.6rem;
     line-height: 2rem;
 }
@@ -295,6 +296,10 @@
 } 
 
 /* blog */
+.background-slider {
+    background-color: var(--white-color);
+    padding: 5.6rem;
+}
 .blog__categories {
     font-size: 2rem;
 }
@@ -331,11 +336,25 @@
     transform-origin: bottom left;
 }
 
+/* discount */
+.discount {
 
+}
+.discount__content .trailer__content-film{
+    box-shadow: .2rem .2rem .5rem var(--color-g);
+    border: .2rem solid var(--white-color);
+    border-radius: 6%;
+    overflow: hidden;
+}
+.discount__content .trailer__content-film:hover {
+    box-shadow: .2rem .2rem 3rem var(--color-g);
+}
+.discount__content .film__item-info {
+    padding: .3rem 1.5rem;
+}
 
 /* footer */ 
 .footer {
-    margin-top: 3rem;
     font-size: 1.7rem;
     width: 100%;
     line-height: 1.4; 
