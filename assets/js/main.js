@@ -14,13 +14,15 @@ window.addEventListener('scroll', function () {
 
 function viewTrailerJs(filmName, urlTrailer) {  
     document.getElementById("film-name").innerHTML += filmName;  
-    document.getElementById("trailer").innerHTML = '<iframe id="fancybox-frame" width="100%" height="377" src="' + urlTrailer.replace("watch?v=", "embed/") + '?rel=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+    document.getElementById("trailer").innerHTML = '<iframe id="fancybox-frame" width="100%" height="500px" src="' + urlTrailer.replace("watch?v=", "embed/") + '?rel=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
 }
 
 function resetViewTrailer() {
     document.getElementById("film-name").innerHTML = "";  
     document.getElementById("trailer").innerHTML = "";
 }
+
+
 
 
 // Modal

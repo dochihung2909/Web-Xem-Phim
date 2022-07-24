@@ -120,15 +120,16 @@ html {
     top: 0;
     bottom: 0;  
     left: 0;
-    right: 0;  
-    background-color: rgba(0, 0, 0, 0.2); 
+    right: 0;   
+    z-index: 199999000;
+    background-color: rgba(0, 0, 0, 0.8); 
     display: none;
     align-items: center;
     justify-content: center;
 }
 
-.modal-js {  
-    width: 630px;
+.modal-js {   
+    width: 900px;
     background-color: white; 
     padding: 24px;
     position: relative;
