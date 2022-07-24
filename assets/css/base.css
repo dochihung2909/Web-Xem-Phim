@@ -110,3 +110,49 @@ html {
     transition: opacity ease-in .3s; 
     opacity: 1; 
 }
+
+.modal.open{
+    display: flex;
+}
+
+.modal {
+    position: fixed; 
+    top: 0;
+    bottom: 0;  
+    left: 0;
+    right: 0;  
+    background-color: rgba(0, 0, 0, 0.2); 
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-js {  
+    width: 630px;
+    background-color: white; 
+    padding: 24px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 18px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+ 
+
+.modal-title {
+    font-size: 3.2rem;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.film-link { 
+    padding: 12px;
+}
+
+.film-link iframe{
+} 
