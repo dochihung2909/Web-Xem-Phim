@@ -147,6 +147,14 @@
     margin-bottom: 3.2rem;
 }
 
+.blog__category,
+.slider-about {
+    color: var(--color-g);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
 
 /* Film item */
 .film__item {
@@ -247,7 +255,7 @@
     background-size: cover; */
 } 
 
-.trailer__content-films {  
+.film__item-info-names {  
 
 }
  
@@ -280,6 +288,45 @@
     color: #ccc;
 } 
 
+/* blog */
+.blog__categories {
+    font-size: 2rem;
+}
+
+.blog__categories .newest,
+.blog__categories .viewest {
+    padding: 2rem 1rem .7rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #999;
+    cursor: pointer;
+    position: relative;
+}
+.blog__categories .viewest {
+    margin-left: 4rem;
+}
+.blog__categories .newest::after,
+.blog__categories .viewest::after {
+    content: "";
+    position: absolute;
+    height: .2rem;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s ease-in-out;
+
+}
+.blog__categories .newest:hover::after,
+.blog__categories .viewest:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
 /* footer */ 
 .footer {
     margin-top: 3rem;
@@ -293,7 +340,7 @@
 
 .footer a {
     text-decoration: none;
-    color: #3e2917;
+    color: var(--white-color);
 }
 
 .footer ul {
@@ -304,12 +351,11 @@
 }
 
 .footer__container a {
-    color: var(--color-w);
 
 }
 
 .footer__container a:hover { 
-    color: #ccc;
+    opacity: 0.7;
 }
 
 .footer__container__about-head > li {
