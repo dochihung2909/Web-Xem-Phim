@@ -15,9 +15,7 @@
     <title>Momo clone</title>
 </head>
 <body>
-    <script src="./assets/js/main.js">
-
-    </script>
+    
     <!-- Back to top -->
     <a href="#" class="back-to-top">
         <i class="fa-solid fa-arrow-up"></i>
@@ -37,7 +35,7 @@
                     <div class="navbar__menu">
                         <ul class="navbar__menu-list">
                             <li class="navbar__menu-item">
-                                <a href="" class="navbar__menu-item-link">Phim<i class="fa-solid fa-chevron-down"></i></a>
+                                <a href="" class="navbar__menu-item-link">Phim<i class="fa-solid fa-chevron-down"></i></a> 
                             </li>
                             <li class="navbar__menu-item">
                                 <a href="" class="navbar__menu-item-link">Rạp chiếu<i class="fa-solid fa-chevron-down"></i></a>
@@ -207,7 +205,7 @@
                             <div class="row">
                                 <div class="col l-4">
                                     <div class="trailer__content-film">
-                                        <a href="#" class="film__item-img-wrapped">
+                                        <a href="#product-pop-up" onclick="viewTrailerJs('Thám Tử Lừng Danh Conan: Nàng Dâu Halloween', 'https://www.youtube.com/watch?v=LiBtjMrddfM');" class="film__item-img-wrapped">
                                             <img class="film__item-img" src="https://static.mservice.io/cinema/momo-cdn-api-220711160238-637931521585639917.jpg" alt="movie">
                                             <span class="trailer__content-film-icon">
                                                 <i class="fa-solid fa-play"></i>
@@ -305,7 +303,7 @@
                             <div class="col l-3">
                                 <li class="footer__container__about-head-box">
                                     <div class="footer__container__about-head-box1">
-                                        <img src="./assets/img/Panda-ngang2.png" alt="panda"> 
+                                        <img src="../assets/img/Panda-ngang2.png" alt="panda"> 
                                     </div>
                                     <div class="footer__container__about-head-box2">
                                         <p class="clear">Lầu 6, Toà nhà Phú Mỹ Hưng, số 8 Hoàng Văn Thái, khu phố 1, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh</p>
@@ -393,7 +391,21 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer>  
     </div>
+
+    <div id="product-pop-up" class="modal js-modal">
+        <div class="modal-js js-modal-container">
+            <div class="modal-title">TRAILER - <span id="film-name"></span></div>
+            <div id="trailer" class="film-link"> 
+            </div>
+            <div class="modal-close js-modal-close"><i class="fa-solid fa-xmark"></i></div>
+           
+        </div> 
+    </div>
+
+    <script src="../assets/js/main.js">
+
+    </script>
 </body>
 </html>
