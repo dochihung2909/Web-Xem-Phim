@@ -217,3 +217,7 @@ html {
 .active-modal-buy {
     background-color: var(--main-color); 
 }  
+
+.buy__theatre-place {
+    width: 100%;
+}

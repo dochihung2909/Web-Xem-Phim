@@ -42,6 +42,15 @@ function resetViewTrailer() {
     const modalBuyContainer = document.querySelector('.js-modal-buy-ticket-container');
 
 
+    var btns = document.querySelectorAll('.buy__time-wrapped');
+    for (const btn of btns) { 
+        btn.addEventListener('click', function() { 
+            let current = document.querySelector('.active-modal-buy');
+            current.classList.remove('active-modal-buy');
+            this.classList.add('active-modal-buy'); 
+        })
+    } 
+
     function openModal(btns,modal,modalClose,modalContainer,reset) {
         // Hàm hiển thị modal mua vé (Thêm class open vào modal)
         function showBuyTickets () {
@@ -73,38 +82,4 @@ function resetViewTrailer() {
    
     openModal(buyBtns,modal,modalclose,modalcontainer,resetViewTrailer);
     openModal(buyTickets,modal_buy,modalCloseBuyTicket,modalBuyContainer);
-
-
-
-    var btns = document.querySelectorAll('.buy__time-wrapped');
-    for (const btn of btns) { 
-        btn.addEventListener('click', function() { 
-            let current = document.querySelector('.active-modal-buy');
-            current.classList.remove('active-modal-buy');
-            this.classList.add('active-modal-buy'); 
-        })
-    }
  
-// Buy ticket modal
-
-    // const buyTickets = document.querySelectorAll('.buy-btn');
-    // const modal_buy = document.querySelector('.js-modal-buy-ticket');
-    // const modalCloseBuyTicket = document.querySelector('.js.modal-buy-ticket-close');
-    // const modalBuyContainer = document.querySelector('.js-modal-buy-ticket-container');
-   
-    // openModal(buyTickets,modal_buy,modalCloseBuyTicket,modalBuyContainer);
-    
-
-// document.addEventListener('DOMContentLoaded', () => {
-
-//     let myBtns=document.querySelectorAll('.buy__time-wrapped');
-//     myBtns.forEach(function(btn) {
-
-//         btn.addEventListener('click', () => {
-//             myBtns.forEach(b => b.classList.remove('active'));
-//             btn.classList.add('active');
-//         });
-    
-//     });
-
-// });
