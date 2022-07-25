@@ -1,12 +1,5 @@
 
-// Scroll
-
-
-
-// window.addEventListener('scroll', function () { 
-//     const header = document.querySelector('.header');
-//     header.classList.toggle("sticky", window.scrollY > 80);
-// })
+// Scroll 
 
 // Header scroll
 window.addEventListener('scroll', function () { 
@@ -15,15 +8,13 @@ window.addEventListener('scroll', function () {
 })  
 
 
-// Trailer view 
-
+// Trailer view  
 function viewTrailerJs(filmName, urlTrailer) {  
     document.getElementById("film-name").innerHTML += filmName;  
     document.getElementById("trailer").innerHTML = '<iframe id="fancybox-frame" width="100%" height="500px" src="' + urlTrailer.replace("watch?v=", "embed/") + '?rel=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
 }
 
-// Reset input trailer modal
-
+// Reset input trailer modal 
 function resetViewTrailer() {
     document.getElementById("film-name").innerHTML = "";  
     document.getElementById("trailer").innerHTML = "";
@@ -31,11 +22,15 @@ function resetViewTrailer() {
 
 
 // Modal
+
+    // Var of modal trailer
     const buyBtns = document.querySelectorAll('.film-trailer-item') 
     const modal = document.querySelector('.js-modal')
     const modalclose = document.querySelector('.js-modal-close')
     const modalcontainer = document.querySelector('.js-modal-container')
 
+
+    // Var of modal buy tickets
     const buyTickets = document.querySelectorAll('.buy-btn');
     const modal_buy = document.querySelector('.js-modal-buy-ticket');
     const modalCloseBuyTicket = document.querySelector('.js-modal-buy-ticket-close');
@@ -51,6 +46,7 @@ function resetViewTrailer() {
         })
     } 
 
+    // Open modal
     function openModal(btns,modal,modalClose,modalContainer,reset) {
         // Hàm hiển thị modal mua vé (Thêm class open vào modal)
         function showBuyTickets () {
@@ -77,9 +73,13 @@ function resetViewTrailer() {
         modalContainer.addEventListener('click', function(event){ 
         event.stopPropagation();
         })
-    } 
- 
-   
+    }  
+
+
+    // Modal trailer
     openModal(buyBtns,modal,modalclose,modalcontainer,resetViewTrailer);
+
+
+    // Modal buy tickets
     openModal(buyTickets,modal_buy,modalCloseBuyTicket,modalBuyContainer);
  
