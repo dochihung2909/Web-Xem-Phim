@@ -232,6 +232,7 @@
 
 .film__item-info-name {
     /* min-height: 4rem; */
+    color: var(--white-color);
 }
 
 .film__item-info-type {
@@ -346,13 +347,12 @@
 
 }
 .discount__content .trailer__content-film{
-    box-shadow: .2rem .2rem .5rem var(--color-g);
-    border: .2rem solid var(--white-color);
-    border-radius: 6%;
+    box-shadow: 0rem 0rem .4rem var(--color-g); 
+    border-radius: .6rem;
     overflow: hidden;
 }
 .discount__content .trailer__content-film:hover {
-    box-shadow: .2rem .2rem 3rem var(--color-g);
+    box-shadow: .0rem .0rem 1rem var(--color-g);
 }
 .discount__content .film__item-info {
     padding: .3rem 1.5rem;

@@ -58,7 +58,7 @@ html {
     padding: 0.8rem 0;
     font-size: 1.6rem;
     text-decoration: none;
-    color: var(--color-w); 
+    color: var(--white-color); 
     justify-content: center;
     border-radius: 0.3rem;
     background: rgb(255,154,0);
@@ -112,10 +112,14 @@ html {
     opacity: 1; 
 }
 
+
+/* Modal view trailer */
+.modal-buy-ticket.open,
 .modal.open{
     display: flex;
 }
 
+.modal-buy-ticket,
 .modal {
     position: fixed; 
     top: 0;
@@ -152,8 +156,7 @@ html {
     text-align: center;
 }
 
-.film-link { 
-    padding: 12px;
+.film-link {  
 }
 
 .film-link iframe{
@@ -170,3 +173,47 @@ html {
     margin: auto;
     border: .2rem solid var(--main-color);
 }
+
+.paragraph-color {
+    color: var(--paragraph-color);
+}
+
+/* Modal buy ticket */ 
+.modal-buy-ticket {
+    /* display: flex; */
+}
+
+.modal-buy {
+    width: 900px; 
+}
+
+.modal-buy__time {
+    margin-top: 1.2rem; 
+    width: 90%; 
+    margin: 1.2rem auto;
+} 
+
+.modal-buy__title {
+    color: var(--white-color);
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 12px;
+}
+
+.buy__time-wrapped {
+    cursor: pointer;
+    text-align: center;
+    padding: 1.4rem;
+    /* background-color: var(--main-color);  */
+    color: var(--white-color);
+    font-size: 1.6rem; 
+    transition: all ease 0.3s;
+}
+
+.buy__time-wrapped:hover {
+    background-color: var(--main-color); 
+}
+
+.active-modal-buy {
+    background-color: var(--main-color); 
+}  
