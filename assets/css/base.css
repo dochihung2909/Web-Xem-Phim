@@ -78,18 +78,22 @@ html {
     transition: all .4s ease-in-out;
 }
 
-/* .header.sticky {
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 1900000; 
-    opacity: 1;
-    transition: opacity 500ms;
+/* .header.sticky {  
+    background-color: #fff;  
+}
+
+.header.sticky .navbar__search-bar {
+    border-color: #000 ;    
 }
 
 .header.sticky .navbar__search-bar-inp {
-    background-color: #ccc;
+    background-color: #fff;
+}
+
+.header.sticky .navbar__search-bar-icon {
+    color: white;
 } */
+
 .back-to-top {
     opacity: 0;  
     position: absolute;
@@ -100,7 +104,8 @@ html {
     font-size: 2rem;
     border-radius: 50%;
     padding: 1rem 1.5rem;
-    color: var(--black-color);   
+    color: var(--black-color);    
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .back-to-top.top {
