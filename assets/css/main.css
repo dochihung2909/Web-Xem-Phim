@@ -481,4 +481,10 @@
 
 .footer__container__about-feet-download a img {
     width: 100%;
+} 
+
+.modal-buy .modal-buy__theatre {
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
