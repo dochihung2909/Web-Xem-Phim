@@ -436,8 +436,7 @@
 .footer__logo img {
     width: 10%;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 2rem auto;
 }
 
 .footer__content {

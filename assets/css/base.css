@@ -185,17 +185,20 @@ html {
 .film-link iframe{
 } 
 
-/* border bottom */
-.stick {
-    width: 100%;
-    background-color: var(--white-color);
-
+/* stick */
+.stick-movie {
+    font-size: 3rem;
+}
+.stick-news {
+    background-color: white;
 }
 .border-bottom {
-    width: 50%;
-    margin: auto;
-    background-color: var(--main-color);
-    border: .2rem solid var(--main-color);
+    width: 70%;
+    border: .1rem solid rgba(234,152, 213, 0.5);
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-bottom: 1.5rem; */
 }
 
 .paragraph-color {
@@ -221,7 +224,7 @@ html {
 .modal-buy__time {
     margin-top: 1.2rem; 
     width: 90%; 
-    margin: 2.4rem auto;
+    /* margin: 2.4rem auto; */
 } 
 
 .buy__time-border {
