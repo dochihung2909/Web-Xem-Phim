@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/panda.png">
     <title>Momo clone</title> 
- 
 </head>
-<body>
-    
+<body">
     <!-- Back to top -->
     <a href="#" class="back-to-top">
         <i class="fa-solid fa-arrow-up"></i>
@@ -64,7 +62,7 @@
         <div class="container">
 
             <!-- Now showing -->
-            <div class="now-showing">
+            <div id="showing" class="now-showing">
                 <div class="grid wide">
                     <div class="now-showing-slider">
                         <div class="slider-tittle">
@@ -74,12 +72,22 @@
                             </h1>
                         </div>
                         <div class="slider-film">
-                            <div class="row">
+                            <div class="slider-pre">
+                                <a href="#showing" class="slider-pre-link">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </a>
+                            </div>
+                            <div class="slider-next">
+                                <a href="#showing" class="slider-next-link">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+                            <div class="row slider-film-wrapped">
                                 <div class="col l-2-4">
                                     <div class="film__item">
                                         <a href="#" class="film__item-img-wrapped"> 
                                             <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131921-637908959613939882.jpg&w=384&q=75" alt="" class="film__item-img">
-                                            <span class="film__item-rank">1</span>
+                                            <span class="film__item-rank"></span>
                                             <div class="film__item-tag-top">
                                                 <span class="film__item-old old-13">13+</span>
                                                 <span class="film__item-reserve"><i class="fa-solid fa-film"></i>Đặt trước</span>
@@ -102,7 +110,7 @@
                                     <div class="film__item">
                                         <a href="#" class="film__item-img-wrapped">
                                             <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131922-637908959629363123.jpg&w=384&q=75" alt="" class="film__item-img">
-                                            <span class="film__item-rank">2</span>
+                                            <span class="film__item-rank"></span>
                                             <div class="film__item-tag-top">
                                                 <span class="film__item-old old-16">16+</span>
                                                 <span class="film__item-reserve hidden"><i class="fa-solid fa-film"></i>Đặt trước</span>
@@ -125,7 +133,7 @@
                                     <div class="film__item">
                                         <a href="#" class="film__item-img-wrapped">
                                             <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131853-637908959338891885.jpg&w=384&q=75" alt="" class="film__item-img">
-                                            <span class="film__item-rank">3</span>
+                                            <span class="film__item-rank"></span>
                                             <div class="film__item-tag-top">
                                                 <span class="film__item-old old-p">P</span>
                                                 <span class="film__item-reserve hidden"><i class="fa-solid fa-film"></i>Đặt trước</span>
@@ -148,7 +156,7 @@
                                     <div class="film__item">
                                         <a href="#" class="film__item-img-wrapped">
                                             <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-upload-api-220704151931-637925447715773738.jpeg&w=384&q=75" alt="" class="film__item-img">
-                                            <span class="film__item-rank">4</span>
+                                            <span class="film__item-rank"></span>
                                             <div class="film__item-tag-top">
                                                 <span class="film__item-old old-16">16+</span>
                                                 <span class="film__item-reserve hidden"><i class="fa-solid fa-film"></i>Đặt trước</span>
@@ -171,7 +179,55 @@
                                     <div class="film__item">
                                         <a href="./page/page1.html" class="film__item-img-wrapped">
                                             <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131845-637908959253148956.jpg&w=384&q=75" alt="" class="film__item-img">
-                                            <span class="film__item-rank">5</span>
+                                            <span class="film__item-rank"></span>
+                                            <div class="film__item-tag-top">
+                                                <span class="film__item-old old-13">13+</span>
+                                                <span class="film__item-reserve hidden"><i class="fa-solid fa-film"></i>Đặt trước</span>
+                                            </div>
+                                        </a>
+                                        <a href="./page/page1.html" class="film__item-info">
+                                            <p class="film__item-info-name">
+                                                Thor: Tình Yêu Và Sấm Sét
+                                            </p>
+                                            <p class="film__item-info-type">
+                                                Hoạt Hình, Hình Sự
+                                            </p>
+                                        </a>
+                                        <div href="#" class="film__item-buy">
+                                            <a href="#buy-ticket" class="film__item-buy-btn buy-btn">Mua vé</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col l-2-4">
+                                    <div class="film__item">
+                                        <a href="./page/page1.html" class="film__item-img-wrapped">
+                                            <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131845-637908959253148956.jpg&w=384&q=75" alt="" class="film__item-img">
+                                            <span class="film__item-rank"></span>
+                                            <div class="film__item-tag-top">
+                                                <span class="film__item-old old-13">13+</span>
+                                                <span class="film__item-reserve hidden"><i class="fa-solid fa-film"></i>Đặt trước</span>
+                                            </div>
+                                        </a>
+                                        <a href="./page/page1.html" class="film__item-info">
+                                            <p class="film__item-info-name">
+                                                Thor: Tình Yêu Và Sấm Sét
+                                            </p>
+                                            <p class="film__item-info-type">
+                                                Hoạt Hình, Hình Sự
+                                            </p>
+                                        </a>
+                                        <div href="#" class="film__item-buy">
+                                            <a href="#buy-ticket" class="film__item-buy-btn buy-btn">Mua vé</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col l-2-4">
+                                    <div class="film__item">
+                                        <a href="./page/page1.html" class="film__item-img-wrapped">
+                                            <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131845-637908959253148956.jpg&w=384&q=75" alt="" class="film__item-img">
+                                            <span class="film__item-rank"></span>
                                             <div class="film__item-tag-top">
                                                 <span class="film__item-old old-13">13+</span>
                                                 <span class="film__item-reserve hidden"><i class="fa-solid fa-film"></i>Đặt trước</span>
@@ -776,8 +832,10 @@
                 <i class="fa-solid fa-xmark"></i>
             </div>
         </div>
-    </div>
-    <script src="./assets/js/main.js"> 
-    </script>
+    </div>  
+
+    <!-- Javascript -->
+    <script src="./assets/js/main.js"></script>
+
 </body>
 </html>  
