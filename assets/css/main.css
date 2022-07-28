@@ -391,65 +391,60 @@
     font-size: 1.7rem;
     width: 100%;
     line-height: 1.4; 
-    color: var(--color-brown);
+    color: white;
     font-weight: 410;
-    background-color: #FF9A00;
 }
 
-.footer a {
+.footer__logo img {
+    width: 10%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer__content {
+    line-height: 1.4;
+}
+.footer__content-header {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1.5rem .5rem;
+    background-color: rgba(0,0,0,0.5);
+}
+.footer__content-img {
+    width: 100%;
+}
+
+.footer__content-paragraph {
+
+}
+.footer__content-social {
+    font-size: 3.5rem;
+}
+.footer__content-contact {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.box3 .footer__content-contact {
+    text-align: left;
+    display: inline-block;
+}
+
+.footer__content-contact {
+    display: block;
+    widows: 100%;
     text-decoration: none;
     color: var(--white-color);
 }
 
-.footer ul {
-    list-style-type: none;
-}
 .footer__container {
     padding: 2.5rem 0; 
 }
 
-.footer__container a {
-
-}
-
 .footer__container a:hover { 
     opacity: 0.7;
-}
-
-.footer__container__about-head > li {
-    padding: 0.5rem;
-    width: 30%;
-}
-
-.footer__container__about-head-box img {
-    width: 10rem;
-}
-
-.footer__container__about-head-box-lists li {
-    padding: 0.5rem 0; 
-}
-
-
-.footer__container__about-head-box-lists li a { 
-}
-
-.footer__container__about-head-box1 {
-    width: 100%;
-}
-
-.footer__container__about-head-box1 img {
-    width: 100%;
-}
-
-.footer__container__about-head-box1 p {
-    font-weight: bold;
-    align-items: center;
-    color: var(--white-color);
-    padding-left: 0.8rem;
-}
-
-.footer__container__about-head-box3 img {
-    width: 15rem;
 }
 
 .footer__container__about-feet-box { 
@@ -463,13 +458,13 @@
     padding: 0 0.5rem;
     font-size: 2.5rem;
 }
-
+/* 
 .footer__container__about-feet-box-socials a i{
     display: block;
     align-items: center;
     text-align: center;
     justify-content: center;
-}
+} */
 
 .footer__container__about-feet-download {
     width: 50%;
@@ -483,6 +478,7 @@
     width: 100%;
 } 
 
+/* modal */
 .modal-buy .modal-buy__theatre {
     height: 70vh;
     overflow-y: auto;

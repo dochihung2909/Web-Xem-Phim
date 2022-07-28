@@ -123,6 +123,19 @@ html {
 .modal-buy-ticket.open,
 .modal.open{
     display: flex;
+    opacity: 1;
+    transition: all ease-in 0.2s; 
+}
+
+.modal-buy {
+    opacity: 0;
+    transition: opacity ease-in 0.2s; 
+    padding: 1.6rem;
+
+}
+
+.open .modal-buy {
+    opacity: 1; 
 }
 
 .modal-buy-ticket,
@@ -136,8 +149,12 @@ html {
     background-color: rgba(0, 0, 0, 0.8); 
     display: none;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    transition: all ease-in 0.2s; 
+
 }
+
+
 
 .modal-js {   
     width: 900px;
