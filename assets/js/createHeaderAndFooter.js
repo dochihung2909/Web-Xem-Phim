@@ -40,7 +40,7 @@ function innit() {
         </div>
         <div class="footer__container__about"> 
             <div class="footer__logo">
-                <img src="../assets/img/Panda-doc2.png" alt="logo">
+                <img src="/assets/img/Panda-doc2.png" alt="logo">
             </div>
             
             <div class="row">
