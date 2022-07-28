@@ -143,8 +143,8 @@
     color: var(--main-color); 
     font-size: 1.6rem;
     line-height: 4rem;
-    text-align: center;
-    margin-bottom: 3.2rem;
+    text-align: center;  
+    padding-bottom: 3.2rem;
 }
 
 .slider-tittle__link {
@@ -185,6 +185,44 @@
 
 
 /* Film item */
+.slider-film {
+    position: relative
+}
+
+.slider-film-wrapped {
+    flex-wrap: nowrap !important;
+    overflow: hidden; 
+}
+
+.slider-pre,
+.slider-next {
+    text-decoration: none;
+    position: absolute; 
+    z-index: 100;   
+    top: 0;
+    bottom: 10%;
+    display: flex;
+    align-items: center; 
+}
+
+.slider-pre { 
+    left: -22px;
+}
+
+.slider-next {
+    right: -22px;
+}
+
+.slider-next-link,
+.slider-pre-link {
+    background-color: rgba(255, 255, 255, 0.8); 
+    font-size: 1.4rem;
+    display: block; 
+    padding: 8px 14px;
+    border-radius: 50%; 
+    color: black;
+}
+
 .film__item {
 
 }
