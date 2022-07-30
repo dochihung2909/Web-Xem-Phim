@@ -5,7 +5,7 @@ function innit() {
     <nav class="header-navbar">
         <div class="navbar__logo">
             <a href="../index.html" class="navbar__logo-link">
-                <img src="/assets/img/Panda-ngang2.png" alt="" class="navbar__logo-img">
+                <img src="assets/img/Panda-ngang2.png" alt="" class="navbar__logo-img">
             </a>  
         </div>
         <div class="navbar__menu">
@@ -40,7 +40,7 @@ function innit() {
         </div>
         <div class="footer__container__about"> 
             <div class="footer__logo">
-                <img src="/assets/img/Panda-doc2.png" alt="logo">
+                <img src="assets/img/Panda-doc2.png" alt="logo">
             </div>
             
             <div class="row">
