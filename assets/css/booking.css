@@ -1,0 +1,114 @@
+
+.container__booking {
+    font-size: 1.6rem;
+    color: white;
+    margin-top: 15rem;
+}
+
+/* movie information */
+.movie {
+    
+}
+
+.movie-img {
+
+}
+
+.movie-img img {
+    width: 70%;
+}
+
+.movie-info {
+
+}
+
+.movie-info-name {
+    font-size: 4.2rem;
+    font-weight: 500;
+}
+
+.movie-info-name-eng {
+    font-style: italic;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding: 0.5rem;
+}
+
+.movie-info-line-wrapped {
+    padding-top: 4rem;
+}
+
+.movie-info-line {
+    display: flex;
+    padding: 1.5rem 0;
+    font-size: 1.4rem;
+}
+
+.movie-info-content {
+    padding: 0 2rem;
+    color: var(--text-color);
+}
+
+/* book seat */
+.seat__container {
+    border: .1rem solid white;
+    padding: 3rem;
+}
+
+.screen {
+    width: 70%;
+    margin-top: 1rem;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+
+
+.screen-text {
+    background-color: gray;
+    width: 56%;
+    height: 6rem;
+    line-height: 6rem;
+    display: block;
+    text-align: center;
+}
+
+.seats {
+    margin-top: 3rem;
+    background: linear-gradient(90deg );
+}
+.seat {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 56%;
+    margin-top: 1rem;
+}
+
+.seat-text {
+    justify-content: center;
+    padding: 0.5rem;
+    margin-right: 1.5rem;
+    color: yellow;
+}
+
+.seats-number {
+    display: flex;
+}
+
+.seat-number {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border: .1rem solid white;
+    width: 4rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0 .5rem;
+    border-radius: .2rem;
+}
+
+.vip {
+    border-color: var(--main-color);
+}
