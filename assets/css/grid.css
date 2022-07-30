@@ -20,12 +20,17 @@
     padding: 0 12px;
 }
 
+/* Flex short hand (set the flex length on flex items)
+    flex: <flex-grow> <flex-basis> <flex-shrink>
+    flex grow: number of grow items in same container
+    flex basis: innit lenght flex items
+    flex shrink: shirnk relative to the rest of flex items
+*/
+
 .l-1 {
     flex: 0 0 8.333333%;
     width: 8.333333%;
-}
-
-
+} 
 
 .l-3 {
     flex: 0 0 25%;

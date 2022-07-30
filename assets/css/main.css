@@ -1,5 +1,5 @@
 /* slider */
-.slider {
+/* .slider {
     padding: 5.6rem 0;
 }
 
@@ -15,7 +15,7 @@
 
 .slider-img__link {
     width: 100%;
-}
+} */
 
 .background {
     position: fixed; 
@@ -33,7 +33,7 @@
 
 /* Body content */
 .container {  
-    padding-top: var(--header-height);
+    /* padding-top: var(--header-height); */
 }
 
 /* Now showing slider */
@@ -45,6 +45,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    height: calc(100vh - var(--header-height));
 }
 
 .slider-tittle {
@@ -97,9 +98,13 @@
     position: relative
 }
 
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;    
+}
+
 .slider-film-wrapped {
-    flex-wrap: nowrap !important;
-    overflow: hidden; 
+    flex-wrap: nowrap !important; 
 }
 
 .slider-pre,
