@@ -64,3 +64,18 @@ function resetViewTrailer() {
     if (modal_buy) {
         openModal(buyTickets,modal_buy,modalCloseBuyTicket,modalBuyContainer,false);
     } 
+
+
+    // Redirect Page jQuery
+
+    function redirectPage(className,pageUrl) {
+        $(document).ready(function() {
+            $('.' + className).bind('click', function(event) {
+                window.location.replace(pageUrl);
+            });
+        });
+    }
+
+    redirectPage('buy__theatre-exactlyTime','./booking.html');
+
+    redirectPage('film-booking','./film.html');

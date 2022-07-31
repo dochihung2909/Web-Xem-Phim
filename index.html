@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/panda.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/createHeaderAndFooter.js"></script>
     <title>Momo clone</title> 
 </head>
@@ -60,7 +61,7 @@
         <div class="container">
 
             <!-- Now showing -->
-            <div id="showing" class="now-showing">
+            <div id="showing" class="now-showing content-padding">
                 <div class="grid wide">
                     <div class="now-showing-slider">
                         <div class="slider-tittle">
@@ -84,7 +85,7 @@
                                 <div class="row slider-film-wrapped">
                                     <div class="col l-2-4 slider-item">
                                         <div class="film__item">
-                                            <a href="#" class="film__item-img-wrapped"> 
+                                            <a href="#" class="film__item-img-wrapped film-booking"> 
                                                 <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131921-637908959613939882.jpg&w=384&q=75" alt="" class="film__item-img">
                                                 <span class="film__item-rank"></span>
                                                 <div class="film__item-tag-top">
@@ -107,7 +108,7 @@
                                     </div>
                                     <div class="col l-2-4 slider-item">
                                         <div class="film__item">
-                                            <a href="#" class="film__item-img-wrapped"> 
+                                            <a href="#" class="film__item-img-wrapped film-booking"> 
                                                 <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131921-637908959613939882.jpg&w=384&q=75" alt="" class="film__item-img">
                                                 <span class="film__item-rank"></span>
                                                 <div class="film__item-tag-top">
@@ -130,7 +131,7 @@
                                     </div>
                                     <div class="col l-2-4 slider-item">
                                         <div class="film__item">
-                                            <a href="#" class="film__item-img-wrapped"> 
+                                            <a href="#" class="film__item-img-wrapped film-booking"> 
                                                 <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131921-637908959613939882.jpg&w=384&q=75" alt="" class="film__item-img">
                                                 <span class="film__item-rank"></span>
                                                 <div class="film__item-tag-top">
@@ -153,7 +154,7 @@
                                     </div>
                                     <div class="col l-2-4 slider-item">
                                         <div class="film__item">
-                                            <a href="#" class="film__item-img-wrapped"> 
+                                            <a href="#" class="film__item-img-wrapped film-booking"> 
                                                 <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131921-637908959613939882.jpg&w=384&q=75" alt="" class="film__item-img">
                                                 <span class="film__item-rank"></span>
                                                 <div class="film__item-tag-top">
@@ -176,7 +177,7 @@
                                     </div>
                                     <div class="col l-2-4 slider-item">
                                         <div class="film__item">
-                                            <a href="#" class="film__item-img-wrapped">
+                                            <a href="#" class="film__item-img-wrapped film-booking">
                                                 <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131922-637908959629363123.jpg&w=384&q=75" alt="" class="film__item-img">
                                                 <span class="film__item-rank"></span>
                                                 <div class="film__item-tag-top">
@@ -199,7 +200,7 @@
                                     </div>
                                     <div class="col l-2-4 slider-item">
                                         <div class="film__item">
-                                            <a href="#" class="film__item-img-wrapped">
+                                            <a href="#" class="film__item-img-wrapped film-booking">
                                                 <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131853-637908959338891885.jpg&w=384&q=75" alt="" class="film__item-img">
                                                 <span class="film__item-rank"></span>
                                                 <div class="film__item-tag-top">
@@ -222,7 +223,7 @@
                                     </div>
                                     <div class="col l-2-4 slider-item">
                                         <div class="film__item">
-                                            <a href="#" class="film__item-img-wrapped">
+                                            <a href="#" class="film__item-img-wrapped film-booking">
                                                 <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-upload-api-220704151931-637925447715773738.jpeg&w=384&q=75" alt="" class="film__item-img">
                                                 <span class="film__item-rank"></span>
                                                 <div class="film__item-tag-top">
@@ -245,7 +246,7 @@
                                     </div>
                                     <div class="col l-2-4 slider-item">
                                         <div class="film__item">
-                                            <a href="./film.html" class="film__item-img-wrapped">
+                                            <a href="./film.html" class="film__item-img-wrapped film-booking">
                                                 <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131845-637908959253148956.jpg&w=384&q=75" alt="" class="film__item-img">
                                                 <span class="film__item-rank"></span>
                                                 <div class="film__item-tag-top">
@@ -269,7 +270,7 @@
                                     
                                     <div class="col l-2-4 slider-item">
                                         <div class="film__item">
-                                            <a href="./film.html" class="film__item-img-wrapped">
+                                            <a href="./film.html" class="film__item-img-wrapped film-booking">
                                                 <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131845-637908959253148956.jpg&w=384&q=75" alt="" class="film__item-img">
                                                 <span class="film__item-rank"></span>
                                                 <div class="film__item-tag-top">
@@ -293,7 +294,7 @@
                                     
                                     <div class="col l-2-4 slider-item">
                                         <div class="film__item">
-                                            <a href="./film.html" class="film__item-img-wrapped">
+                                            <a href="./film.html" class="film__item-img-wrapped film-booking">
                                                 <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131845-637908959253148956.jpg&w=384&q=75" alt="" class="film__item-img">
                                                 <span class="film__item-rank"></span>
                                                 <div class="film__item-tag-top">
@@ -322,7 +323,7 @@
             </div>
 
             <!-- Trailer -->
-            <div class="trailer">
+            <div id="trailer-container" class="trailer content-padding">
                 <div class="trailer__content">
                     <div class="grid wide">
                         <div class="slider-tittle">
@@ -395,7 +396,7 @@
             </div>
 
             <!-- Blog phim -->
-            <div class="blog background-slider">
+            <div id="blog-container" class="blog background-slider">
                 <div class="blog__content">
                     <div class="grid wide">
                         <div class="slider-tittle">
@@ -409,10 +410,10 @@
                             </p>
                         </div>
                         <div class="blog__categories flex center">
-                            <a href="#" class="newest">
+                            <a href="#blog-container" class="slider-tittle__link newest">
                                 Mới nhất
                             </a>
-                            <a href="#" class="viewest">
+                            <a href="#blog-container" class="slider-tittle__link viewest">
                                 Xem nhiều nhất
                             </a>
                         </div>
@@ -491,7 +492,7 @@
             
 
             <!-- Khuyến mãi -->
-            <div class="discount background-slider">
+            <div id="discount-container" class="discount background-slider">
                 <div class="discount__content">
                     <div class="grid wide">
                         <div class="slider-tittle">

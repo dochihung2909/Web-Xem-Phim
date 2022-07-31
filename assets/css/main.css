@@ -17,6 +17,10 @@
     width: 100%;
 } */
 
+.content-padding {
+    padding: 8.6rem 0;
+}
+
 .background {
     position: fixed; 
     top: 0;
@@ -37,8 +41,7 @@
 }
 
 /* Now showing slider */
-.now-showing{
-    padding: 5.6rem;
+.now-showing{ 
     background-color: #000;
     background-image: url("https://static.mservice.io/img/momo-upload-api-210701105436-637607336767432408.jpg");
     /* background-image: url("../img/background.jpg"); */
@@ -233,8 +236,7 @@
 
 }
 
-.trailer__content {
-    padding: 5.6rem 0;
+.trailer__content { 
     /* background: url("https://static.mservice.io/img/momo-upload-api-211001091715-637686766356856456.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -283,25 +285,26 @@
 /* blog */
 .background-slider {
     background-color: var(--white-color);
-    padding: 5.6rem;
+    padding: 8.6rem;
 }
 .blog__categories {
-    font-size: 2rem;
+    font-size: 2rem; 
 }
 
-.blog__categories .newest,
-.blog__categories .viewest {
+.newest,
+.viewest {
     padding: 2rem 1rem .7rem;
     margin-bottom: 2rem;
     text-decoration: none;
-    color: #999;
+    color: #999; 
     cursor: pointer;
     position: relative;
 }
+
 .blog__categories .viewest {
     margin-left: 4rem;
 }
-.blog__categories .newest::after,
+/* .blog__categories .newest::after,
 .blog__categories .viewest::after {
     content: "";
     position: absolute;
@@ -319,7 +322,7 @@
 .blog__categories .viewest:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
+} */
 
 /* discount */
 .discount {

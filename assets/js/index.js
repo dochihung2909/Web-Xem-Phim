@@ -11,14 +11,21 @@ const showing = document.querySelector('#now-showing');
 const willShowing = document.querySelector('#will-showing');
 const nowFilm = document.querySelectorAll('.slider-tittle__link');
  
-for (const film of nowFilm) {
-    film.addEventListener('click',function() {
-        const current = document.querySelector('.active-show');
-        current.classList.remove('active-show');
-        this.classList.add('active-show');
+function changeTitle(nowFilm) {
+    for (const film of nowFilm) {
+        film.addEventListener('click',function() {
+            const current = document.querySelector('.active-show');
+            current.classList.remove('active-show');
+            this.classList.add('active-show'); 
+        })
+    } 
+}
 
-    })
-} 
+changeTitle(nowFilm);
+
+// Change Blog
+const nowBlog = document.querySelectorAll('.blog-news');
+changeTitle(nowBlog);
 
 // Slider
 window.addEventListener('load', function() {
