@@ -1,3 +1,5 @@
+
+// Create seats
 const seatWrapper = document.querySelector('.seats')
 
 function intToChar(int) { 
@@ -23,13 +25,31 @@ function createSeat(seatRow, seatStart) {
     let seatNumber = document.querySelectorAll('.seats-number')
     
     for(let i = 0; i < 12; i++) {
-        let seatVip = "";
+        let seatVip = "normal";
         if(seatRow >= "E") {
             seatVip = "vip"
         }
         seatNumber[seatNumber.length-1].innerHTML += 
         `
-            <a class="seat-number ${seatVip}" href="#" class="seat">${i+1+seatStart}</a>
+            <a class="seat-number ${seatVip}" href="#seat-booking" class="seat">${i+1+seatStart}</a>
         `
     }        
 }
+
+
+// Add selected if click 
+
+$(document).ready(function() {
+    $('.seat-number').click(function() { 
+        if (!$(this).hasClass('select')) 
+            $(this).addClass('select'); 
+        else 
+            $(this).removeClass('select'); 
+    });  
+
+    // Money count
+    let normalPrice = 65000;
+    let vipPrice = 80000;
+    let 
+
+})
