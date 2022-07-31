@@ -6,25 +6,19 @@ function intToChar(int) {
     return String.fromCharCode(code + int);
   }
 
-
-
 for(let i = 0; i < 8; i++) {
     createSeat(intToChar(i),0);
 }
 
 
 function createSeat(seatRow, seatStart) {
-    let seat = seatWrapper.innerHTML += `
+    let seat = seatWrapper.innerHTML += 
+        `
         <div class="seat">
-            <p class="seat-text">
-                ${seatRow}
-            </p>
-
-            <div class="seats-number">
-                
-            </div>
-
-        </div>`
+            <p class="seat-text">${seatRow}</p>
+            <div class="seats-number"></div>
+        </div>
+        `
 
     let seatNumber = document.querySelectorAll('.seats-number')
     
@@ -33,10 +27,9 @@ function createSeat(seatRow, seatStart) {
         if(seatRow >= "E") {
             seatVip = "vip"
         }
-        seatNumber[seatNumber.length-1].innerHTML += `
+        seatNumber[seatNumber.length-1].innerHTML += 
+        `
             <a class="seat-number ${seatVip}" href="#" class="seat">${i+1+seatStart}</a>
         `
-        
-        
     }        
 }
