@@ -16,8 +16,7 @@ for(let i = 0; i < 8; i++) {
 function createSeat(seatRow, seatStart) {
     let seat = seatWrapper.innerHTML += 
         `
-        <div class="seat">
-            <p class="seat-text">${seatRow}</p>
+        <div class="seat"> 
             <div class="seats-number"></div>
         </div>
         `
@@ -31,7 +30,7 @@ function createSeat(seatRow, seatStart) {
         }
         seatNumber[seatNumber.length-1].innerHTML += 
         `
-            <a class="seat-number ${seatVip}" href="#seat-booking" class="seat">${i+1+seatStart}</a>
+            <a class="seat-number ${seatVip}" href="#seat-booking" class="seat">${seatRow}${i+1+seatStart}</a>
         `
     }        
 }
@@ -39,17 +38,22 @@ function createSeat(seatRow, seatStart) {
 
 // Add selected if click 
 
-$(document).ready(function() {
-    $('.seat-number').click(function() { 
-        if (!$(this).hasClass('select')) 
-            $(this).addClass('select'); 
-        else 
-            $(this).removeClass('select'); 
-    });  
-
+$(document).ready(function() { 
+    const selected =  $('#seat-selected');
+    
     // Money count
     let normalPrice = 65000;
-    let vipPrice = 80000;
-    let 
-
+    let vipPrice = 80000;  
+    
+    $('.seat-number').click(function() { 
+        if (!$(this).hasClass('select')) {
+            $(this).addClass('select'); 
+            selected.append($(this).text()+ " ");
+        }
+        else {
+            selected.text(selected.text().replace($(this).text(),'')); 
+            $(this).removeClass('select'); 
+        }
+    });   
 })
+
