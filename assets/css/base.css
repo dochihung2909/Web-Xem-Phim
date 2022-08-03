@@ -6,7 +6,7 @@
     --old-color-13: #f1c40f;
     --old-color-16: #FF9A00;
     --old-color-p: #27ae60; 
-    --header-height: 8rem;
+    --header-height: 8.6rem;
     --color-g: gray;
     --color-brown: #3e2917;
     --paragraph-color:#2a2a2a;
@@ -377,8 +377,10 @@ html {
 /* Header */
 .header {
     height: var(--header-height);
-    background-color: var(--black-color);
-    position: relative;
+    /* background-color: var(--black-color); */
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
     z-index: 1000;
     transition: all 0.2s ease-in;  
 }

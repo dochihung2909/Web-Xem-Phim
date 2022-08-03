@@ -1,12 +1,11 @@
-.content {
-    margin-top: var(--header-height);
+.content { 
     /* position: relative; */
     width: 100%; 
+    margin-bottom: 8.6rem;
 }
 
 .content-video-wrapped { 
-    position: relative; 
-    margin-top: -11rem;
+    position: relative;  
     filter: brightness(70%); 
     width: 100%;    
 }
@@ -14,13 +13,16 @@
 .content-video {  
     min-width: 100%;
     min-height: 100%;  
+    
 }
 
-.content-info {
-    width: 100%;
-    position: absolute;   
-    top: 15%; 
-    z-index: 100;    
+.content-info { 
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(https://images3.alphacoders.com/124/1241167.png);
+    /* background-image: url(https://images3.alphacoders.com/124/1241167.png); */
+    width: 100%;  
+    padding: 12rem 0;  
+    background-size: cover;
+    background-position: top center; 
 }
 
 .info__img-wrapped {
