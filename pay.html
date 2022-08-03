@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css"> 
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/pay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" href="./assets/img/panda.png">
+    <title>Pay</title>  
+    <script src="./assets/js/createHeaderAndFooter.js"></script>
+</head>
+<body onload="innit()">
+    <!-- Back to top -->
+    <a href="#" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- Background -->
+    <div class="background"></div>
+    <div class="app-booking">
+        <header class="header"> 
+             
+        </header>
+
+        <div class="pay__container">
+           <div class="grid wide">
+
+            <div class="transaction">
+                <div class="col l-6">
+                    <h1 class="header-h1">Chi tiết giao dịch</h1>
+
+                    <div class="transaction__content">
+    
+    
+                        <div class="transaction-infos">
+                            <div class="transaction-info">
+                                <p class="transaction-info-title">Phim:</p>
+                                <p class="transaction-info-about">Thor: Tinh yeu va sam set</p>
+                            </div>
+    
+                            <div class="transaction-info">
+                                <p class="transaction-info-title">Suat chieu:</p>
+                                <p class="transaction-info-about">13:15 - Thu 5, 05/08/2022</p>
+                            </div>
+    
+                            <div class="transaction-info">
+                                <p class="transaction-info-title">Rap:</p>
+                                <p class="transaction-info-about">CGV Vincom Thu Duc</p>
+                            </div>
+    
+                            <div class="transaction-info">
+                                <p class="transaction-info-title">Phong chieu:</p>
+                                <p class="transaction-info-about">05</p>
+                            </div>
+    
+                            <div class="transaction-info">
+                                <p class="transaction-info-title">Ghe:</p>
+                                <p class="transaction-info-about">A13</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pay-for">
+                <div class="col l-4">
+                    <div class="pay-for-content">
+                        <h1 class="header-h1">
+                            Loại thẻ thanh toán
+                        </h1>
+    
+                        <div class="payment-methods">
+    
+                            <div class="payment-method">
+                                <label class="payment-method-label" for="bidv">
+                                    <div class="payment-method-img">
+                                        <img src="https://bom.so/UjtdaY" alt="image">
+                                    </div>
+            
+                                    <div class="payment-method-name">
+                                        BIDV
+                                    </div>
+                                </label>
+    
+                                <input class="payment-method-input" type="radio" name="pay-method" id="bidv">
+                            </div>
+    
+                            <div class="payment-method">
+                                <label class="payment-method-label" for="momo">
+                                    <div class="payment-method-img">
+                                        <img src="https://bom.so/qdJ7I8" alt="image">
+                                    </div>
+            
+                                    <div class="payment-method-name">
+                                        Momo
+                                    </div>
+    
+                                </label>
+                                
+                                <input class="payment-method-input" type="radio" name="pay-method" id="momo">
+                            </div>
+    
+                            <div class="payment-method">
+                                <label class="payment-method-label" for="zalopay">
+                                    <div class="payment-method-img">
+                                        <img src="https://bom.so/MRRspX" alt="image">
+                                    </div>
+        
+                                    <div class="payment-method-name">
+                                        ZaloPay
+                                    </div>
+    
+                                </label>
+                                
+                                <input class="payment-method-input" type="radio" name="pay-method" id="zalopay">
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+           </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+             
+        </footer>
+    </div>
+
+    <!-- Javascript --> 
+    <script src="./assets/js/base.js"></script> 
+    <script src="./assets/js/booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* common */
+.header-h1 {
+    padding: 2rem 0;
+    color: var(--main-color);
+}
+
+.pay__container {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.pay-sth {
+    height: 40rem;
+}
+
+/* transaction */
+.transaction {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    color: white;
+}
+
+.transaction__content {
+    border: .1rem solid var(--main-color);
+    border-radius: .5rem;
+    padding: 1.5rem .5rem;
+}
+
+.transaction-info-title,
+.transaction-info-about {
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 1.5rem;
+}
+
+.transaction-info-title {
+    font-weight: bold;
+}
+
+.transaction-info {
+    display: flex;
+    border-bottom: .1rem solid rgba(209, 209, 224, 0.4);
+}
+
+.transaction-info:last-child {
+    border-bottom: none;
+}
+
+.transaction-info-about {
+    text-align: right;
+}
+
+/* pay for */
+.pay-for {
+
+}
+
+.pay-for-content {
+
+}
+
+.payment-method-label,
+.payment-method {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.payment-method {
+    padding: .3rem 0;
+}
+
+.pay-for-content-header {
+    padding: 2rem 0;
+    color: var(--main-color);
+}
+
+.payment-method-img {
+    width: 10%;
+    border-radius: .3rem ;
+    overflow: hidden;
+}
+
+.payment-method-img img {
+    width: 100%;
+}
+
+.payment-method-name {
+    padding-left: 3rem;
+}
+
+.payment-method-input {
+    justify-content: left;
+}
