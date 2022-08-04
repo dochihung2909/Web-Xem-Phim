@@ -48,7 +48,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: calc(100vh - var(--header-height));
+    height: calc(100vh);
+    padding-top: 10rem;
 }
 
 .slider-tittle {
