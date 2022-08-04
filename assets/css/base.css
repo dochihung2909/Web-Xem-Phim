@@ -66,7 +66,7 @@ html {
 
 .buy-btn {
     display: flex;
-    padding: 0.8rem 0;
+    padding: 0.8rem 1.6rem;
     font-size: 1.6rem;
     text-decoration: none;
     color: var(--white-color); 
@@ -348,7 +348,11 @@ html {
     background-color: white;
     width: 100%;  
     box-shadow: .0rem .1rem 0 .1rem rgba(0, 0, 0, 0.1); 
-    transition: all 0.2s ease-in; 
+    height: var(--header-height);   
+}
+
+.sticky .header-navbar {
+    height: var(--header-height);
 }
 
 .sticky .navbar__search-bar {
@@ -371,30 +375,32 @@ html {
 
 .sticky .navbar__menu-item-link {
     color: var(--navbar-color);
+    font-size: 1.8rem;
 }
 
 
 /* Header */
-.header {
-    height: var(--header-height);
-    /* background-color: var(--black-color); */
+.header { 
+    /* background-color: var(--white-color); */
     background-color: transparent;
     position: fixed;
     width: 100%;
-    z-index: 1000;
-    transition: all 0.2s ease-in;  
+    z-index: 1000;  
+    top: 0;
+    padding: 0 6.4rem;     
 }
 
 .header-navbar {
-    height: var(--header-height);
+    height: 10rem;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .navbar__logo {  
-    width: 19%; 
+    display: flex;
+    width: 18%;  
 }
 
 .navbar__menu {
@@ -417,7 +423,7 @@ html {
 }
 
 .navbar__menu-item {   
-    height: inherit;      
+    height: inherit;    
 }
 
 .navbar__menu-item-link {
@@ -428,8 +434,9 @@ html {
     text-transform: uppercase;
     padding: 0.8rem 1.6rem;
     color: var(--white-color);
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: bold;
+    transition: 0.2s;
 }   
 
 .navbar__menu-item-link:hover {
@@ -576,5 +583,6 @@ html {
 
 .footer__container__about-feet-download a img {
     width: 100%;
-} 
+}  
+
 

@@ -43,4 +43,4 @@ window.addEventListener('load', function() {
         slider.style.transform = "translateX(" + widthItem + "px)";
     })
 
-})
+}) 

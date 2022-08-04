@@ -47,8 +47,7 @@
     /* background-image: url("../img/background.jpg"); */
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-    height: calc(100vh);
+    background-repeat: no-repeat; 
     padding-top: 10rem;
 }
 
@@ -224,8 +223,7 @@
     font-size: 1.4rem;
 }
 
-.film__item-buy-btn {
-    
+.film__item-buy-btn { 
 }
 
 .film__item-buy-btn:hover {
@@ -348,4 +346,28 @@
     height: 70vh;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+
+.ranking-showing {
+    background-image: url(https://images3.alphacoders.com/124/1241167.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.ranking__infor {
+    padding: 6.4rem;
+    /* position: absolute; */  
+    display: flex;
+    height: 100vh; 
+    align-items: center; 
+    justify-content: center;  
+    flex-direction: column; 
+}
+
+.ranking__infor-name {
+    font-size: 3.2rem;
 }

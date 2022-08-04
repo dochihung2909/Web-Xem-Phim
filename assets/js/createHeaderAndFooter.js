@@ -1,7 +1,7 @@
 function innit() {
     const head = document.querySelector('.header');
     const footer = document.querySelector('.footer');
-    head.innerHTML = `<div class="grid wide">
+    head.innerHTML = `<div class="grid">
     <nav class="header-navbar">
         <div class="navbar__logo">
             <a href="./index.html" class="navbar__logo-link">
