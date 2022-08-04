@@ -60,17 +60,47 @@
         <!-- Container content -->
         <div class="container">
             <div class="ranking-showing">
-                <div class="row">
-                    <div class="col l-6">
-                        <div class="ranking__infor"> 
-                            <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/thorlat_lob_log_def_04.png" class="ranking__infor-name">
-                            <div href="#" class="film__item-buy">
-                                <a href="#buy-ticket" class="film__item-buy-btn buy-btn">Mua vé</a>
+                <div class="grid">
+                    <div class="row no-gutters">
+                        <div class="l-6">
+                            <div class="ranking__infor"> 
+                                <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/thorlat_lob_log_def_04.png" class="ranking__infor-name">
+                                <div href="#" class="film__item-buy">
+                                    <a href="#buy-ticket" class="slider-buy-btn buy-btn">Mua vé</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-6">
+                            <div class="ranking__slide">
+                                <div class="ranking-trailer">
+                                    <a href="#trailer" onclick="viewTrailerJs('https://www.youtube.com/watch?v=UBgPypHGAqE');" class="ranking__trailer-icon film-trailer-item">
+                                        <i class="fa-solid fa-play"></i>
+                                    </a> 
+                                </div>
+                                <div class="ranking__number">
+                                    <ul class="ranking__number-list">
+                                        <li class="ranking__number-item">
+                                            <a href="#" class="ranking__number-link">1</a>
+                                        </li>
+                                        <li class="ranking__number-item">
+                                            <a href="#" class="ranking__number-link ranking-active">2</a>
+                                        </li>
+                                        <li class="ranking__number-item">
+                                            <a href="#" class="ranking__number-link">3</a>
+                                        </li>
+                                        <li class="ranking__number-item">
+                                            <a href="#" class="ranking__number-link">4</a>
+                                        </li>
+                                        <li class="ranking__number-item">
+                                            <a href="#" class="ranking__number-link">5</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-               
             </div>
             <!-- Now showing -->
             <div id="showing" class="now-showing content-padding">
@@ -78,8 +108,8 @@
                     <div class="now-showing-slider">
                         <div class="slider-tittle">
                             <h1>
-                                <a id="now-showing" class="slider-tittle__link active-show" href="#"">Phim đang chiếu</a> 
-                                <a id="will-showing" class="slider-tittle__link" href="#">Phim sắp chiếu</a>   
+                                <a id="now-showing" class="slider-tittle__link active-show" href="#showing">Phim đang chiếu</a> 
+                                <a id="will-showing" class="slider-tittle__link" href="#showing">Phim sắp chiếu</a>   
                             </h1>
                         </div>
                         <div class="slider-film">
@@ -98,7 +128,7 @@
                                     <div class="col l-2-4 slider-item">
                                         <div class="film__item">
                                             <a href="#" class="film__item-img-wrapped film-booking"> 
-                                                <img src="https://momo.vn/_next/image?url=https%3A%2F%2Fstatic.mservice.io%2Fcinema%2Fs256x384%2Fmomo-cdn-api-220615131921-637908959613939882.jpg&w=384&q=75" alt="" class="film__item-img">
+                                                <img src="./assets/img/film_1.webp" alt="" class="film__item-img">
                                                 <span class="film__item-rank"></span>
                                                 <div class="film__item-tag-top">
                                                     <span class="film__item-old old-13">13+</span>
@@ -337,17 +367,17 @@
             <!-- Trailer -->
             <div id="trailer-container" class="trailer content-padding">
                 <div class="trailer__content">
-                    <div class="grid wide">
+                    <div class="grid wide"> 
                         <div class="slider-tittle">
                             <h1>
                                 Trailer mới nhất
                             </h1>
-                        </div>
+                        </div> 
                         <div class="trailer__content-films"> 
                             <div class="row">
                                 <div class="col l-4">
                                     <div class="trailer__content-film">
-                                        <a href="#product-pop-up" onclick="viewTrailerJs('Thám Tử Lừng Danh Conan: Nàng Dâu Halloween', 'https://www.youtube.com/watch?v=LiBtjMrddfM');" class="film__item-img-wrapped film-trailer-item">
+                                        <a href="#product-pop-up" onclick="viewTrailerJs('https://www.youtube.com/watch?v=LiBtjMrddfM');" class="film__item-img-wrapped film-trailer-item">
                                             <img class="film__item-img" src="https://static.mservice.io/cinema/momo-cdn-api-220615143142-637909003020510101.jpg" alt="movie">
                                             <span class="trailer__content-film-icon">
                                                 <i class="fa-solid fa-play"></i>
@@ -365,7 +395,7 @@
                                 </div>
                                 <div class="col l-4">
                                     <div class="trailer__content-film">
-                                        <a href="#product-pop-up" onclick="viewTrailerJs('Minions: Sự Trỗi Dậy Của Gru', 'https://www.youtube.com/watch?v=SC7BfxpWieM');" class="film__item-img-wrapped film-trailer-item">
+                                        <a href="#product-pop-up" onclick="viewTrailerJs('https://www.youtube.com/watch?v=SC7BfxpWieM');" class="film__item-img-wrapped film-trailer-item">
                                             <img class="film__item-img" src="https://static.mservice.io/cinema/momo-cdn-api-220615143047-637909002477743248.jpg" alt="movie">
                                             <span class="trailer__content-film-icon">
                                                 <i class="fa-solid fa-play"></i>
@@ -383,7 +413,7 @@
                                 </div>
                                 <div class="col l-4">
                                     <div class="trailer__content-film">
-                                        <a href="#product-pop-up" onclick="viewTrailerJs('Thoát Khỏi Mogadishu', 'https://www.youtube.com/watch?v=Dp4WMfDZC7o');" class="film__item-img-wrapped film-trailer-item">
+                                        <a href="#product-pop-up" onclick="viewTrailerJs('https://www.youtube.com/watch?v=Dp4WMfDZC7o');" class="film__item-img-wrapped film-trailer-item">
                                             <img class="film__item-img" src="https://static.mservice.io/cinema/momo-cdn-api-220711160238-637931521585639917.jpg" alt="movie">
                                             <span class="trailer__content-film-icon">
                                                 <i class="fa-solid fa-play"></i>
@@ -712,8 +742,7 @@
 
     <!-- modal trailer -->
     <div id="product-pop-up" class="modal js-modal">
-        <div class="modal-js js-modal-container">
-            <div class="modal-title">TRAILER - <span id="film-name"></span></div>
+        <div class="modal-js js-modal-container"> 
             <div id="trailer" class="film-link"> 
             </div>
             <div class="modal-close js-modal-close"><i class="fa-solid fa-xmark"></i></div>

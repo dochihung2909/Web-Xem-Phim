@@ -16,6 +16,11 @@
     margin: 0 -12px;
 }
 
+.row.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .col {
     padding: 0 12px;
 }

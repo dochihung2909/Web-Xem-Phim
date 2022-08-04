@@ -230,56 +230,7 @@
      
 }
 
-/* trailer */
-.trailer {
 
-}
-
-.trailer__content { 
-    /* background: url("https://static.mservice.io/img/momo-upload-api-211001091715-637686766356856456.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
-} 
-
-.film__item-info-names {  
-
-}
- 
-.trailer__content-film-icon {
-    display: flex;
-    border: .28rem solid white;
-    color: white;
-    position: absolute;
-    font-size: 2rem;
-    padding: .8rem 1rem;
-    border-radius: 50%; 
-    z-index: 10; 
-    left: 45%;
-    bottom: 40%;
-    opacity: 0;
-    transition: opacity ease 0.3s;
-}
-
-.film__item-img-wrapped:hover .trailer__content-film-icon {
-    opacity: 1;
-}
-
-.trailer__content-film-icon i {
-    padding-left: .2rem;
-} 
-
-.trailer__content-film { 
-    font-size: 1.6rem;  
-}  
-
-.trailer__content-film-name { 
-
-}
-
-.trailer__content-film-type {
-    color: #ccc;
-} 
 
 /* blog */
 .background-slider {
@@ -349,18 +300,19 @@
 }
 
 
-.ranking-showing {
-    background-image: url(https://images3.alphacoders.com/124/1241167.png);
+.ranking-showing {  
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(https://images3.alphacoders.com/124/1241167.png);
     background-repeat: no-repeat;
     background-position: top center;
     height: 100vh;
     background-size: cover;
-    position: relative;
+    position: relative; 
 }
 
-.ranking__infor {
-    padding: 6.4rem;
+.ranking__infor,
+.ranking__slide {
     /* position: absolute; */  
+    padding: 6.4rem;
     display: flex;
     height: 100vh; 
     align-items: center; 
@@ -370,4 +322,55 @@
 
 .ranking__infor-name {
     font-size: 3.2rem;
+}
+
+.slider-buy-btn {
+    margin-top: 24px;
+    width: 120px;
+}
+
+.ranking-trailer {
+    flex: 1;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.ranking__trailer-icon {
+    font-size: 3.2rem;
+    text-decoration: none;
+    color: var(--black-color); 
+    display: block;  
+    padding: 1.2rem 2.2rem; 
+    background-color: var(--white-color);
+    border-radius: 50%; 
+} 
+
+.ranking__trailer-icon > i { 
+    margin:0 0 8px 6px; 
+}
+
+.ranking__number {  
+}
+
+.ranking__number-list {
+    display: flex;
+    list-style-type: none;
+    align-items: flex-end; 
+    height: 7.6rem;
+}
+
+.ranking__number-link {
+    text-decoration: none;
+    font-size: 3.6rem;  
+    color: var(--white-color);
+    padding: 0 1.2rem;
+    display: flex;  
+}
+
+.ranking-active {
+    font-size: 4.8rem;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    transition: 0.4s;
 }
