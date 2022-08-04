@@ -78,4 +78,4 @@ function resetViewTrailer() {
 
     redirectPage('buy__theatre-exactlyTime','./booking.html');
 
-    redirectPage('film-booking','./film.html');
+    redirectPage('film__item','./film.html');
