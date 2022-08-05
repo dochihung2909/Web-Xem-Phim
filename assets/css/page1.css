@@ -1,7 +1,6 @@
 .content { 
     /* position: relative; */
-    width: 100%; 
-    margin-bottom: 8.6rem;
+    width: 100%;  
 }
 
 .content-video-wrapped { 
@@ -24,6 +23,10 @@
     padding: 12rem 0;  
     background-size: cover;
     background-position: top center; 
+}
+
+.buy-ticket {
+    padding: 8.6rem;
 }
 
 .info__img-wrapped {
