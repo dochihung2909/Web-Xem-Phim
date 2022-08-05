@@ -480,7 +480,7 @@ html {
 } 
 
 /* Footer */
-.footer {
+/* .footer {
     font-size: 1.7rem;
     width: 100%;
     line-height: 1.4; 
@@ -564,7 +564,9 @@ html {
 .footer__container__about-feet-box a {
     padding: 0 0.5rem;
     font-size: 2.5rem;
-}
+} */
+
+/* comment */
 /* 
 .footer__container__about-feet-box-socials a i{
     display: block;
@@ -573,7 +575,7 @@ html {
     justify-content: center;
 } */
 
-.footer__container__about-feet-download {
+/* .footer__container__about-feet-download {
     width: 50%;
 }
 
@@ -583,7 +585,50 @@ html {
 
 .footer__container__about-feet-download a img {
     width: 100%;
-}   
+}    */
+
+.footer {
+    background: rgba(0,0,0,0.5);
+    font-size: 2rem;
+    color: white;
+    height: 20rem;
+    padding: 8.6rem;
+}
+
+.footer__container {
+    padding-top: 2rem ;
+}
+
+.footer-brand {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.footer-brand {
+    justify-content: left;
+}
+
+.footer-title {
+    justify-content: center;
+}
+
+.footer-socials {
+    justify-content: right;
+}
+.footer-social,
+.footer-title-content{
+    padding: 0 2rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+
+.footer-social {
+    color: white;
+}
+
+
 
 /* trailer */
 .trailer {
