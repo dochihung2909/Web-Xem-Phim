@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
@@ -23,226 +23,275 @@
     <a href="#" class="back-to-top">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
-    <div class="background"></div>
+    <!-- <div class="background"></div> -->
     <div class="app">
         <!-- Header -->
-        <header class="header"> 
-             
-        </header>
+        <header class="header"></header>
 
         <!-- Container -->
         <div class="container-page1">
-            <div class="content">  
-                <div class="content-video-wrapped">
-                    <!-- <video class="content-video" autoplay muted loop>
-                        <source src="./assets/video/Marvel Studios' Thor_ Love and Thunder _ Official Trailer.mp4" type="video/mp4">
-                    </video> -->
+            <div class="content">   
+                <div class="content-info"> 
+                    <div class="infor__trailer-wrapper">
+                        <a onclick="viewTrailerJs('https://www.youtube.com/watch?v=UBgPypHGAqE');" href="#trailer" class="infor__trailer-play-btn film-trailer-item">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                    <div class="infor__name">
+                        <img class="infor__name-img" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/thorlat_lob_log_def_04.png" alt="">
+                    </div>
                 </div>
-                <div class="content-info">
-                    <div class="grid wide"> 
-                        <div class="row">
-                            <div class="col l-4">
-                                <div class="info__img-wrapped">
-                                    <img src="https://www.cgv.vn/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/t/h/thor-main-poster_1_.jpg" alt="" class="info__img ">
-                                    <a href="#product-pop-up" onclick="viewTrailerJs('https://www.youtube.com/watch?v=UBgPypHGAqE');" class="info__img-play-btn film-trailer-item">
-                                        <i class="fa-solid fa-play"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col l-8">
-                                <div class="infor__about">
-                                    <div class="infor__about-old old-13">13+</div>
-                                    <h1 class="infor__about-title">Thor: Tình Yêu Và Sấm Sét</h1>
-                                    <div class="infor__about-desc">
-                                        <p class="infor__about-desc-name">Thor: Love and Thunder</p> 
-                                        <p class="infor__about-desc-dot">.</p>
-                                        <p class="infor__about-desc-year">2022</p> 
-                                        <p class="infor__about-desc-dot">.</p>
-                                        <p class="infor__about-desc-length">188 phút</p>
-                                    </div>
-                                    <p class="infor__about-unit">Chỉ một và duy nhất!</p>
-                                    <p class="infor__about-content">
-                                        <p class="infor__about-content-title">Nội dung</p>
-                                        <p class="infor__about-content-desc">Thor đi vào một cuộc hành trình không giống như bất cứ cuộc phiêu lưu anh ấy từng phải đối mặt, một cuộc tìm kiếm sự bình yên bên trong tâm hồn của vị Thần Sấm. Nhưng việc nghỉ hưu của anh ta bị gián đoạn bởi một kẻ giết người nổi tiếng liên thiên hà được gọi là Gorr the God Butcher, kẻ đang huỷ diệt sự sống của các vị thần. Để chống lại mối đe dọa, Thor nhờ đến sự giúp đỡ của Vua Valkyrie, Korg và bạn gái cũ Jane Foster, người bỗng nhiên sử dụng được chiếc búa Mjolnir ngon lành cành đào một cách khó hiểu. Cùng nhau, họ tham gia vào một cuộc phiêu lưu vũ trụ đầy cam go để khám phá bí ẩn về sự báo thù của Gorr the God Butcher và ngăn chặn hắn trước khi quá muộn.</p>
+            </div>  
+
+            <div class="booking-wrapper">
+                <div class="grid wide">
+                    <div class="booking__infor">
+                        <div class="row no-gutters">
+                            <div class="l-6">
+                                <div class="booking__infor-wrapper">
+                                    <p class="booking__infor-name">Thor: Tình yêu và sấm xét</p>
+                                    <p class="booking__infor-kind">
+                                        Adventure Action
+                                        <br>
+                                        120min
                                     </p>
-                                    <div class="infor__about-footer">
-                                        <div class="infor__about-footer-wrapped">
-                                            <div class="infor__about-footer-title">Ngày chiếu</div>
-                                            <p class="infor__about-footer-content">07/07/2022</p>
+                                </div>
+                            </div>
+                            <div class="l-6">
+                                <div class="booking__infor-score">
+                                    IMB 6.8
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="booking__schedule">
+                        <div class="row">
+                            <div class="col l-2">
+                                <div class="booking__schedule-film">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BYmMxZWRiMTgtZjM0Ny00NDQxLWIxYWQtZDdlNDNkOTEzYTdlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="" class="booking__schedule-img">
+                                </div>
+                            </div>
+                            <div class="col l-10">
+                                <div class="booking__schedule-wrapper">
+                                    <div class="booking__days">
+                                        <div class="row">
+                                            <div class="col l-2">
+                                                <a href="" class="booking__days-wrapper">
+                                                    <p class="booking__date"></p>
+                                                    <p class="booking__day"></p>
+                                                    <p class="booking__month"></p>
+                                                </a>
+                                            </div>
+                                            <div class="col l-2">
+                                                <a href="" class="booking__days-wrapper">
+                                                    <p class="booking__date"></p>
+                                                    <p class="booking__day"></p>
+                                                    <p class="booking__month"></p>
+                                                </a>
+                                            </div>
+                                            <div class="col l-2">
+                                                <a href="" class="booking__days-wrapper">
+                                                    <p class="booking__date"></p>
+                                                    <p class="booking__day"></p>
+                                                    <p class="booking__month"></p>
+                                                </a>
+                                            </div>
+                                            <div class="col l-2">
+                                                <a href="" class="booking__days-wrapper">
+                                                    <p class="booking__date"></p>
+                                                    <p class="booking__day"></p>
+                                                    <p class="booking__month"></p>
+                                                </a>
+                                            </div>
+                                            <div class="col l-2">
+                                                <a href="" class="booking__days-wrapper">
+                                                    <p class="booking__date"></p>
+                                                    <p class="booking__day"></p>
+                                                    <p class="booking__month"></p>
+                                                </a>
+                                            </div>
+                                            <div class="col l-2">
+                                                <a href="" class="booking__days-wrapper">
+                                                    <p class="booking__date"></p>
+                                                    <p class="booking__day"></p>
+                                                    <p class="booking__month"></p>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="infor__about-footer-wrapped">
-                                            <div class="infor__about-footer-title">Thể loại</div>
-                                            <p class="infor__about-footer-content">Hài, Phiêu Lưu</p>
-                                        </div>
-                                        <div class="infor__about-footer-wrapped">
-                                            <div class="infor__about-footer-title">Quốc gia</div>
-                                            <p class="infor__about-footer-content">Mỹ</p>
-                                        </div> 
+                                    </div> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="booking__theatre">
+                        <div class="row">
+                            <div class="col l-2">
+                                <div class="theatre-wrapper">
+                                    <div class="theatre__address">
+                                        <p class="theatre__address-name">HowT Nguyễn Kiệm</p>
+                                        <p class="theare__address-desc">371 Nguyễn Kiệm Phương 3 Gò Vấp</p>
                                     </div>
-                                    <div class="infor__about-rating">
-                                        <div class="rating-wrapper">
-                                            <img class="rating-img" src="https://www.rottentomatoes.com/assets/pizza-pie/images/icons/tomatometer/tomatometer-fresh.149b5e8adc3.svg" alt=""><span class="rating-score">66%</span>
+                                </div>
+                            </div>
+                            <div class="col l-10">
+                                <div class="booking__time">
+                                    <div class="row">
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
                                         </div>
-                                        <div class="rating-wrapper">
-                                            <img src="https://www.rottentomatoes.com/assets/pizza-pie/images/icons/audience/aud_score-fresh.6c24d79faaf.svg" alt="" class="rating-img"><span class="rating-score">78%</span>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="infor__about-buy">
-                                        <a href="#buy-ticket" type="button" class="infor__about-buy-btn buy-btn">Mua vé</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking__theatre">
+                        <div class="row">
+                            <div class="col l-2">
+                                <div class="theatre-wrapper">
+                                    <div class="theatre__address">
+                                        <p class="theatre__address-name">HowT Nguyễn Kiệm</p>
+                                        <p class="theare__address-desc">371 Nguyễn Kiệm Phương 3 Gò Vấp</p>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col l-10">
+                                <div class="booking__time">
+                                    <div class="row">
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking__theatre">
+                        <div class="row">
+                            <div class="col l-2">
+                                <div class="theatre-wrapper">
+                                    <div class="theatre__address">
+                                        <p class="theatre__address-name">HowT Nguyễn Kiệm</p>
+                                        <p class="theare__address-desc">371 Nguyễn Kiệm Phương 3 Gò Vấp</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-10">
+                                <div class="booking__time">
+                                    <div class="row">
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2">
+                                            <a href="" class="booking__time-wrapper">
+                                                <p class="booking__time-text">10:30 am</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <div class="detail">
+                <div class="grid wide">
+                    <div class="detail-wrapper">
+                        <div class="detail__title">
+                            <div class="row">
+                                <div class="col l-5">
+                                    <p class="detail__title-film">Thông tin</p>
+                                </div>
+                                <div class="col l-7">
+                                    <p class="deltail__story">Cốt truyện</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div id="buy-ticket" class="buy-ticket">
-                <div class="buy">
-                    <div class="grid wide">
-                        <div class="modal-buy__title">
-                            <h1>VUI LÒNG CHỌN THÔNG TIN VÉ</h1>
-                        </div>
-                        <div class="stick">
-                            <div style="width: 100%;" class="border-bottom"></div>
-                        </div>
-                        <div class="modal-buy__time">
-                            <div class="row buy__time-border">  
-                                 <!-- Javascript create buy time -->
-                            </div>
-                        </div>
-                        <div class="modal-buy__theatre">
-                            <div class="row box__info-theatre">
-                                <div class="col l-3">
-                                    <div class="buy__theatre-place">
-                                        <div class="buy__theatre-infor">
-                                            <p class="buy__theatre-infor-name">HowT Thao Dien</p>
-                                            <p class="buy__theatre-infor-address">371 Nguyen Kiem Phuong 3 Go vap</p>
-                                        </div>
-                                        <a href="#" class="buy__theatre-locate">
-                                            <i class="fa-solid fa-location-dot"></i> 
-                                            Xem vị trí
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col l-1">
-                                    <div class="buy__theatre-type">
-                                        <p class="buy__theatre-type-HD">2D Sub</p>
-                                        <p class="buy__theatre-type-numberCinema">C16</p>
-                                    </div>
-                                </div>
-                                <div class="col l-8">
-                                    <div class="modal-buy__theatre-time">
-                                        <div class="row"> 
-                                            <div class="col l-2-4">
-                                                <a href="#" class="buy__theatre-exactlyTime">
-                                                    19:00
-                                                </a>
-                                            </div>
-                                            <div class="col l-2-4">
-                                                <a href="#" class="buy__theatre-exactlyTime">
-                                                    19:00
-                                                </a>
-                                            </div>
-                                            <div class="col l-2-4">
-                                                <a href="#" class="buy__theatre-exactlyTime">
-                                                    19:00
-                                                </a>
-                                            </div>
-                                            <div class="col l-2-4">
-                                                <a href="#" class="buy__theatre-exactlyTime">
-                                                    19:00
-                                                </a>
-                                            </div>
-                                            <div class="col l-2-4">
-                                                <a href="#" class="buy__theatre-exactlyTime">
-                                                    19:00
-                                                </a>
-                                            </div>
-                                            <!-- <div class="col l-2-4">
-                                                <a href="#" class="buy__theatre-exactlyTime">
-                                                    19:00
-                                                </a>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row box__info-theatre">
-                                <div class="col l-3">
-                                    <div class="buy__theatre-place">
-                                        <div class="buy__theatre-infor">
-                                            <p class="buy__theatre-infor-name">HowT Thao Dien</p>
-                                            <p class="buy__theatre-infor-address">40 vo van ngan truong tho thu duc thanh pho ho chi minh</p>
-                                        </div>
-                                        <a href="#" class="buy__theatre-locate">
-                                            <i class="fa-solid fa-location-dot"></i> 
-                                            Xem vị trí
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col l-1">
-                                    <div class="buy__theatre-type">
-                                        <p class="buy__theatre-type-HD">2D Sub</p>
-                                        <p class="buy__theatre-type-numberCinema">C16</p>
-                                    </div>
-                                </div>
-                                <div class="col l-8">
-                                    <div class="modal-buy__theatre-time">
-                                        <div class="row"> 
-                                            <div class="col l-2-4">
-                                                <a href="#" class="buy__theatre-exactlyTime">
-                                                    19:00
-                                                </a>
-                                            </div>
-                                            <div class="col l-2-4">
-                                                <a href="#" class="buy__theatre-exactlyTime">
-                                                    19:00
-                                                </a>
-                                            </div>
-                                            <div class="col l-2-4">
-                                                <a href="#" class="buy__theatre-exactlyTime">
-                                                    19:00
-                                                </a>
-                                            </div>
-                                            <div class="col l-2-4">
-                                                <a href="#" class="buy__theatre-exactlyTime">
-                                                    19:00
-                                                </a>
-                                            </div>
-                                            <div class="col l-2-4">
-                                                <a href="#" class="buy__theatre-exactlyTime">
-                                                    19:00
-                                                </a>
-                                            </div>
-                                            <!-- <div class="col l-2-4">
-                                                <a href="#" class="buy__theatre-exactlyTime">
-                                                    19:00
-                                                </a>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="js-modal-buy-ticket-close"></div>
-                </div>
-
-                
-            </div>
-
-
         </div>
 
         <!-- Footer -->
-        <footer class="footer">
-             
-        </footer>
+        <footer class="footer"></footer>
     </div>
     <div id="product-pop-up" class="modal js-modal">
         <div class="modal-js js-modal-container"> 
