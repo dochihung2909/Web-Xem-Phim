@@ -67,18 +67,7 @@
 
 .infor__trailer-play-btn:hover::after {
     background-color: #ddd;
-}
-
-@keyframes pulse-border {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-        opacity: 0;
-    }
-}
+} 
 
 
 .infor__name {
@@ -206,7 +195,7 @@
 .detail__title {
     border-bottom: 4px solid;
     /* border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
-    border-image-source: linear-gradient(to right,var(--main-color),var(--black-color));
+    border-image-source: linear-gradient(to right,var(--main-color),var(--main-color),rgb(17, 16, 16));
     border-image-slice: 1;
 }
 
@@ -214,4 +203,38 @@
 .deltail__story {
     font-size: 2.2rem;
     color: var(--white-color);
+}
+
+.disable-time {
+    visibility: hidden;
+}
+
+.detail__paragraph {
+    padding: 3.2rem 0 5.2rem;
+}
+
+.detail__paragraph-wrapper {
+
+}
+
+.detail__paragraph-infor {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    padding: 2.4rem 0 1.2rem;
+    border-bottom: 1px solid var(--navbar-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail__paragraph-infor:first-child {
+    padding-top:0;
+}
+
+.detail__paragraph-infor > span {
+    color: var(--white-color); 
+}
+
+.detail__paragraph-story {
+    color: var(--text-color);
+    font-size: 1.6rem;
 }

@@ -31,130 +31,60 @@ function innit() {
     </nav>
 </div>`; 
 
-//     footer.innerHTML =  ` <div class="footer__container">
-//     <div class="grid wide">
-//         <div class="stick-movie">
-//             <div class="border-bottom">
-
-//             </div>
-//         </div>
-//         <div class="footer__container__about"> 
-//             <div class="footer__logo">
-//                 <img src="./assets/img/Panda-doc2.png" alt="logo">
-//             </div>
-            
-//             <div class="row">
-                
-//                 <div class="col l-3">
-//                     <div class="footer__content">
-//                         <p class="footer__content-header">
-//                             Thông tin
-//                         </p>
-//                         <a href="" class="footer__content-contact">
-//                             Giới thiệu
-//                         </a>
-//                         <a href="" class="footer__content-contact">
-//                             Tin tức
-//                         </a>
-//                         <a href="" class="footer__content-contact">
-//                             Hỏi đáp
-//                         </a>
-//                         <a href="" class="footer__content-contact">
-//                             Liên hệ quảng cáo
-//                         </a>
-//                     </div>
-//                 </div>
-                
-//                 <div class="col l-3">
-//                     <div class="footer__content">
-//                         <p class="footer__content-header">
-//                             Kết nối với chúng tôi
-//                         </p>
-//                         <div class="footer__social">
-//                             <div class="footer__social-wrapped">
-//                                 <a class="footer__social-link" href="#" target="blank" rel="noopener" style="color: #17a8fc;"><i class="fa-brands fa-facebook"></i></a>
-//                             </div>
-//                             <div class="footer__social-wrapped">
-//                                 <a class="footer__social-link" href="#" target="blank" rel="noopener" style="color: #005cc1;"><i class="fa-brands fa-linkedin"></i></a>
-//                             </div>
-//                             <div class="footer__social-wrapped">
-//                                 <a class="footer__social-link" href="#" target="blank" rel="noopener" style="color: #ff0000;"><i class="fa-brands fa-youtube"></i></a>
-//                             </div>
-//                             <div class="footer__social-wrapped">
-//                                 <a class="footer__social-link" href="#" target="blank" rel="noopener" style="color: #1d9bf0;"><i class="fa-brands fa-twitter"></i></a>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//                 <div class="col l-3">
-//                     <div class="footer__content box3">
-//                         <p class="footer__content-header">
-//                             Chăm sóc khách hàng
-//                         </p>
-                        
-//                         <p class="footer__content-paragraph ">
-//                             Địa chỉ:
-//                             <a href="#" class="footer__content-contact">Tầng M, Tòa nhà Petroland, Số 12 Tân Trào, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh</a>
-//                         </p>
-//                         <p class="footer__content-paragraph">
-//                             Hotline : 
-//                             <a href="tel:1900 5454 41" class="footer__content-contact">1900 5454 41</a>(1000 đ/phút)
-//                         </p>
-//                         <p class="footer__content-paragraph">
-//                             Email : 
-//                             <a href="mailto:hotro@momo.vn" class="footer__content-contact">hotro@momo.vn</a>
-//                         </p>
-//                         <p class="footer__content-paragraph">
-//                             Tổng đài gọi ra :
-//                             <a href="tel:028.7306.5555" class="footer__content-contact">028.7306.5555</a>- 
-//                             <a href="tel:028.9999.5555" class="footer__content-contact">028.9999.5555</a>
-//                         </p>
-//                     </div>
-//                 </div>
-                
-//                 <div class="col l-3">
-//                     <div class="footer__content">
-//                         <p class="footer__content-header">
-//                             Chính sách và quy định
-//                         </p>
-//                         <a href="#" class="footer__content-contact">Quy định chung</a>
-//                         <a href="#" class="footer__content-contact">Điều khoản giao dịch</a>
-//                         <a href="#" class="footer__content-contact">Chính sách bảo mật</a>
-//                         <a href="#" class="footer__content-contact"> Thông tin công ty</a>
-                    
-//                     </div>
-//                 </div>
-//             </div>
-
-//             <div class="row">
-//                 <div class="col l-4">
-//                     <div class="footer__container__about-feet-box">
-//                         <div class="footer__container__about-feet-copyright">
-//                             <p>&copy; Copyright HowT 2022</p>
-//                         </div>
-//                     </div>
-//                 </div>
-//                 <div class="col l-4">
-                    
-//                 </div>
-//                 <div class="col l-4">
-//                     <div class="footer__container__about-feet-box">
-//                         <div class="footer__container__about-feet-download">
-//                             <a href="#">
-//                                 <img src="https://static.mservice.io/img/momo-upload-api-210724113855-637627235353131497.jpg" alt="appStore">
-//                             </a> 
-//                         </div>
-//                         <div class="footer__container__about-feet-download">
-//                             <a href="#">
-//                                 <img src="https://static.mservice.io/img/momo-upload-api-210724113959-637627235994410679.jpg" alt="googlePlay">
-//                             </a>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     </div>
-// </div>`;
+    footer.innerHTML =  `<div class="grid wide">
+    <div class="footer-wrapper">
+        <div class="row">
+            <div class="col l-2">
+                <a href="./index.html" class="footer__logo">
+                    <img src="./assets/img/Panda-doc2.png" alt="" class="footer__logo-img">
+                </a>
+            </div>
+            <div class="col l-8">
+                <div class="footer__menu-wrapper">
+                    <div class="footer__menu-item">
+                        <a href="#" class="footer__menu-item-link">Trang chủ</a>
+                    </div>
+                    <div class="footer__menu-item">
+                        <a href="#" class="footer__menu-item-link">Phim</a>
+                    </div>
+                    <div class="footer__menu-item">
+                        <a href="#" class="footer__menu-item-link">Lịch chiếu</a>
+                    </div>
+                    <div class="footer__menu-item">
+                        <a href="#" class="footer__menu-item-link">Tin tức</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l-2">
+                <div class="footer__social">
+                    <div class="footer__social-wrapper">
+                        <a href="" class="footer__social-link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="footer__social-wrapper">
+                        <a href="" class="footer__social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="footer__social-wrapper">
+                        <a href="" class="footer__social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="copyright-wrapper">
+        <div class="row">
+            <div class="l-12">
+                <p class="copyright">Copyright 2022 by HowT</p>
+            </div>
+        </div>
+    </div>
+</div>`;
 
     const modalBuyTime = document.querySelector('.buy__time-border');
     if (modalBuyTime) {

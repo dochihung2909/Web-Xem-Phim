@@ -22,4 +22,11 @@ $(document).ready(function() {
         $(this).text(a);
     });
     month.text(`Tháng ${d.getMonth() + 1}`); 
-}) 
+
+    let time = $('.booking__time .l-2'); 
+    for (let i = 0;i<7;i++) {
+        let a = parseInt(Math.random() * 18);
+        let b = time[a];
+        b.classList.add('disable-time');
+    }
+})  
