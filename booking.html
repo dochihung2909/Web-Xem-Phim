@@ -22,150 +22,133 @@
     <a href="#" class="back-to-top">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
-    <!-- Background -->
-    <div class="background"></div>
+    <!-- Background --> 
     <div class="app-booking">
         <header class="header"> 
              
-        </header>
-
+        </header> 
         <div class="container__booking">
-            <div class="grid wide">
-                <div class="movie">
-                    <div class="row">
-                        <div class="col l-4">
-                            <div class="movie-img">
-                                <img src="https://www.cgv.vn/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/t/h/thor-main-poster_1_.jpg" alt="thor">
-                            </div>
-                        </div>
-                        <div class="col l-8">
-                            <div class="movie-info">
-                                <h1 class="movie-info-name">
-                                    Thor: Tình yêu và sấm sét
-                                </h1>
-                                <p class="movie-info-name-eng">
-                                    Thor: Love and Thunder
-                                </p>
-                                <div class="movie-info-line-wrapped">
-                                    <div class="movie-info-line">
-                                        <p class="movie-info-title">Phân loại:</p>
-                                        <p class="movie-info-content">13 +</p>
-                                    </div>
-                                    <div class="movie-info-line">
-                                        <p class="movie-info-title">Thể loại:</p>
-                                        <p class="movie-info-content">Hài, Phiêu Lưu</p>
-                                    </div>
-                                    <div class="movie-info-line">
-                                        <p class="movie-info-title">Khởi chiếu:</p>
-                                        <p class="movie-info-content">12/2/2022</p>
-                                    </div>
-                                    <div class="movie-info-line">
-                                        <p class="movie-info-title">Thời lượng:</p>
-                                        <p class="movie-info-content">117 phút</p>
-                                    </div>
-                                    <div class="movie-info-line">
-                                        <p class="movie-info-title">Ngôn ngữ:</p>
-                                        <p class="movie-info-content">Tiếng Việt</p>
-                                    </div>
-                                    <div class="movie-info-line">
-                                        <p class="movie-info-title">Nội dung:</p>
-                                        <p class="movie-info-content">.......</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="seat-booking" class="seat-book-wrapper">
-                    <div class="seat__container">
-                        <div class="row">
-                            <div class="l-12">
-                                <div class="screen">
-                                    <p class="screen-text">
-                                        Screen 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="l-12">
-                                <div class="seats">
-                                    <!-- <div class="seat">
-                                        <p class="seat-text">
-                                            A
-                                        </p>
+            <div class="booking-background"></div>
             
-                                        <div class="seats-number">
-                                            <a class="seat-number" href="#" class="seat">1</a>
-                                            <a class="seat-number" href="#" class="seat">2</a>
-                                            <a class="seat-number" href="#" class="seat">3</a>
-                                            <a class="seat-number" href="#" class="seat">4</a>
-                                            <a class="seat-number" href="#" class="seat">5</a>
-                                            <a class="seat-number" href="#" class="seat">6</a>
-                                            <a class="seat-number" href="#" class="seat">7</a>
-                                            <a class="seat-number" href="#" class="seat">8</a>
-                                            <a class="seat-number" href="#" class="seat">9</a>
-                                            <a class="seat-number" href="#" class="seat">10</a>
-                                            <a class="seat-number" href="#" class="seat">11</a>
-                                            <a class="seat-number" href="#" class="seat">12</a>
+            <div class="booking-slider">
+                <div class="grid wide">
+                    <div class="slider__img-wrapper">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYmMxZWRiMTgtZjM0Ny00NDQxLWIxYWQtZDdlNDNkOTEzYTdlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__name">
+                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/thorlat_lob_log_def_04.png" alt="" class="slider__name-img">
+                    </div> 
+                </div>
+            </div>     
+            <div class="booking-wrapper">
+                <div class="grid wide">
+                    <div class="row no-gutters">
+                        <div class="l-3">
+                            <div class="pay">
+                                <div class="pay-wrapper">
+                                    <div class="pay__content">
+                                        <div class="pay-data">
+                                            <p class="pay-data-header">Vé</p>
+                                            <p class="pay-data-content ticket-selected">Đã chọn</p> 
+                                            <p class="pay-data-content ticket-normal">Thường</p>
+                                            <p class="pay-data-content ticket-vip">Vip</p>
+                                            <p class="pay-data-content your-selected">Ghế bạn chọn</p>
+                                        </div> 
+                                        <div class="payment">
+                                            <p class="your-seat">Chỗ ngồi <span id="seat-selected"></span> </p>
+                                            <p class="payment-total">Tổng <span id="total-price"></span></p>  
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-8">
+                            <div id="seat-booking" class="seat-book-wrapper">
+                                <div class="seat__container">
+                                    <div class="row">
+                                        <div class="l-12">
+                                            <div class="screen">
+                                                <p class="screen-text">
+                                                    Screen 
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="seat">
-                                        <p class="seat-text">
-                                            B
-                                        </p>
-            
-                                        <div class="seats-number">
-                                            <a class="seat-number" href="#" class="seat">1</a>
-                                            <a class="seat-number" href="#" class="seat">2</a>
-                                            <a class="seat-number" href="#" class="seat">3</a>
-                                            <a class="seat-number" href="#" class="seat">4</a>
-                                            <a class="seat-number" href="#" class="seat">5</a>
-                                            <a class="seat-number" href="#" class="seat">6</a>
-                                            <a class="seat-number" href="#" class="seat">7</a>
-                                            <a class="seat-number" href="#" class="seat">8</a>
-                                            <a class="seat-number" href="#" class="seat">9</a>
-                                            <a class="seat-number" href="#" class="seat">10</a>
-                                            <a class="seat-number" href="#" class="seat">11</a>
-                                            <a class="seat-number" href="#" class="seat">12</a>
+                                    <div class="row">
+                                        <div class="l-12">
+                                            <div class="seats">
+                                                <!-- <div class="seat">
+                                                    <p class="seat-text">
+                                                        A
+                                                    </p>
+                        
+                                                    <div class="seats-number">
+                                                        <a class="seat-number" href="#" class="seat">1</a>
+                                                        <a class="seat-number" href="#" class="seat">2</a>
+                                                        <a class="seat-number" href="#" class="seat">3</a>
+                                                        <a class="seat-number" href="#" class="seat">4</a>
+                                                        <a class="seat-number" href="#" class="seat">5</a>
+                                                        <a class="seat-number" href="#" class="seat">6</a>
+                                                        <a class="seat-number" href="#" class="seat">7</a>
+                                                        <a class="seat-number" href="#" class="seat">8</a>
+                                                        <a class="seat-number" href="#" class="seat">9</a>
+                                                        <a class="seat-number" href="#" class="seat">10</a>
+                                                        <a class="seat-number" href="#" class="seat">11</a>
+                                                        <a class="seat-number" href="#" class="seat">12</a>
+                                                    </div>
+                                                </div>
+                                                <div class="seat">
+                                                    <p class="seat-text">
+                                                        B
+                                                    </p>
+                        
+                                                    <div class="seats-number">
+                                                        <a class="seat-number" href="#" class="seat">1</a>
+                                                        <a class="seat-number" href="#" class="seat">2</a>
+                                                        <a class="seat-number" href="#" class="seat">3</a>
+                                                        <a class="seat-number" href="#" class="seat">4</a>
+                                                        <a class="seat-number" href="#" class="seat">5</a>
+                                                        <a class="seat-number" href="#" class="seat">6</a>
+                                                        <a class="seat-number" href="#" class="seat">7</a>
+                                                        <a class="seat-number" href="#" class="seat">8</a>
+                                                        <a class="seat-number" href="#" class="seat">9</a>
+                                                        <a class="seat-number" href="#" class="seat">10</a>
+                                                        <a class="seat-number" href="#" class="seat">11</a>
+                                                        <a class="seat-number" href="#" class="seat">12</a>
+                                                    </div>
+                                                </div> -->
+                                            </div>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
-                            </div>
+                
+                                
+                            </div>  
                         </div>
-                    </div>
-    
-                    <div class="pay">
-                        <div class="pay-wrapper">
-                            <div class="pay__content">
-                                <div class="pay-data">
-                                    <p class="pay-data-header">Vé</p>
-                                    <p class="pay-data-content ticket-normal">Thường</p>
-                                    <p class="pay-data-content ticket-vip">Vip</p>
-                                    <p class="pay-data-content ticket-selected">Đã chọn: <span id="seat-selected"></span> </p>
-                                </div>
-                                <div class="pay-data">
-                                    <p class="pay-data-header">Giá</p>
-                                    <p class="pay-data-content">65,000 VNĐ</p>
-                                    <p class="pay-data-content">80,000 VNĐ</p>  
-                                    <p id="total-price" class="pay-data-content">Tổng: </p>  
-                                </div>
-                                <!-- <div class="pay-data">
-                                    <p class="pay-data-header">Số lượng</p>
-                                    <p class="pay-data-content price-normal">0</p>
-                                    <p class="pay-data-content price-vip">0</p>
-                                </div> -->
-                                <!-- <div class="pay-data">
-                                    <p class="pay-data-header">Tổng</p>
-                                    <p class="pay-data-content total-normal">0 VNĐ</p>
-                                    <p class="pay-data-content total-vip">0 VNĐ</p>
-                                </div> -->
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+                        <div class="l-1">
+                            <div class="booking__infor">
+                                <div class="booking__infor-day">
+                                    <span class="booking__infor-title"></span>
+                                    <div class="booking__infor-date-wrapper">
+                                        <p class="infor-date">06</p>
+                                        <p class="infor-month">8</p>
+                                    </div> 
+                                </div>
+                                <div class="booking__infor-time">
+                                    <span class="booking__infor-title"></span>
+                                    <div class="booking__infor-main"></div>
+                                </div>
+                                <div class="booking__infor-type">
+                                    <span class="booking__infor-title"></span>
+                                    <div class="booking__infor-main"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
 
         <!-- Footer -->

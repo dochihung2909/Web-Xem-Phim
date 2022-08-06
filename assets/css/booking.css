@@ -1,57 +1,52 @@
 
 .container__booking {
     font-size: 1.6rem;
-    color: white;   
-    padding: 12rem 0;
+    color: white;    
+    background-color: var(--body-color); 
 }
 
-/* movie information */
-.movie {
-    
+/* Slider */
+.booking-slider {
+    background-image: url(https://images3.alphacoders.com/124/1241167.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh; 
+    box-shadow: inset 0 -50vh 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 0; 
 }
 
-.movie-img {
-
+.slider__img-wrapper {
+    width: 20%;
+    position: absolute; 
+    top: 50vh;
+    transform: translateY(-50%);
+    left: 10%;
+}
+ 
+.slider__img {
+    width: 100%;
 }
 
-.movie-img img {
-    width: 70%;
+.slider__name {
+    /* width: 80%; */
+    position: absolute;  
+    bottom: 10%;
+    left: 35%;
 }
 
-.movie-info {
-
+.slider__name-img { 
+    width: 30rem;
 }
 
-.movie-info-name {
-    font-size: 4.2rem;
-    font-weight: 500;
-}
-
-.movie-info-name-eng {
-    font-style: italic;
-    color: var(--text-color);
-    font-size: 1.4rem;
-    padding: 0.5rem;
-}
-
-.movie-info-line-wrapped {
-    padding-top: 4rem;
-}
-
-.movie-info-line {
-    display: flex;
-    padding: 1.5rem 0;
-    font-size: 1.4rem;
-}
-
-.movie-info-content {
-    padding: 0 2rem;
-    color: var(--text-color);
-}
 
 /* book seat */
+.booking-wrapper {
+    padding: 7.2rem 0;
+}
+
 .seat-book-wrapper {
-    padding: 7.2rem 0;   
 }
 
 .screen {
@@ -66,15 +61,11 @@
 .screen-text {
     padding: 5rem 0;
     width: 100%;
-    transform: rotateX(-35deg);
+    transform: rotateX(-45deg);
     display: block;
     text-align: center;
-    background-size: cover;
-    background-blend-mode: hard-light;
-    background: linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
-    -webkit-animation: hue-rotate 3s linear infinite;
-    animation: hue-rotate 3s linear infinite;
-    box-shadow: 0 0px 24px 4px rgba(255,255,255,0.7);
+    background-size: cover; 
+    background-color: rgb(131, 131, 131);  
 }
 
 .seats { 
@@ -106,8 +97,7 @@
     width: 3.6rem;
     height: 3.6rem; 
     margin: 0 .3rem;
-    border-radius: 1.2rem;
-    border: .1rem solid white;
+    border-radius: 1.2rem; 
     text-decoration: none;
     text-align: center;
     color: white;
@@ -115,16 +105,21 @@
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
-    /* background-color: purple; */
+    background-color: purple;
+    transition: all 0.2s ease-in;
+} 
+
+.seat-number:hover {
+    filter: brightness(2);
+    border: .2rem solid white;
 }
 
 /* .seat-number.normal:hover {
     background-color: #fff;
 } */
 
-.vip {
-    border-color: var(--main-color);
-    /* background-color: var(--main-color); */
+.vip { 
+    background-color: rgb(255, 0, 174);
 }
 
 /* Pay */
@@ -132,31 +127,37 @@
     padding: 1.8rem 0;
     font-size: 1.6rem;  
     display: flex;
-    justify-content: center;
+    height: 100%;
+    justify-content: center;  
+    align-items: center;
+    margin-top: 4.8rem;
 }
 
-.pay-wrapper {
-    width: 70%;
-    border: .1rem solid orange;
+.pay-wrapper { 
+    width: 100%;
 }
 
-.pay__content {
-    padding: 0 3rem;
-    border: .1rem solid blue; 
+.pay__content { 
+}
+
+.pay-data { 
+    width: 100%;   
     display: flex;
-}
-
-.pay-data {
-    padding: 1.2rem 3rem;
-    width: 100%;  
-}
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.6rem;
+    margin-bottom: 2.4rem;
+    padding: 1.2rem 0.8rem;
+} 
 
 .pay-data-header {
     font-weight: bold;
+    width: 100%;
 }
 
 .pay-data-content {
     padding: .6rem 0;
+    width: 50%;
 }
 
 .ticket-normal, 
@@ -166,6 +167,7 @@
 
 .ticket-normal::before,
 .ticket-vip::before,
+.your-selected::before,
 .ticket-selected::before {
     content: "";
     display: inline-block;
@@ -176,20 +178,49 @@
 }
 
 .ticket-normal::before {
-    border: .1rem solid white;
+    background-color: purple;
 }
 
 .ticket-vip::before {
-    border: .1rem solid red;
+    background-color: rgb(255, 0, 174);
 }
 
-.ticket-selected::before {
+.your-selected::before {
     border: 0.1rem solid var(--white-color);
     background-color: var(--main-color);
 }
 
+.ticket-selected::before {
+    background-color: gray;
+}
+
+.payment { 
+    border: 1px solid var(--white-color); 
+    border-radius: .6rem;
+}
+ 
+.payment > p {
+    padding: 1.2rem 0;
+    margin: 0 1.2rem; 
+}
+
+.your-seat {
+    border-bottom: 1px solid #ccc;  
+} 
+
+.your-seat,
+.payment-total { 
+    font-weight: bold; 
+} 
+
+#seat-selected,
 #total-price {
-    font-weight: bold;
+    color: var(--white-color);
+}
+
+#total-price {
+    font-weight: bold; 
+    float: right; 
 }
 
 /* animation screen */
@@ -228,15 +259,11 @@
 /* Selected js */
 .select {
     background-color: var(--main-color);
-    border: 0.1rem solid var(--white-color);
-    animation: fadeIn ease-in 0.2s;
+    border: 0.1rem solid var(--white-color);  
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.selected {
+    background-color: gray;
+    pointer-events: none;
 }
+ 

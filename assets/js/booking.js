@@ -40,20 +40,46 @@ function createSeat(seatRow, seatStart) {
 
 $(document).ready(function() { 
     const selected =  $('#seat-selected');
-    
+    const price = $('#total-price');
+    var seat = $('.seat-number');
     // Money count
-    let normalPrice = 65000;
-    let vipPrice = 80000;  
-    
-    $('.seat-number').click(function() { 
-        if (!$(this).hasClass('select')) {
-            $(this).addClass('select'); 
-            selected.append($(this).text()+ " ");
-        }
-        else {
-            selected.text(selected.text().replace($(this).text(),'')); 
-            $(this).removeClass('select'); 
-        }
-    });   
+    let normalPrice = 65;
+    let vipPrice = 80;   
+    let money = 0;  
+    for (let i = 0;i<30;i++) {
+        let a = parseInt(Math.random() * seat.length);
+        $('.seat-number')[a].classList.add('selected');
+    }
+
+
+    seat.click(function() {  
+        if ($('.select').length == 8) {
+            alert("Chỉ chọn cùng lúc tối đa 8 ghế"); 
+        } else {
+            if (!$(this).hasClass('select')) {
+                if ($(this).hasClass('.vip')) {
+                    money += vipPrice;
+                } else {
+                    money += normalPrice;
+                }
+                $(this).addClass('select'); 
+                selected.append($(this).text()+ " "); 
+                price.text(`${money}.000đ`)
+            }
+            else {
+                if ($(this).hasClass('.vip')) {
+                    money -= vipPrice;
+                } else {
+                    money -= normalPrice;
+                } 
+                price.text(`${money}.000đ`);
+                selected.text(selected.text().replace($(this).text(),'')); 
+                $(this).removeClass('select'); 
+            }
+            if ($('.select').length == 0) {
+                price.text("");
+            }
+        }  
+    });    
 })
 

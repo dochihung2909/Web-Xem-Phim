@@ -146,11 +146,8 @@ html {
     display: none;
     align-items: center;
     justify-content: center; 
-    transition: all ease-in 0.2s; 
-
-}
-
-
+    transition: all ease-in 0.2s;  
+} 
 
 .modal-js {   
     width: 75%; 
@@ -161,7 +158,7 @@ html {
     position: absolute;
     top: -26px;
     right: -18px;
-    padding: 0.8rem 1.6rem;
+    padding: 1rem 1.6rem;
     font-size: 1.6rem;
     color: var(--white-color);
     cursor: pointer;
@@ -482,7 +479,7 @@ html {
 
 /* Footer */
 .footer {
-    background: rgba(0,0,0,0.9);
+    background: var(--black-color);
 }
 
 .footer-wrapper {
