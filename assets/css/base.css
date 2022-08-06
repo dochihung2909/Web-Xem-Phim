@@ -482,7 +482,7 @@ html {
 
 /* Footer */
 .footer {
-    background-color: var(--black-color);
+    background: rgba(0,0,0,0.9);
 }
 
 .footer-wrapper {
@@ -620,7 +620,6 @@ html {
 .trailer__content-film-type {
     color: #ccc;
 } 
-
 
 
 /* Animation */
