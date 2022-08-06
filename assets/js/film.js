@@ -29,4 +29,8 @@ $(document).ready(function() {
         let b = time[a];
         b.classList.add('disable-time');
     }
+
+    $('.booking__time-wrapper').each(function() {
+        $(this).attr('href','./booking.html');
+    })
 })  

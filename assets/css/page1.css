@@ -1,5 +1,5 @@
 .container-page1 {
-    background-color: #1f1f1f;
+    background-color: var(--body-color);
 }
 
 .content { 
@@ -149,6 +149,8 @@
 }
 
 .booking__time { 
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #666;
 }
 
 .booking__time-wrapper {
