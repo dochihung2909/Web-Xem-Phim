@@ -4,18 +4,9 @@
     color: var(--main-color);
 }
 
-.pay__container {
-    font-size: 1.6rem;
-    color: white;
-}
-
-.pay-sth {
-    height: 40rem;
-}
-
 /* transaction */
 .transaction {
-    margin-top: 5rem;
+    padding-top: 10rem;
     font-size: 1.6rem;
     border-radius: .5rem;
     color: white;
@@ -51,13 +42,34 @@
     text-align: right;
 }
 
+/* customer information */
+.customer-info {
+    padding-top: 4rem;
+}
+.customer-info-title {
+    padding-top: 2rem;
+}
+
+.customer-info-type {
+}
+
 /* pay for */
 .pay-for {
 
 }
 
-.pay-for-content {
+.pay__container {
+    font-size: 1.6rem;
+    color: white;
+    background-color: var(--body-color);
+}
 
+/* .pay-sth {
+    height: 40rem;
+} */
+
+.pay-for-content {
+    padding-top: 4rem;
 }
 
 .payment-method-label,
@@ -69,6 +81,7 @@
 
 .payment-method {
     padding: .3rem 0;
+    border-bottom: 0.1rem solid rgba(209, 209, 224, 0.4);
 }
 
 .pay-for-content-header {
@@ -92,4 +105,18 @@
 
 .payment-method-input {
     justify-content: left;
+}
+
+.pay-btns {
+    justify-content: center;
+}
+
+.pay-btn {
+    padding: 1.5rem .5rem;
+    color: white;
+    background-color: red;
+    text-transform: uppercase;
+    margin: 0 1rem;
+    text-decoration: none;
+    border-radius: .5rem;
 }
