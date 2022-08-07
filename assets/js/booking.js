@@ -36,12 +36,12 @@ function createSeat(seatRow, seatStart) {
 }
 
 
-// Add selected if click 
-
+// Add selected if click  
 $(document).ready(function() { 
     const selected =  $('#seat-selected');
     const price = $('#total-price');
     var seat = $('.seat-number');
+    const delAll = $('#del-all');
     // Money count
     let normalPrice = 65;
     let vipPrice = 80;   
@@ -53,33 +53,47 @@ $(document).ready(function() {
 
 
     seat.click(function() {  
-        if ($('.select').length == 8) {
-            alert("Chỉ chọn cùng lúc tối đa 8 ghế"); 
-        } else {
-            if (!$(this).hasClass('select')) {
-                if ($(this).hasClass('.vip')) {
-                    money += vipPrice;
-                } else {
-                    money += normalPrice;
-                }
-                $(this).addClass('select'); 
-                selected.append($(this).text()+ " "); 
-                price.text(`${money}.000đ`)
+        if (!$(this).hasClass('select')) {
+            if ($(this).hasClass('.vip')) {
+                money += vipPrice;
+            } else {
+                money += normalPrice;
             }
-            else {
-                if ($(this).hasClass('.vip')) {
-                    money -= vipPrice;
-                } else {
-                    money -= normalPrice;
-                } 
-                price.text(`${money}.000đ`);
-                selected.text(selected.text().replace($(this).text(),'')); 
-                $(this).removeClass('select'); 
-            }
-            if ($('.select').length == 0) {
-                price.text("");
-            }
-        }  
+            $(this).addClass('select'); 
+            selected.append($(this).text()+ " "); 
+            price.text(`${money}.000đ`)
+        }
+        else {
+            if ($(this).hasClass('.vip')) {
+                money -= vipPrice;
+            } else {
+                money -= normalPrice;
+            } 
+            price.text(`${money}.000đ`);
+            selected.text(selected.text().replace($(this).text(),'')); 
+            $(this).removeClass('select'); 
+        }
+        if ($('.select').length == 0) {
+            price.text("");
+        } 
     });    
+
+    if ($('.select').length >= 1) {
+        delAll.css({
+            'display':'block'
+        })
+    } else {
+        delAll.css({
+            'display':'none'
+        })
+    }
+
+    delAll.click(function() {
+        $('.select').each(function() {
+            $(this).removeClass('select');
+        }) 
+        selected.text("");
+        price.text(""); 
+    })
 })
 

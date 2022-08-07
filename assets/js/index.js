@@ -66,7 +66,6 @@ $(document).ready(function() {
     var sliderWidthItem = sliderItems[0].offsetWidth;
     sliderMain.css('width',`${sliderLength * sliderWidthItem}`);
 
-
     let pre = $('.ranking__direct.pre');
     let next = $('.ranking__direct.next');
     var number = $('.ranking__number-link');
@@ -75,6 +74,8 @@ $(document).ready(function() {
         let index = curr.index('.ranking__number-link');
         return index;
     }
+
+    let positionX = 0;
     pre.click(function() { 
         var pos = getPosition();
         if (pos == 0) {
@@ -84,6 +85,10 @@ $(document).ready(function() {
             number[pos-1].classList.add('ranking-active');
             number[pos].classList.remove('ranking-active');
         }   
+        if (positionX < sliderMain.width()) {
+            positionX = positionX - sliderWidthItem;
+            sliderMain.css('transform',`translateX(${positionX}px)`)
+        }
     })
 
     next.click(function() {
@@ -96,10 +101,37 @@ $(document).ready(function() {
             number[pos+1].classList.add('ranking-active');
             number[pos].classList.remove('ranking-active');
         }  
+        if (positionX < sliderMain.width()) {
+            positionX = positionX + sliderWidthItem;
+            sliderMain.css('transform',`translateX(${positionX}px)`)
+        }
     })
 
-
-    
-
+    var html = `<div class="col l-2-4 slider-item">
+    <div class="film__item">
+        <a href="#" class="film__item-img-wrapped film-booking"> 
+            <img src="https://m.media-amazon.com/images/M/MV5BMDU2ZmM2OTYtNzIxYy00NjM5LTliNGQtN2JmOWQzYTBmZWUzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="" class="film__item-img">
+            <div class="film__item-tag-top">
+                <span class="film__item-old old-13">13+</span>
+                <span class="film__item-reserve"><i class="fa-solid fa-film"></i>Đặt trước</span>
+            </div>
+        </a>
+        <a href="" class="film__item-info">
+        <p class="film__item-info-name">
+            Sát thủ đối đầu
+        </p>
+        <div class="film__item-info-types flex">
+            <p class="film__item-info-type">Hành động</p>
+            <div class="lineY"></div>
+            <p class="film__item-info-type">Gây cấn</p>
+        </div>
+    </a>
+        
+    </div>
+</div>`;
+$('.slider-film-wrapped').html("");
+    for (let i = 0;i<10;i++) {
+        $('.slider-film-wrapped').append(html) ;   
+    }  
 })
 
