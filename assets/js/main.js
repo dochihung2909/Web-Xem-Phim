@@ -47,14 +47,7 @@ function openModal(btns,modal,modalClose,modalContainer,reset) {
     })
 }  
 
-// Set active rank
-function setActiveRank() {
-    $('.ranking__number-link').click(function() {
-        let current = $('.ranking-active');
-        current.removeClass('ranking-active');
-        $(this).addClass('ranking-active');
-    })
-}
+
 
 
 // Set image film
@@ -91,7 +84,6 @@ $(document).ready(function () {
     redirectPage('buy__theatre-exactlyTime','./booking.html'); 
     redirectPage('film-booking','./film.html');   
 
-    setActiveRank(); 
 
     setSrcFilmItem();
 }) 

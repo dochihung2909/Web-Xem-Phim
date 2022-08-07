@@ -33,12 +33,7 @@
 /* Body content */
 .container {  
     /* padding-top: var(--header-height); */
-    background-image: linear-gradient(transparent,rgba(0,0,0,0.7) 10%),url(https://wallpaperaccess.com/full/1106958.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center bottom;   
-    background-color: #000;
-    box-shadow: inset 0 -10px 100px rgba(0,0,0,1);
+    background-color: var(--black-color);
 }
 
 /* Now showing slider */
@@ -244,6 +239,15 @@
 
 
 /* blog */
+.background-bottom {
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.8) 10%),url(https://wallpaperaccess.com/full/1106958.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center ;   
+    background-color: #000; 
+    box-shadow: inset 0 120px 40px var(--black-color);
+}
+
 .background-slider { 
     padding: 8.6rem;
 }
@@ -318,16 +322,42 @@
 
 .ranking-showing {  
     background-image: url(https://images3.alphacoders.com/124/1241167.png);
-    background-repeat: no-repeat;
     background-position: top center;
-    height: 100vh;
+    height: 100vh;   
     background-size: cover;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
     position: relative;     
-    z-index: 100;    
+    z-index: 100;   
 } 
 
-.ranking-showing-bg {  
-    background: linear-gradient(180deg, transparent, rgba(0,0,0,1) 100%);
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+        background-size: 50% 100%;
+    } to {
+        background-position: 100% 0; 
+        background-size: 100% 100%;
+    }
+}
+
+.ranking-showing__bg {   
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    overflow: hidden;
+}
+
+.ranking-showing__bg-wrapper {
+    display: flex;    
+    position: relative;
+}
+
+.ranking-showing__bg-img {    
+    width: 100vw;    
+    filter: brightness(70%);
 }
 
 .ranking__infor,
