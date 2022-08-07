@@ -66,7 +66,6 @@ $(document).ready(function() {
     var sliderWidthItem = sliderItems[0].offsetWidth;
     sliderMain.css('width',`${sliderLength * sliderWidthItem}`);
 
-
     let pre = $('.ranking__direct.pre');
     let next = $('.ranking__direct.next');
     var number = $('.ranking__number-link');
@@ -75,6 +74,8 @@ $(document).ready(function() {
         let index = curr.index('.ranking__number-link');
         return index;
     }
+
+    let positionX = 0;
     pre.click(function() { 
         var pos = getPosition();
         if (pos == 0) {
@@ -84,6 +85,10 @@ $(document).ready(function() {
             number[pos-1].classList.add('ranking-active');
             number[pos].classList.remove('ranking-active');
         }   
+        if (positionX < sliderMain.width()) {
+            positionX = positionX - sliderWidthItem;
+            sliderMain.css('transform',`translateX(${positionX}px)`)
+        }
     })
 
     next.click(function() {
@@ -96,6 +101,10 @@ $(document).ready(function() {
             number[pos+1].classList.add('ranking-active');
             number[pos].classList.remove('ranking-active');
         }  
+        if (positionX < sliderMain.width()) {
+            positionX = positionX + sliderWidthItem;
+            sliderMain.css('transform',`translateX(${positionX}px)`)
+        }
     })
 
     var html = `<div class="col l-2-4 slider-item">

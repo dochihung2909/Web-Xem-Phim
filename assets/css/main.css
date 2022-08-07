@@ -486,3 +486,8 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+
+.active-dot {
+    background-color: var(--main-color);
+}
