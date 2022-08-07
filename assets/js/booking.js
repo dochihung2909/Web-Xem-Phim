@@ -36,12 +36,12 @@ function createSeat(seatRow, seatStart) {
 }
 
 
-// Add selected if click 
-
+// Add selected if click  
 $(document).ready(function() { 
     const selected =  $('#seat-selected');
     const price = $('#total-price');
     var seat = $('.seat-number');
+    const delAll = $('#del-all');
     // Money count
     let normalPrice = 65;
     let vipPrice = 80;   
@@ -77,5 +77,23 @@ $(document).ready(function() {
             price.text("");
         } 
     });    
+
+    if ($('.select').length >= 1) {
+        delAll.css({
+            'display':'block'
+        })
+    } else {
+        delAll.css({
+            'display':'none'
+        })
+    }
+
+    delAll.click(function() {
+        $('.select').each(function() {
+            $(this).removeClass('select');
+        }) 
+        selected.text("");
+        price.text(""); 
+    })
 })
 

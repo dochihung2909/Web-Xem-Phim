@@ -244,8 +244,13 @@
 }
 
 #del-all {
-    
-}
+    text-decoration: none;
+    color: red;
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px; 
+}   
 
 /* animation screen */
 @-webkit-keyframes hue-rotate {
