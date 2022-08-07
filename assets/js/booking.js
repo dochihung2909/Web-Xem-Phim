@@ -53,33 +53,29 @@ $(document).ready(function() {
 
 
     seat.click(function() {  
-        if ($('.select').length == 8) {
-            alert("Chỉ chọn cùng lúc tối đa 8 ghế"); 
-        } else {
-            if (!$(this).hasClass('select')) {
-                if ($(this).hasClass('.vip')) {
-                    money += vipPrice;
-                } else {
-                    money += normalPrice;
-                }
-                $(this).addClass('select'); 
-                selected.append($(this).text()+ " "); 
-                price.text(`${money}.000đ`)
+        if (!$(this).hasClass('select')) {
+            if ($(this).hasClass('.vip')) {
+                money += vipPrice;
+            } else {
+                money += normalPrice;
             }
-            else {
-                if ($(this).hasClass('.vip')) {
-                    money -= vipPrice;
-                } else {
-                    money -= normalPrice;
-                } 
-                price.text(`${money}.000đ`);
-                selected.text(selected.text().replace($(this).text(),'')); 
-                $(this).removeClass('select'); 
-            }
-            if ($('.select').length == 0) {
-                price.text("");
-            }
-        }  
+            $(this).addClass('select'); 
+            selected.append($(this).text()+ " "); 
+            price.text(`${money}.000đ`)
+        }
+        else {
+            if ($(this).hasClass('.vip')) {
+                money -= vipPrice;
+            } else {
+                money -= normalPrice;
+            } 
+            price.text(`${money}.000đ`);
+            selected.text(selected.text().replace($(this).text(),'')); 
+            $(this).removeClass('select'); 
+        }
+        if ($('.select').length == 0) {
+            price.text("");
+        } 
     });    
 })
 
