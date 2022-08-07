@@ -50,8 +50,19 @@
     padding-top: 2rem;
 }
 
-.customer-info-type {
+.rules {
+    padding: 2rem 0;
 }
+
+.rules-input {
+    margin-right: 1rem;
+}
+
+.rules-link {
+    color: green;
+}
+
+
 
 /* pay for */
 .pay-for {
@@ -63,10 +74,6 @@
     color: white;
     background-color: var(--body-color);
 }
-
-/* .pay-sth {
-    height: 40rem;
-} */
 
 .pay-for-content {
     padding-top: 4rem;

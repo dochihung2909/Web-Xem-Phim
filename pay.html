@@ -59,17 +59,27 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <div class="col l-6">
+
+                </div>
             </div>
             <div class="col l-4">
                 <div class="customer-info">
                     <h1 class="header-h1">Thông tin khách hàng</h1>
-                    <p class="customer-info-title">Tên</p>
-                    <input type="text" class="customer-info-type">
-                    <p class="customer-info-title">Email</p>
-                    <input type="email" class="customer-info-type">
-                    <p class="customer-info-title">Điện thoại</p>
-                    <input type="tel" class="customer-info-type">
+                    <form>
+                        <p class="customer-info-title">Tên</p>
+                        <input type="text" class="customer-info-type">
+                    </form>
+                    <form>
+                        <p class="customer-info-title" pattern="[a-z]{1,15}">Email</p>
+                        <input type="email" class="customer-info-type">
+                    </form>
+                    <form>
+                        <p class="customer-info-title">Điện thoại</p>
+                        <input type="tel" class="customer-info-type">
+                    </form>
+                    
                 </div>
             </div>
 
@@ -88,7 +98,6 @@
                                         BIDV
                                     </div>
                                 </label>
-    
                                 <input class="payment-method-input" type="radio" name="pay-method" id="bidv">
                             </div>
                             <div class="payment-method">
@@ -123,9 +132,15 @@
                     </div>
                 </div>
             </div>
+
+            <div class="rules flex">
+                <input class="rules-input" type="checkbox">
+                <p class="rules-paragraph">Tôi đã đọc và đồng ý <a href="#" class="rules-link">Điều khoản và điều kiện</a></p>
+            </div>
+
             <div class="row pay-btns">
                     <a href="#" class="pay-btn">quay lại</a>
-                    <a href="#" class="pay-btn">thanh toán</a>
+                    <input type="submit" value="thanh toán" class="pay-btn"></input>
             </div>
 
 
