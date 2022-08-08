@@ -29,8 +29,11 @@ $(document).ready(function() {
         let b = time[a];
         b.classList.add('disable-time');
     }
-
-    $('.booking__time-wrapper').each(function() {
+    $('.booking__time-wrapper').each(function() { 
         $(this).attr('href','./booking.html');
     })
+
+    $('.booking__time-wrapper').click(function () {
+        localStorage.time = $(this).text();
+    }) 
 })  

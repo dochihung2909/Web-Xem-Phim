@@ -1,4 +1,4 @@
-// Scroll  
+// Scroll    
 
 $(document).ready(function() {
     $(window).scroll(function() {
@@ -20,7 +20,7 @@ $(document).ready(function() {
     window.addEventListener('scroll', function () { 
         const header = document.querySelector('.back-to-top');
         header.classList.toggle("top", window.scrollY > 120);
-    })  
+    })   
 }) 
 
 

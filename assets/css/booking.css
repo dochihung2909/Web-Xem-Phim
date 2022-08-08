@@ -250,7 +250,34 @@
     display: inline-block;
     border: 1px solid white;
     border-radius: 4px; 
-}   
+}
+
+.booking__infor-title {
+    color: #ccc;
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.booking__infor-wrapper {
+    margin-bottom: 4.2rem;
+}
+
+.booking__infor-wrapper.date {
+    font-size: 3.2rem;
+    border: 1px solid #ccc;
+    border-radius: .4rem;
+    padding: 0.8rem 0;
+    text-align: center;   
+}
+
+.infor-month {
+    font-size: 1.8rem;
+}
+
+.booking__infor-main {
+    color: var(--white-color);
+    font-size: 1.8rem;
+}
 
 /* animation screen */
 @-webkit-keyframes hue-rotate {

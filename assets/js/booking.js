@@ -95,5 +95,13 @@ $(document).ready(function() {
         selected.text("");
         price.text(""); 
     })
+
+    
+
+    let monthClient = $('#month-client');
+    let dateClient = $('#date-client');
+    let timeClient = $('#time-client');
+    let typeClient = $('#type-client');    
+    timeClient.text(localStorage.time);
 })
 
