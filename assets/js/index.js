@@ -1,111 +1,88 @@
-// Set rank
+// Set rank 
+function setRank() {
+    const ranks = document.querySelectorAll('.film__item-rank');
+    for (let i = 0;i < ranks.length;i++) {
+        ranks[i].innerText = i+1;
+    }
+} 
 
-const ranks = document.querySelectorAll('.film__item-rank');
-for (let i = 0;i < ranks.length;i++) {
-    ranks[i].innerText = i+1;
-}
-
-
-// Change film
-const showing = document.querySelector('#now-showing');
-const willShowing = document.querySelector('#will-showing');
-const nowFilm = document.querySelectorAll('.slider-tittle__link');
- 
-function changeTitle(nowFilm) {
-    for (const film of nowFilm) {
-        film.addEventListener('click',function() {
-            const current = document.querySelector('.active-show');
-            current.classList.remove('active-show');
-            this.classList.add('active-show'); 
-        })
-    } 
-}
-
-changeTitle(nowFilm);
-
-// Change Blog
-const nowBlog = document.querySelectorAll('.blog-news');
-changeTitle(nowBlog);
-
-// Slider
-// window.addEventListener('load', function() {
-//     const slider = document.querySelector('.slider-film-wrapped');
-//     const nextSlide = document.querySelector('.slider-next');
-//     const preSlide = document.querySelector('.slider-pre');
-//     const sliderItems = document.querySelectorAll('.slider-item');
-//     const widthItem = document.querySelector('.slider-item').offsetWidth;
-
-//     nextSlide.addEventListener('click',() => {
-//         slider.style.transform = "translateX(" + (-widthItem) +  "px)";
-//     })
-
-//     preSlide.addEventListener('click',() => {
-//         slider.style.transform = "translateX(" + widthItem + "px)";
-//     })
-
-// })  
-
-// Set active rank
-function setActiveRank() {
-    $('.ranking__number-link').click(function() {
-        let current = $('.ranking-active');
-        current.removeClass('ranking-active');
-        $(this).addClass('ranking-active');
-    })
-}
-
-$(document).ready(function() {    
-    setActiveRank();  
-
-
+function slider() {
     // Slider
+    var positionX = 0; 
     const slider = $('.ranking-showing__bg');
     const sliderMain = $('.ranking-showing__bg-wrapper');
     const sliderItems = $('.ranking-showing__bg-img');
     var sliderLength = sliderItems.length;
-    var sliderWidthItem = sliderItems[0].offsetWidth;
-    sliderMain.css('width',`${sliderLength * sliderWidthItem}`);
+    var sliderWidthItem = sliderItems[0].offsetWidth;  
+    var pre = $('.ranking__direct.pre');
+    var next = $('.ranking__direct.next');
+    var number = $('.ranking__number-link'); 
 
-    let pre = $('.ranking__direct.pre');
-    let next = $('.ranking__direct.next');
-    var number = $('.ranking__number-link');
+    $('.ranking__number-link').click(function() {
+        let current = $('.ranking-active');
+        current.removeClass('ranking-active');
+        $(this).addClass('ranking-active');
+        let curent = getPosition();  
+        if (current == 0) {
+            positionX = 0;
+        } else {
+            positionX = -(curent * sliderWidthItem);
+        } 
+        sliderMain.css('transform',`translateX(${positionX}px)`)
+    }) 
+
     function getPosition() {
-        let curr = number.filter('.ranking-active');
+        let curr = $('.ranking__number-link').filter('.ranking-active'); 
         let index = curr.index('.ranking__number-link');
         return index;
-    }
+    } 
 
-    let positionX = 0;
-    pre.click(function() { 
-        var pos = getPosition();
+    function prevSlide() {
+        var pos = getPosition();     
         if (pos == 0) {
             number[0].classList.remove('ranking-active');
             number[number.length - 1].classList.add('ranking-active');
+            positionX = -(sliderLength - 1)*sliderWidthItem ;
         } else {
             number[pos-1].classList.add('ranking-active');
             number[pos].classList.remove('ranking-active');
-        }   
-        if (positionX < sliderMain.width()) {
-            positionX = positionX - sliderWidthItem;
-            sliderMain.css('transform',`translateX(${positionX}px)`)
-        }
-    })
+            positionX = positionX + sliderWidthItem;
+        }    
+        sliderMain.css('transform',`translateX(${positionX}px)`)
+    }
 
-    next.click(function() {
-        var pos = getPosition();
+    function nextSlide() {
+        var pos = getPosition(); 
         if (pos == number.length - 1) {
             number[number.length - 1].classList.remove('ranking-active');
             number[0].classList.add('ranking-active');
-            
+            positionX = 0;
         } else {
             number[pos+1].classList.add('ranking-active');
             number[pos].classList.remove('ranking-active');
+            positionX = positionX - sliderWidthItem;
         }  
-        if (positionX < sliderMain.width()) {
-            positionX = positionX + sliderWidthItem;
-            sliderMain.css('transform',`translateX(${positionX}px)`)
-        }
+        sliderMain.css('transform',`translateX(${positionX}px)`)
+    }
+    
+    pre.click(function() { 
+        prevSlide();
     })
+
+    
+
+    next.click(function() {
+        nextSlide();
+    })
+
+    setInterval(function() {
+        nextSlide();
+    },4000);
+}
+ 
+$(document).ready(function() {   
+    setRank(); 
+    slider();
 
     var html = `<div class="col l-2-4 slider-item">
     <div class="film__item">
@@ -116,7 +93,7 @@ $(document).ready(function() {
                 <span class="film__item-reserve"><i class="fa-solid fa-film"></i>Đặt trước</span>
             </div>
         </a>
-        <a href="" class="film__item-info">
+        <a href="#" class="film__item-info">
         <p class="film__item-info-name">
             Sát thủ đối đầu
         </p>
@@ -129,7 +106,7 @@ $(document).ready(function() {
         
     </div>
 </div>`;
-$('.slider-film-wrapped').html("");
+    $('.slider-film-wrapped').html("");
     for (let i = 0;i<10;i++) {
         $('.slider-film-wrapped').append(html) ;   
     }  

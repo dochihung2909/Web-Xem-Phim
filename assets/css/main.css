@@ -3,17 +3,10 @@
     font-size: 3.2rem;
     padding-bottom: 3.2rem;
     color: white;
-}
-
-.lineX {
-    border-bottom: .1rem solid transparent;
-    border-img: linear-gradient(white, )
-}
-
-
+} 
 
 .content-padding { 
-    padding: 8.6rem 0;
+    padding-top: 8.6rem;
 }
 
 .background {
@@ -144,8 +137,9 @@
     border-radius: .4rem;
     overflow: hidden;
 } 
-.trailer__content .film__item-img-wrapped {
-    min-height: 35rem;
+.trailer__content .film__item-img-wrapped { 
+    height: 35rem; 
+    display: flex;  
 }
 
 .film__item-img-wrapped:hover .film__item-img {
@@ -155,6 +149,7 @@
 .film__item-img {
     transition: transform 0.2s linear; 
     width: 100%;  
+    height: auto;
     border-radius: .4rem;
 }
 
@@ -326,46 +321,29 @@
     height: 70vh;
     overflow-y: auto;
     overflow-x: hidden;
-}
-
-
-.ranking-showing {  
-    background-image: url(https://images3.alphacoders.com/124/1241167.png);
-    background-position: top center;
-    height: 100vh;   
-    background-size: cover;
-    background-position: 0px 0px;
-    background-repeat: no-repeat;
-    position: relative;     
-    z-index: 100;   
 } 
 
-@keyframes animatedBackground {
-    from {
-        background-position: 0 0;
-        background-size: 50% 100%;
-    } to {
-        background-position: 100% 0; 
-        background-size: 100% 100%;
-    }
-}
+.ranking-showing {   
+}  
 
 .ranking-showing__bg {   
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;    
-    overflow: hidden;
+    bottom: 0;     
+    overflow: hidden; 
 }
 
 .ranking-showing__bg-wrapper { 
-    position: relative;
+    position: absolute;   
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
 .ranking-showing__bg-img {    
-    width: 100vw;    
-    filter: brightness(70%);
+    width: 100vw;     
+    filter: brightness(80%);
 }
 
 .ranking__infor,

@@ -6,17 +6,7 @@ function viewTrailerJs(urlTrailer) {
 // Reset input trailer modal 
 function resetViewTrailer() { 
     document.getElementById("trailer").innerHTML = "";
-}  
-
-// Redirect Page jQuery 
-function redirectPage(className,pageUrl) {
-    $(document).ready(function() {
-        $('.' + className).bind('click', function() {
-            window.location.replace(pageUrl);
-        });
-    });
-}
-
+}    
 
 // Open modal   
 function openModal(btns,modal,modalClose,modalContainer,reset) {
@@ -45,10 +35,7 @@ function openModal(btns,modal,modalClose,modalContainer,reset) {
     modalContainer.addEventListener('click', function(event){ 
         event.stopPropagation();
     })
-}  
-
-
-
+}    
 
 // Set image film
 function setSrcFilmItem() {
@@ -79,11 +66,6 @@ $(document).ready(function () {
     // Modal buy tickets
     if (modal_buy) {
         openModal(buyTickets,modal_buy,modalCloseBuyTicket,modalBuyContainer,false);
-    } 
-
-    redirectPage('buy__theatre-exactlyTime','./booking.html'); 
-    redirectPage('film-booking','./film.html');   
-
-
+    }  
     setSrcFilmItem();
 }) 
