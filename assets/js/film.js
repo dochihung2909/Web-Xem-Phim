@@ -29,16 +29,19 @@ $(document).ready(function() {
         let b = time[a];
         b.classList.add('disable-time');
     }
-    $('.booking__time-wrapper').each(function() { 
+    let selectTimeBtn = $('.booking__time-wrapper');
+    selectTimeBtn.each(function() { 
         $(this).attr('href','./booking.html');
     })
 
-    $('.booking__time-wrapper').click(function () {
+    selectTimeBtn.click(function () {
         localStorage.timeLocal = $(this).text();
+        localStorage.addressLocal = $('.theatre__address-name')[0].innerText;
     }) 
-
     let filmNameFilm = $('.booking__infor-name');
     filmNameFilm.text(localStorage.filmNameLocal);
     $('.booking__schedule-img').attr('src',localStorage.filmImageLocal);
     $('.booking__infor-type').text(localStorage.filmTypeLocal)
 })  
+
+
