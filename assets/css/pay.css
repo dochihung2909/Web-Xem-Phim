@@ -42,6 +42,41 @@
     text-align: right;
 }
 
+/* total transaction*/
+.transaction-total-wrapper {
+    border: .1rem solid var(--main-color);
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.transaction-total-content {
+    padding: 4rem 2rem; 
+}
+
+.transaction-total {
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.cost .transaction-total-name {
+}
+
+.cost {
+    /* background-color: red; */
+    border-radius: .5rem;
+}
+
+.cost .transaction-total-name {
+    text-transform: uppercase;
+    margin: auto 0;
+
+}
+
+.cost .transaction-total-price {
+    font-size: 3rem;
+}
+
+
 /* customer information */
 .customer-info {
     padding-top: 4rem;
@@ -61,8 +96,6 @@
 .rules-link {
     color: green;
 }
-
-
 
 /* pay for */
 .pay-for {

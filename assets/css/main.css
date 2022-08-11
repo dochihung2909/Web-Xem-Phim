@@ -346,6 +346,7 @@
     filter: brightness(80%);
 }
 
+
 .ranking__infor,
 .ranking__slide { 
     padding: 6.4rem;
@@ -355,6 +356,12 @@
     justify-content: center;  
     flex-direction: column; 
     position: relative;
+}
+
+
+/* ẩn tạm thời */
+.ranking__infor {
+    display: none !important;
 }
 
 .ranking__infor-name {

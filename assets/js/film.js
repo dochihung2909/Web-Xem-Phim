@@ -36,4 +36,7 @@ $(document).ready(function() {
     $('.booking__time-wrapper').click(function () {
         localStorage.time = $(this).text();
     }) 
+
+    let filmNameFilm = $('.booking__infor-name');
+    filmNameFilm.text(`${localStorage.filmNameLocal}`)
 })  

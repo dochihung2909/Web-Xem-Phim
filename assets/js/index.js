@@ -110,5 +110,10 @@ $(document).ready(function() {
     for (let i = 0;i<10;i++) {
         $('.slider-film-wrapped').append(html) ;   
     }  
+
+    $('.film__item').click(function() {
+        let filmName = $(this).find('.film__item-info-name').text();
+        localStorage.filmNameLocal = filmName;
+    })
 })
 
