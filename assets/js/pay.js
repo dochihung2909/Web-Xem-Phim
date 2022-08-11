@@ -13,10 +13,6 @@ $(document).ready(function() {
     
     let getInputEmail = $('.group-email');
     getInputEmail.change(function() {
-        getInputEmail.css({
-                'color': 'white'
-            
-            })
         if(checkEmail.test(getInputEmail.val())) {
             console.log('Dung');
             
@@ -26,9 +22,21 @@ $(document).ready(function() {
             getInputEmail.css({
                 'color': '#e92828'
             })
+            
+            let getGroupEmail = $('.wrong-email');
+            getGroupEmail.css({
+                'display': 'block'
+            })
+            setTimeout(function(){
+                getGroupEmail.css({
+                    'display': 'none'
+                })
+            }, 5000)
+                
         }
-
     })
     
+    
+
 })
 

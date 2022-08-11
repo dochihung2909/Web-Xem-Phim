@@ -137,6 +137,7 @@
 }
 
 /* Label move up */
+.group input:placeholder-shown ~ label,
 .group input:focus ~ label, 
 .group input:valid ~ label {
     top:-20px;
@@ -202,6 +203,8 @@ input:focus ~ .bar:after {
 .wrong-email {
     background-color: white;
     color: black;
+    display: none;
+
 }
 .wrong-email-content {
     padding: 1rem;
