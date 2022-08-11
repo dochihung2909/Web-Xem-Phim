@@ -94,19 +94,22 @@ $(document).ready(function() {
         }) 
         selected.text("");
         price.text(""); 
-    })
+    }) 
 
     let paymentBtn = $('.pay__commit-btn');
     paymentBtn.click(function() {
         localStorage.seatLocal = $('#seat-selected').text();
         localStorage.totalLocal = money;
-    })
+    }) 
     
 
     let monthClient = $('#month-client');
     let dateClient = $('#date-client');
     let timeClient = $('#time-client');
-    let typeClient = $('#type-client');    
-    timeClient.text(localStorage.timeLocal);
+    let typeClient = $('#type-client');     
+    timeClient.text(localStorage.timeLocal); 
+    timeClient.text(localStorage.time);
+
+    // Lấy seats 
 })
 

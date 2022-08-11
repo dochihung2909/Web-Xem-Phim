@@ -34,13 +34,119 @@
             <div class="transaction">
 
                 <div class="row">
-                    <div class="col l-8">
-                        <h1 class="header-h1">Chi tiết giao dịch</h1>
+                    <div class="col l-6">
+                        <div class="customer-info">
+                            <h1 class="header-h1">Thông tin khách hàng</h1>
+                            <!-- <form>
+                                <p class="customer-info-title">Tên</p>
+                                <input type="text" class="customer-info-type">
+                            </form> -->
+                            <div class="group">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Tên</label>
+                            </div>
+                            <!-- <form>
+                                <p class="customer-info-title" pattern="[a-z]{1,15}">Email</p>
+                                <input type="email" class="customer-info-type">
+                            </form> -->
+                            <div class="group">      
+                                <input type="text" class="group-email" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Email</label>
+
+                                <div class="wrong-email">
+                                    <div class="wrong-email-content flex">
+                                        <p class="wrong-email-exclamation">
+                                            !
+                                        </p>
+                                        <p class="wrong-email-text">
+                                            Please include an '@' in the email address. 'aaaaaaaaaaaaaaaaaaaaaaa' is missing an '@'
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <form>
+                                <p class="customer-info-title">Điện thoại</p>
+                                <input type="tel" class="customer-info-type">
+                            </form> -->
+                            <div class="group">      
+                                <input type="tel" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Số điện thoại</label>
+                            </div>
+                            <!-- <form>
+                                <p class="customer-info-title">Ghi chú</p>
+                                <input type="text" class="customer-info-type">
+                            </form> -->
+                            <div class="group">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Ghi chú</label>
+                            </div>
+                        </div>
+                        <div class="pay-for">
+                            <div class="col l-8">
+                                <div class="pay-for-content">
+                                    <h1 class="header-h1">Loại thẻ thanh toán</h1>
+                                    <div class="payment-methods">
+                                        <div class="payment-method">
+                                            <label class="payment-method-label" for="bidv">
+                                                <div class="payment-method-img">
+                                                    <img src="https://bom.so/UjtdaY" alt="image">
+                                                </div>
+                        
+                                                <div class="payment-method-name">
+                                                    BIDV
+                                                </div>
+                                            </label>
+                                            <input class="payment-method-input" type="radio" name="pay-method" id="bidv">
+                                        </div>
+                                        <div class="payment-method">
+                                            <label class="payment-method-label" for="momo">
+                                                <div class="payment-method-img">
+                                                    <img src="https://bom.so/qdJ7I8" alt="image">
+                                                </div>
+                        
+                                                <div class="payment-method-name">
+                                                    Momo
+                                                </div>
+                
+                                            </label>
+                                            
+                                            <input class="payment-method-input" type="radio" name="pay-method" id="momo">
+                                        </div>
+                                        <div class="payment-method">
+                                            <label class="payment-method-label" for="zalopay">
+                                                <div class="payment-method-img">
+                                                    <img src="https://bom.so/MRRspX" alt="image">
+                                                </div>
+                    
+                                                <div class="payment-method-name">
+                                                    ZaloPay
+                                                </div>
+                
+                                            </label>
+                                            
+                                            <input class="payment-method-input" type="radio" name="pay-method" id="zalopay">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-6">
                         <div class="transaction__content">
+                            <h1 class="header-h1">Chi tiết giao dịch</h1>
                             <div class="transaction-infos">
                                 <div class="transaction-info">
                                     <p class="transaction-info-title">Phim:</p>
-                                    <p class="transaction-info-about transaction-name">Thor: Tinh yeu va sam set</p>
+                                    <p class="transaction-info-about transaction-name"></p>
                                 </div>
                                 <div class="transaction-info">
                                     <p class="transaction-info-title">Suat chieu:</p>
@@ -52,108 +158,39 @@
                                 </div>
                                 <div class="transaction-info">
                                     <p class="transaction-info-title">Phong chieu:</p>
-                                    <p class="transaction-info-about transaction-position">05</p>
+                                    <p class="transaction-info-about transaction-position"></p>
                                 </div>
                                 <div class="transaction-info">
                                     <p class="transaction-info-title">Ghe:</p>
-                                    <p class="transaction-info-about transaction-seats">A13</p>
+                                    <p class="transaction-info-about transaction-seats">...</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col l-4">
+
                         <div class="transaction-total-wrapper">
                             <div class="transaction-total-content">
                                 <div class="transaction-total flex">
                                     <p class="transaction-total-name">Tổng giá vé</p>
-                                    <p class="transaction-total-price">100.000đ</p>
+                                    <p class="transaction-total-price cost-ticket">...</p>
                                 </div>
                                 <div class="transaction-total flex">
                                     <p class="transaction-total-name">Ưu đãi</p>
-                                    <p class="transaction-total-price">10.000đ</p>
+                                    <p class="transaction-total-price cost-offer">...</p>
                                 </div>
                                 <div class="transaction-total cost flex">
                                     <p class="transaction-total-name">Tổng thanh toán</p>
-                                    <p class="transaction-total-price ">90.000đ</p>
+                                    <p class="transaction-total-price cost-total">...</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
-            </div>
-            <div class="col l-4">
-                <div class="customer-info">
-                    <h1 class="header-h1">Thông tin khách hàng</h1>
-                    <form>
-                        <p class="customer-info-title">Tên</p>
-                        <input type="text" class="customer-info-type">
-                    </form>
-                    <form>
-                        <p class="customer-info-title" pattern="[a-z]{1,15}">Email</p>
-                        <input type="email" class="customer-info-type">
-                    </form>
-                    <form>
-                        <p class="customer-info-title">Điện thoại</p>
-                        <input type="tel" class="customer-info-type">
-                    </form>
-                    <form>
-                        <p class="customer-info-title">Ghi chú</p>
-                        <input type="text" class="customer-info-type">
-                    </form>
-                    
-                </div>
+
             </div>
 
-            <div class="pay-for">
-                <div class="col l-4">
-                    <div class="pay-for-content">
-                        <h1 class="header-h1">Loại thẻ thanh toán</h1>
-                        <div class="payment-methods">
-                            <div class="payment-method">
-                                <label class="payment-method-label" for="bidv">
-                                    <div class="payment-method-img">
-                                        <img src="https://bom.so/UjtdaY" alt="image">
-                                    </div>
             
-                                    <div class="payment-method-name">
-                                        BIDV
-                                    </div>
-                                </label>
-                                <input class="payment-method-input" type="radio" name="pay-method" id="bidv">
-                            </div>
-                            <div class="payment-method">
-                                <label class="payment-method-label" for="momo">
-                                    <div class="payment-method-img">
-                                        <img src="https://bom.so/qdJ7I8" alt="image">
-                                    </div>
-            
-                                    <div class="payment-method-name">
-                                        Momo
-                                    </div>
-    
-                                </label>
-                                
-                                <input class="payment-method-input" type="radio" name="pay-method" id="momo">
-                            </div>
-                            <div class="payment-method">
-                                <label class="payment-method-label" for="zalopay">
-                                    <div class="payment-method-img">
-                                        <img src="https://bom.so/MRRspX" alt="image">
-                                    </div>
-        
-                                    <div class="payment-method-name">
-                                        ZaloPay
-                                    </div>
-    
-                                </label>
-                                
-                                <input class="payment-method-input" type="radio" name="pay-method" id="zalopay">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div class="rules flex">
                 <input class="rules-input" type="checkbox">
@@ -183,6 +220,5 @@
     <script src="./assets/js/pay.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/base.js"></script> 
-    <script src="./assets/js/booking.js"></script>
 </body>
 </html>
