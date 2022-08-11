@@ -98,9 +98,7 @@ $(document).ready(function() {
             Sát thủ đối đầu
         </p>
         <div class="film__item-info-types flex">
-            <p class="film__item-info-type">Hành động</p>
-            <div class="lineY"></div>
-            <p class="film__item-info-type">Gây cấn</p>
+            <p class="film__item-info-type">Hành động, Gây cấn</p> 
         </div>
     </a>
         
@@ -113,7 +111,11 @@ $(document).ready(function() {
 
     $('.film__item').click(function() {
         let filmName = $(this).find('.film__item-info-name').text();
+        let filmImage = $(this).find('.film__item-img').attr('src');
+        let filmType = $(this).find('.film__item-info-type').text();
+        localStorage.filmImageLocal = filmImage;
         localStorage.filmNameLocal = filmName;
+        localStorage.filmTypeLocal = filmType;
     })
 })
 

@@ -38,5 +38,7 @@ $(document).ready(function() {
     }) 
 
     let filmNameFilm = $('.booking__infor-name');
-    filmNameFilm.text(`${localStorage.filmNameLocal}`)
+    filmNameFilm.text(localStorage.filmNameLocal);
+    $('.booking__schedule-img').attr('src',localStorage.filmImageLocal);
+    $('.booking__infor-type').text(localStorage.filmTypeLocal)
 })  

@@ -11,16 +11,16 @@ function innit() {
         <div class="navbar__menu">
             <ul class="navbar__menu-list">
                 <li class="navbar__menu-item">
-                    <a href="" class="navbar__menu-item-link">Phim</a> 
+                    <a href="" class="navbar__menu-item-link top-dot">Trang Chủ</a> 
                 </li>
                 <li class="navbar__menu-item">
-                    <a href="" class="navbar__menu-item-link">Giá vé</a>
+                    <a href="" class="navbar__menu-item-link">Lịch chiếu</a>
                 </li>
                 <li class="navbar__menu-item">
-                    <a href="" class="navbar__menu-item-link">Khuyến mãi</a>
+                    <a href="" class="navbar__menu-item-link">Phim</a>
                 </li>
                 <li class="navbar__menu-item">
-                    <a href="" class="navbar__menu-item-link">Về HowT</a>
+                    <a href="" class="navbar__menu-item-link">Tin tức</a>
                 </li>
             </ul>
         </div>  

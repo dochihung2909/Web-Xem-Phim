@@ -491,3 +491,18 @@ html {
         opacity: 0;
     }
 }
+
+/* Top dot */
+.top-dot{
+    position: relative;
+}
+
+.top-dot::after {
+    content: "";
+    position: absolute; 
+    left: 50%;
+    right: 50%;
+    border: 5px solid var(--main-color);
+    top: 20%;
+    /* border-radius: 50%; */
+}
