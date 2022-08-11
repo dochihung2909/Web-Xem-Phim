@@ -39,4 +39,5 @@ $(document).ready(function() {
 
     let filmNameFilm = $('.booking__infor-name');
     filmNameFilm.text(`${localStorage.filmNameLocal}`)
+
 })  
