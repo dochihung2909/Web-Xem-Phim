@@ -67,7 +67,8 @@ html {
 
 .buy-btn {
     display: flex;
-    padding: 0.8rem 1.6rem;
+    padding: 1.4rem 4.8rem;
+    width: 100%;
     font-size: 1.6rem;
     text-decoration: none;
     color: var(--white-color); 
@@ -490,4 +491,20 @@ html {
         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
         opacity: 0;
     }
+}
+
+/* Top dot */
+.top-dot{
+    position: relative;
+}
+
+.top-dot::after {
+    content: "";
+    position: absolute; 
+    left: 50%;
+    right: 50%;
+    border: 3px solid var(--main-color);
+    background-color: var(--main-color);
+    top: 20%;
+    border-radius: 50%;
 }

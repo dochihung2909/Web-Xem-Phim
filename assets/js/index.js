@@ -7,77 +7,177 @@ function setRank() {
 } 
 
 function slider() {
-    // Slider
-    var positionX = 0; 
-    const slider = $('.ranking-showing__bg');
-    const sliderMain = $('.ranking-showing__bg-wrapper');
+    // Slider   
     const sliderItems = $('.ranking-showing__bg-img');
-    var sliderLength = sliderItems.length;
-    var sliderWidthItem = sliderItems[0].offsetWidth;  
+    var sliderLength = sliderItems.length; 
     var pre = $('.ranking__direct.pre');
     var next = $('.ranking__direct.next');
     var number = $('.ranking__number-link'); 
 
+    // Src ảnh logo
+    var srcItems = [
+        'https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/image_title-a5d678326f1e-1655971698046-JtsDdAZ5.png?v=0',
+        'https://terrigen-cdn-dev.marvel.com/content/prod/1x/thorlat_lob_log_def_04.png',
+        './assets/img/slider3.png',
+        'https://www.bullettrainmovie.com/images/date_portrait.png',
+        'https://images.fanart.tv/fanart/dc-league-of-super-pets-61a4eb178cfe8.png'
+    ];
+
+    // Alt ảnh logo
+    var altItems = [
+        'Thám Tử Lừng Danh Conan: Nàng Dâu Halloween',
+        'Thor: Tình yêu và sấm sét',
+        'Dân chơi không sợ con rơi',
+        'Sát thủ đối đầu',
+        'Siêu thú DC'
+    ]
+
+    // lấy ảnh logo
+    var imageItem = $('.ranking__infor-name');
+
+    // iframe trailer
+    var trailerItems = [
+        'https://www.youtube.com/watch?v=V6qby0eZzlA',
+        'https://www.youtube.com/watch?v=UBgPypHGAqE',
+        'https://www.youtube.com/watch?v=2BOCZ5ax5qk',
+        'https://www.youtube.com/watch?v=fiEG-Y9vB00',
+        'https://www.youtube.com/watch?v=L2umMe5uRnk'
+    ]
+
+    // Lấy thẻ a
+    let trailerItem = $('.ranking-trailer .film-trailer-item');
+    trailerItem.click(myStop);
+    addAtr(0);
+    // Slider 1 on top 
+    sliderItems[0].style.cssText = `  
+        opacity:1;
+    `;
+
+    // Xoá thêm Active ở ranking
     $('.ranking__number-link').click(function() {
+        // Lấy vị trí cũ để xoá thuộc tính
+        let passActive = getPosition();
         let current = $('.ranking-active');
         current.removeClass('ranking-active');
         $(this).addClass('ranking-active');
-        let curent = getPosition();  
-        if (current == 0) {
-            positionX = 0;
-        } else {
-            positionX = -(curent * sliderWidthItem);
-        } 
-        sliderMain.css('transform',`translateX(${positionX}px)`)
+        // Lấy vị trí mới thêm thuộc tính vào
+        let nowActive = getPosition();   
+        sliderItems[nowActive].style.cssText = `
+            animation: fadeIn 0.5s ease-out; 
+            opacity:1;
+        `; 
+        sliderItems[passActive].style.cssText = `  
+            opacity:0;
+        `;  
+        imageItem.attr({
+            src : srcItems[nowActive],
+            alt : altItems[nowActive]   
+        }); 
+        trailerItem.attr({
+            onclick : `viewTrailerJs('${trailerItems[nowActive]}')`
+        })
+        myStopAndReset();
     }) 
 
+    // Lấy vị trí active
     function getPosition() {
         let curr = $('.ranking__number-link').filter('.ranking-active'); 
         let index = curr.index('.ranking__number-link');
         return index;
     } 
 
+    // Slider trước
     function prevSlide() {
-        var pos = getPosition();     
+        var pos = getPosition();      
         if (pos == 0) {
             number[0].classList.remove('ranking-active');
-            number[number.length - 1].classList.add('ranking-active');
-            positionX = -(sliderLength - 1)*sliderWidthItem ;
+            number[number.length - 1].classList.add('ranking-active'); 
+            sliderItems[sliderLength - 1].style.cssText = `
+                animation: fadeIn 0.5s ease-out; 
+                opacity:1;
+            `;
+            sliderItems[0].style.cssText = `  
+                opacity:0;
+            `;
         } else {
             number[pos-1].classList.add('ranking-active');
-            number[pos].classList.remove('ranking-active');
-            positionX = positionX + sliderWidthItem;
-        }    
-        sliderMain.css('transform',`translateX(${positionX}px)`)
+            number[pos].classList.remove('ranking-active'); 
+            sliderItems[pos - 1].style.cssText = `
+                animation: fadeIn 0.5s ease-out; 
+                opacity:1;
+            `;
+            sliderItems[pos].style.cssText = `  
+                opacity:0;
+            `;
+        }      
+        pos = getPosition();
+        addAtr(pos);
     }
 
+    // Slide sau
     function nextSlide() {
-        var pos = getPosition(); 
+        var pos = getPosition();  
         if (pos == number.length - 1) {
             number[number.length - 1].classList.remove('ranking-active');
             number[0].classList.add('ranking-active');
-            positionX = 0;
+            sliderItems[0].style.cssText = `
+                animation: fadeIn 0.5s ease-out; 
+                opacity:1;
+            `;
+            sliderItems[sliderLength - 1].style.cssText = `  
+                opacity:0;
+            `; 
         } else {
             number[pos+1].classList.add('ranking-active');
-            number[pos].classList.remove('ranking-active');
-            positionX = positionX - sliderWidthItem;
-        }  
-        sliderMain.css('transform',`translateX(${positionX}px)`)
-    }
-    
-    pre.click(function() { 
-        prevSlide();
-    })
+            number[pos].classList.remove('ranking-active'); 
+            sliderItems[pos+1].style.cssText = `
+                animation: fadeIn 0.5s ease-out; 
+                opacity:1;
+            `;
+            sliderItems[pos].style.cssText = `  
+                opacity:0;
+            `;
+        }   
+        // Lấy lại vị trí mới
+        pos = getPosition();
+        addAtr(pos);
+    }  
 
-    
+    function addAtr(pos) {
+        imageItem.attr({ 
+            src:srcItems[pos],
+            alt:altItems[pos]
+        }); 
+        trailerItem.attr({
+            onclick : `viewTrailerJs('${trailerItems[pos]}')`
+        })
+    } 
+
+    let myInterval = setInterval(nextSlide,4000); 
+
+    function myStop() {
+        window.clearInterval(myInterval);
+    }
+
+    function myStopAndReset() {
+        window.clearInterval(myInterval);
+        resetInterval();
+    }
+
+    pre.click(function() { 
+        prevSlide(); 
+        myStopAndReset();
+    }) 
 
     next.click(function() {
         nextSlide();
+        myStopAndReset(); 
     })
-
-    setInterval(function() {
-        nextSlide();
-    },4000);
+    function resetInterval() {
+        setTimeout(function() { 
+            myInterval = setInterval(nextSlide,4000);
+        },8000);
+    }
 }
  
 $(document).ready(function() {   
@@ -98,9 +198,7 @@ $(document).ready(function() {
             Sát thủ đối đầu
         </p>
         <div class="film__item-info-types flex">
-            <p class="film__item-info-type">Hành động</p>
-            <div class="lineY"></div>
-            <p class="film__item-info-type">Gây cấn</p>
+            <p class="film__item-info-type">Hành động, Gây cấn</p> 
         </div>
     </a>
         
@@ -113,7 +211,11 @@ $(document).ready(function() {
 
     $('.film__item').click(function() {
         let filmName = $(this).find('.film__item-info-name').text();
+        let filmImage = $(this).find('.film__item-img').attr('src');
+        let filmType = $(this).find('.film__item-info-type').text();
+        localStorage.filmImageLocal = filmImage;
         localStorage.filmNameLocal = filmName;
+        localStorage.filmTypeLocal = filmType;
     })
 })
 
