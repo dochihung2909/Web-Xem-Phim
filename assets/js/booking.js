@@ -96,12 +96,17 @@ $(document).ready(function() {
         price.text(""); 
     })
 
+    let paymentBtn = $('.pay__commit-btn');
+    paymentBtn.click(function() {
+        localStorage.seatLocal = $('#seat-selected').text();
+        localStorage.totalLocal = money;
+    })
     
 
     let monthClient = $('#month-client');
     let dateClient = $('#date-client');
     let timeClient = $('#time-client');
     let typeClient = $('#type-client');    
-    timeClient.text(localStorage.time);
+    timeClient.text(localStorage.timeLocal);
 })
 
