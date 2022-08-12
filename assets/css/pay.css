@@ -1,33 +1,32 @@
 /* common */
-.header-h1 {
+/* .header-h1 {
     padding: 2rem 0;
     color: var(--main-color);
-}
+} */
 
-.pay__container {
+/* .pay__container {
     background-image: linear-gradient(transparent,rgba(0,0,0,0.8) 10%),url(https://wallpaperaccess.com/full/1106958.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     background-color: #000;
     box-shadow: inset 0 120px 40px var(--black-color);
-}
+} */
 
 /* transaction */
-.transaction {
+/* .transaction {
     padding-top: 10rem;
     font-size: 1.6rem;
     border-radius: .5rem;
     color: white;
-}
+} */
 
-.transaction__content {
-    border: .1rem solid var(--main-color);
+/* .transaction__content {
     border-radius: .5rem;
-    padding: 1.5rem .5rem;
-}
+    padding-top: 4rem;
+} */
 
-.transaction-info-title,
+/* .transaction-info-title,
 .transaction-info-about {
     width: 100%;
     font-size: 1.7rem;
@@ -49,20 +48,19 @@
 
 .transaction-info-about {
     text-align: right;
-}
+} */
 
 /* total transaction*/
-.transaction-total-wrapper {
-    /* border: .1rem solid var(--main-color); */
+/* .transaction-total-wrapper {
     height: 100%;
     border-radius: 0.5rem;
-}
+} */
 
-.transaction-total-content {
+/* .transaction-total-content {
     padding: 4rem 2rem; 
-}
+} */
 
-.transaction-total {
+/* .transaction-total {
     justify-content: space-between;
     padding: 2rem 0;
 }
@@ -71,11 +69,10 @@
 }
 
 .cost {
-    /* background-color: red; */
     border-radius: .5rem;
-}
+} */
 
-.cost .transaction-total-name {
+/* .cost .transaction-total-name {
     text-transform: uppercase;
     margin: auto 0;
 
@@ -83,11 +80,11 @@
 
 .cost .transaction-total-price {
     font-size: 3rem;
-}
+} */
 
 
 /* customer information */
-.customer-info {
+/* .customer-info {
     padding-top: 4rem;
 }
 .customer-info-title {
@@ -119,7 +116,6 @@
     border:none;
     background-color: #222c4c;
     color: white;
-    /* border-bottom:1px solid #757575; */
 }
 .group input:focus { 
     outline:none; 
@@ -134,20 +130,20 @@
     left: 2rem;
     top: 1rem;
     transition:0.2s ease all; 
-}
+} */
 
 /* Label move up */
-.group input:placeholder-shown ~ label,
+/* .group input:placeholder-shown ~ label,
 .group input:focus ~ label, 
 .group input:valid ~ label {
     top:-20px;
     left: 0;
     font-size:14px;
     color:#5264AE;
-}
+} */
 
 /* BOTTOM BARS  */
-.bar { 
+/* .bar { 
     position:relative; 
     display:block; 
     width:300px; 
@@ -166,16 +162,16 @@
 }
 .bar:after {
   right:50%; 
-}
+} */
 
 /* animation bar */
-input:focus ~ .bar:before, 
+/* input:focus ~ .bar:before, 
 input:focus ~ .bar:after {
     width:50%;
-}
+} */
 
 /* HIGHLIGHTER */
-.highlight {
+/* .highlight {
     position:absolute;
     height:60%; 
     width:100px; 
@@ -183,15 +179,15 @@ input:focus ~ .bar:after {
     left:0;
     pointer-events:none;
     opacity:0.5;
-  }
+  } */
   
   /* active state */
-.group input:focus ~ .highlight {
+/* .group input:focus ~ .highlight {
     animation:inputHighlighter 0.3s ease;
-}
+} */
 
 /* ANIMATIONS */
-@keyframes inputHighlighter {
+/* @keyframes inputHighlighter {
     from { 
         background:#5264AE; 
     }
@@ -221,10 +217,10 @@ input:focus ~ .bar:after {
 
 .wrong-email-text {
     margin-left: 1rem;
-}
+} */
 
 /* pay for */
-.pay-for {
+/* .pay-for {
 
 }
 
@@ -284,5 +280,48 @@ input:focus ~ .bar:after {
     text-transform: uppercase;
     margin: 0 1rem;
     text-decoration: none;
-    border-radius: .5rem;
+    border-radius: .5rem; 
+} */
+
+/* new */
+.pay {
+    background-color: #15141a;
+    padding-top: 10rem;
+    height: 100rem;  
+
+    /* tạm thời */
+    color: white;
+    font-size: 2rem;
+}
+
+.pay__content-title {
+    padding: 2.5rem 0;
+}
+
+.pay__content-payment-wrapper,
+.pay__content-movie-wrapper {
+    background-color: #23202b;
+}
+
+.pay__content-payment-wrapper {
+    margin-top: 2.5rem;
+}
+
+.pay__content-payment,
+.pay__content-movie {
+    padding: 2rem;
+}
+
+.pay-movie-row {
+    padding: 2rem 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+.payment-method-input {
+    display: flex;
+}
+
+.payment-method-input-card {
+    width: 40%;
 }
