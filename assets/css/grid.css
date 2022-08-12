@@ -92,16 +92,157 @@
     width: 100%;
 }
 
-/* <= Tablet */
+/*  mobile */
 @media (max-width: 739px)  {
-    body {
+    .row {
+        margin: 0 -4px;
+    } 
+
+    .row.no-gutters {
+        margin: 0;
+    }
+
+    .row.no-gutters .col {
+        padding: 0;
+    }
+
+    .col {
+        padding: 0 4px;
+    }
+
+    .s-0 {
         display: none;
+    }
+
+    .s-1 {
+        flex: 0 0 8.333333%;
+        width: 8.333333%;
+    } 
+    
+    .s-2 {
+        flex: 0 0 16.66667%;
+        width: 16.66667%;
+    }
+    
+    .s-3 {
+        flex: 0 0 25%;
+        width: 25%;
+    }
+    
+    .s-4 {
+        flex: 0 0 33.33333333%;
+        width: 33.33333333%;
+    }
+    
+    .s-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    } 
+    
+    .s-5 {
+        flex: 0 0 41.66667%;
+        width: 41.66667%;
+    }
+    
+    .s-6 {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+    
+    .s-7 {
+        flex: 0 0 58.33333%;
+        width: 58.33333%;
+    }
+    
+    .s-8 {
+        flex: 0 0 66.66666667%;
+        width: 66.66666667%;
+    } 
+    
+    .s-9 {
+        flex: 0 0 75%;
+        width: 75%;
+    }
+    
+    .s-10 {
+        flex: 0 0 83.333333%;
+        width: 83.333333%;
+    }
+    
+    .s-12 {
+        flex: 0 0 100%;
+        width: 100%;
     }
 } 
 
+/* Tablet */
 @media (min-width: 1024px) {
-    body {
-        display: block;
+    .row {
+        margin: 0 -8px;
+    } 
+
+    .col {
+        padding: 0 8px;
+    }
+
+    .m-1 {
+        flex: 0 0 8.333333%;
+        width: 8.333333%;
+    } 
+    
+    .m-2 {
+        flex: 0 0 16.66667%;
+        width: 16.66667%;
+    }
+    
+    .m-3 {
+        flex: 0 0 25%;
+        width: 25%;
+    }
+    
+    .m-4 {
+        flex: 0 0 33.33333333%;
+        width: 33.33333333%;
+    }
+    
+    .m-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    } 
+    
+    .m-5 {
+        flex: 0 0 41.66667%;
+        width: 41.66667%;
+    }
+    
+    .m-6 {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+    
+    .m-7 {
+        flex: 0 0 58.33333%;
+        width: 58.33333%;
+    }
+    
+    .m-8 {
+        flex: 0 0 66.66666667%;
+        width: 66.66666667%;
+    } 
+    
+    .m-9 {
+        flex: 0 0 75%;
+        width: 75%;
+    }
+    
+    .m-10 {
+        flex: 0 0 83.333333%;
+        width: 83.333333%;
+    }
+    
+    .m-12 {
+        flex: 0 0 100%;
+        width: 100%;
     }
 }
 

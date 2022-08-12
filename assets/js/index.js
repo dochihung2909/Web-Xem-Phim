@@ -221,5 +221,17 @@ $(document).ready(function() {
         localStorage.filmNameLocal = filmName;
         localStorage.filmTypeLocal = filmType;
     })
+
+    $('.slider-film-wrapped').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 5
+    });
+
+    $('.trailer__content-films > .row').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 5
+    })
 })
 

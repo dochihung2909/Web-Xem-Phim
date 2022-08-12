@@ -2,13 +2,13 @@ $(document).ready(function () {
     const head = document.querySelector('.header');
     const footer = document.querySelector('.footer');
     head.innerHTML = `<div class="grid">
-    <nav class="header-navbar">
-        <div class="navbar__logo">
+    <nav class="header-navbar row">
+        <div class="navbar__logo s-6">
             <a href="./index.html" class="navbar__logo-link">
                 <img src="./assets/img/Panda-ngang2.png" alt="" class="navbar__logo-img">
             </a>  
         </div>
-        <div class="navbar__menu">
+        <div class="navbar__menu s-0">
             <ul class="navbar__menu-list">
                 <li class="navbar__menu-item">
                     <a href="" class="navbar__menu-item-link top-dot">Trang Chủ</a> 
@@ -24,7 +24,7 @@ $(document).ready(function () {
                 </li>
             </ul>
         </div>  
-        <div class="navbar__search-bar">
+        <div class="navbar__search-bar s-6">
             <input id="navbar-search-inp" class="navbar__search-bar-inp" type="text" placeholder="Bạn tìm gì...">
             <label for="navbar-search-inp"><i class="fa-solid fa-magnifying-glass navbar__search-bar-icon"></i></label>
         </div>
@@ -33,13 +33,13 @@ $(document).ready(function () {
 
     footer.innerHTML =  `<div class="grid wide">
     <div class="footer-wrapper">
-        <div class="row">
-            <div class="col l-2">
+        <div class="row no-gutters">
+            <div class="col l-2 s-6">
                 <a href="./index.html" class="footer__logo">
                     <img src="./assets/img/Panda-doc2.png" alt="" class="footer__logo-img">
                 </a>
             </div>
-            <div class="col l-8">
+            <div class="col l-8 s-6">
                 <div class="footer__menu-wrapper">
                     <div class="footer__menu-item">
                         <a href="#" class="footer__menu-item-link">Trang chủ</a>
@@ -55,7 +55,7 @@ $(document).ready(function () {
                     </div>
                 </div>
             </div>
-            <div class="col l-2">
+            <div class="col l-2 s-12">
                 <div class="footer__social">
                     <div class="footer__social-wrapper">
                         <a href="" class="footer__social-link">
@@ -78,8 +78,8 @@ $(document).ready(function () {
         
     </div>
     <div class="copyright-wrapper">
-        <div class="row">
-            <div class="l-12">
+        <div class="row no-gutters">
+            <div class="l-12 s-12">
                 <p class="copyright">Copyright 2022 by HowT</p>
             </div>
         </div>

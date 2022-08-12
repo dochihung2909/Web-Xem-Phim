@@ -37,12 +37,6 @@ function openModal(btns,modal,modalClose,modalContainer,reset) {
     })
 }    
 
-// Set image film
-function setSrcFilmItem() {
-    let film = $('.film-booking > .film__item-img');
-    film.attr('src','./assets/img/film_1.webp');
-}
-
 $(document).ready(function () {    
 // Modal 
     // Var of modal trailer
@@ -66,6 +60,5 @@ $(document).ready(function () {
     // Modal buy tickets
     if (modal_buy) {
         openModal(buyTickets,modal_buy,modalCloseBuyTicket,modalBuyContainer,false);
-    }  
-    setSrcFilmItem();
+    }   
 }) 

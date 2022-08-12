@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +16,7 @@
     <link rel="shortcut icon" href="./assets/img/panda.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/createHeaderAndFooter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Momo clone</title> 
 </head>
 <body>
@@ -67,78 +70,80 @@
                         <img src="https://www.cinemabang.com/resources/dc%20league%20of%20superpets%20banner.jpg" alt="" class="ranking-showing__bg-img"> 
                     </div>
                 </div>
-                <div class="grid">
-                    <div class="row no-gutters">
-                        <div class="l-6">
-                            <div class="ranking__infor"> 
-                                <div class="ranking__infor-name-wrapper">
-                                    <img src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/image_title-a5d678326f1e-1655971698046-JtsDdAZ5.png?v=0" class="ranking__infor-name" alt="">
-                                </div>
-                                
-                                <!-- <h1 class="ranking__infor-name">Thám Tử Lừng Danh Conan: Nàng Dâu Halloween</h1> -->
-                                <div href="#" class="film__item-buy ranking__infor-buy">
-                                    <a href="./film.html" class="slider-buy-btn buy-btn">Mua vé</a> 
-                                </div>
-                                <div class="ranking__social">
-                                    <div class="footer__social">
-                                        <div class="footer__social-wrapper">
-                                            <a href="" class="footer__social-link">
-                                                <i class="fa-brands fa-facebook-f"></i>
-                                            </a>
-                                        </div>
-                                        <div class="footer__social-wrapper">
-                                            <a href="" class="footer__social-link">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                        </div>
-                                        <div class="footer__social-wrapper">
-                                            <a href="" class="footer__social-link">
-                                                <i class="fa-brands fa-twitter"></i>
-                                            </a>
+                <div class="ranking-showing__content">
+                    <div class="grid">
+                        <div class="row no-gutters">
+                            <div class="l-6">
+                                <div class="ranking__infor"> 
+                                    <div class="ranking__infor-name-wrapper">
+                                        <img src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/image_title-a5d678326f1e-1655971698046-JtsDdAZ5.png?v=0" class="ranking__infor-name" alt="">
+                                    </div>
+                                    
+                                    <!-- <h1 class="ranking__infor-name">Thám Tử Lừng Danh Conan: Nàng Dâu Halloween</h1> -->
+                                    <div class="film__item-buy ranking__infor-buy">
+                                        <a href="./film.html" class="slider-buy-btn buy-btn">Mua vé</a> 
+                                    </div>
+                                    <div class="ranking__social">
+                                        <div class="footer__social">
+                                            <div class="footer__social-wrapper">
+                                                <a href="" class="footer__social-link">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </a>
+                                            </div>
+                                            <div class="footer__social-wrapper">
+                                                <a href="" class="footer__social-link">
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                </a>
+                                            </div>
+                                            <div class="footer__social-wrapper">
+                                                <a href="" class="footer__social-link">
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="l-6">
-                            <div class="ranking__slide">
-                                <div class="ranking-trailer">
-                                    <a href="#trailer" onclick="" class="ranking__trailer-icon film-trailer-item">
-                                        <i class="fa-solid fa-play"></i>
-                                    </a> 
-                                </div>
-                                <div class="ranking__number">
-                                    <ul class="ranking__number-list">
-                                        <li class="ranking__number-item">
-                                            <a href="#" class="ranking__direct pre">
-                                                <i class="fa-solid fa-arrow-left-long"></i>
-                                            </a>
-                                        </li>
-                                        <li class="ranking__number-item">
-                                            <a href="#" class="ranking__number-link ranking-active">01</a>
-                                        </li>
-                                        <li class="ranking__number-item">
-                                            <a href="#" class="ranking__number-link">02</a>
-                                        </li>
-                                        <li class="ranking__number-item">
-                                            <a href="#" class="ranking__number-link">03</a>
-                                        </li>
-                                        <li class="ranking__number-item">
-                                            <a href="#" class="ranking__number-link">04</a>
-                                        </li>
-                                        <li class="ranking__number-item">
-                                            <a href="#" class="ranking__number-link">05</a>
-                                        </li>
-                                        <li class="ranking__number-item">
-                                            <a href="#" class="ranking__direct next">
-                                                <i class="fa-solid fa-arrow-right-long"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                            <div class="l-6">
+                                <div class="ranking__slide">
+                                    <div class="ranking-trailer">
+                                        <a href="#trailer" onclick="" class="ranking__trailer-icon film-trailer-item">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a> 
+                                    </div>
+                                    <div class="ranking__number">
+                                        <ul class="ranking__number-list">
+                                            <li class="ranking__number-item">
+                                                <a href="#" class="ranking__direct pre">
+                                                    <i class="fa-solid fa-arrow-left-long"></i>
+                                                </a>
+                                            </li>
+                                            <li class="ranking__number-item">
+                                                <a href="#" class="ranking__number-link ranking-active">01</a>
+                                            </li>
+                                            <li class="ranking__number-item">
+                                                <a href="#" class="ranking__number-link">02</a>
+                                            </li>
+                                            <li class="ranking__number-item">
+                                                <a href="#" class="ranking__number-link">03</a>
+                                            </li>
+                                            <li class="ranking__number-item">
+                                                <a href="#" class="ranking__number-link">04</a>
+                                            </li>
+                                            <li class="ranking__number-item">
+                                                <a href="#" class="ranking__number-link">05</a>
+                                            </li>
+                                            <li class="ranking__number-item">
+                                                <a href="#" class="ranking__direct next">
+                                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div> 
+                        </div> 
+                    </div>
                 </div>
             </div>
             <!-- Now showing -->
@@ -289,6 +294,7 @@
                                             </a> 
                                         </div>
                                     </div>
+                                    
                                 </div>
                             </div> 
                         </div>

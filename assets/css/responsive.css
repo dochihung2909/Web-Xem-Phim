@@ -1,0 +1,49 @@
+
+@media (max-width: 739px) { 
+    .navbar__menu {
+        display: none;
+    }
+
+    .header {
+        padding: 0;
+    }
+    
+    .header-navbar {
+        width: 100%;  
+    }
+
+    .navbar__logo {
+        width: 20%;
+    }
+
+    .navbar__search-bar { 
+    }
+
+    .ranking__infor,
+    .ranking__slide {
+        height: 300px;
+    }
+
+    .ranking-showing__bg-img {
+        height: 300px;
+    }
+
+    .ranking__social,
+    .ranking__number {
+        display: none;
+    }
+
+    .buy-btn {
+        width: 100px;
+        padding: 1.2rem 0;
+        font-size: 1.2rem;   
+    }
+
+    .ranking__infor-name {
+        width: 100%;
+    } 
+
+    .footer__menu-wrapper {
+        flex-direction: column;
+    }
+}

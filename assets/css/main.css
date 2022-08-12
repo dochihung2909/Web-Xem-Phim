@@ -90,6 +90,9 @@
     position: relative
 }
 
+.slider-film-wrapped { 
+}
+
 .slider-wrapper {
     position: relative;
     overflow: hidden;    
@@ -240,7 +243,7 @@
 }
 
 .background-slider { 
-    padding: 8.6rem;
+    padding: 8.6rem 0;
 }
 
 .trailer__content-films {
