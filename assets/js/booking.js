@@ -107,9 +107,9 @@ $(document).ready(function() {
     let dateClient = $('#date-client');
     let timeClient = $('#time-client');
     let typeClient = $('#type-client');     
-    timeClient.text(localStorage.timeLocal); 
-    timeClient.text(localStorage.time);
-
+    timeClient.text(localStorage.timeLocal);  
+    dateClient.text(localStorage.dateLocal); 
+    monthClient.text(localStorage.monthLocal);
     // Lấy seats 
 })
 

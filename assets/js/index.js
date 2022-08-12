@@ -1,3 +1,6 @@
+// Clear all localStorage
+localStorage.clear();
+
 // Set rank 
 function setRank() {
     const ranks = document.querySelectorAll('.film__item-rank');
@@ -76,7 +79,7 @@ function slider() {
         trailerItem.attr({
             onclick : `viewTrailerJs('${trailerItems[nowActive]}')`
         })
-        myStopAndReset();
+        myStop();
     }) 
 
     // Lấy vị trí active
@@ -165,14 +168,15 @@ function slider() {
     }
 
     pre.click(function() { 
-        prevSlide(); 
-        myStopAndReset();
+        prevSlide();  
+        myStop();
     }) 
 
     next.click(function() {
-        nextSlide();
-        myStopAndReset(); 
-    })
+        nextSlide();  
+        myStop();
+    }) 
+    myStopAndReset();
     function resetInterval() {
         setTimeout(function() { 
             myInterval = setInterval(nextSlide,4000);

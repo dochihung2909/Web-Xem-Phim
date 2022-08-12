@@ -115,8 +115,7 @@
     width: 100%;
 }
 
-.booking__days { 
-
+.booking__days {  
 }
 
 .booking__days-wrapper {
@@ -125,23 +124,46 @@
     text-align: center;
     color: var(--white-color);
     text-decoration: none;
-    transition: all 0.2s;    
-    border-bottom: 2px solid transparent;
+    transition: all 0.2s;     
+    position: relative;
+} 
+
+.active-booking {
+    color: var(--main-color);
+}
+
+.active-booking::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background-color: var(--main-color);
+} 
+
+.active-booking::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: -20px;
+    left: 50%;
+    right: 50%;
+    background-color: var(--main-color);
+    border-radius: 50%;
 }
 
 .booking__days-wrapper:hover {
-    color: var(--main-color); 
-    border-bottom: 2px solid var(--main-color); 
-}
-
-
+    color: var(--main-color);  
+} 
 
 .booking__date { 
-    font-size: 2.2rem; 
+    font-size: 4.6rem;
 }
 
 .booking__day {
-    font-size: 4.6rem;
+    font-size: 2.2rem; 
 }
 
 .booking__month {

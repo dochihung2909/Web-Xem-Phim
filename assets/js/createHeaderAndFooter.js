@@ -1,4 +1,4 @@
-function innit() {
+$(document).ready(function () { 
     const head = document.querySelector('.header');
     const footer = document.querySelector('.footer');
     head.innerHTML = `<div class="grid">
@@ -14,10 +14,10 @@ function innit() {
                     <a href="" class="navbar__menu-item-link top-dot">Trang Chủ</a> 
                 </li>
                 <li class="navbar__menu-item">
-                    <a href="" class="navbar__menu-item-link">Lịch chiếu</a>
+                    <a href="" class="navbar__menu-item-link">Phim</a>
                 </li>
                 <li class="navbar__menu-item">
-                    <a href="" class="navbar__menu-item-link">Phim</a>
+                    <a href="" class="navbar__menu-item-link">Lịch chiếu</a>
                 </li>
                 <li class="navbar__menu-item">
                     <a href="" class="navbar__menu-item-link">Tin tức</a>
@@ -152,4 +152,4 @@ function innit() {
             })
         } 
     }
-}
+}) 

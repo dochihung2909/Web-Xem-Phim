@@ -502,8 +502,9 @@ html {
     content: "";
     position: absolute; 
     left: 50%;
-    right: 50%;
-    border: 3px solid var(--main-color);
+    right: 50%; 
+    width: 6px;
+    height: 6px;
     background-color: var(--main-color);
     top: 20%;
     border-radius: 50%;

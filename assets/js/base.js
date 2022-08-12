@@ -1,5 +1,4 @@
 // Scroll    
-
 $(window).ready(function() {
     $(window).scroll(function() {
         var header = $(".header");
