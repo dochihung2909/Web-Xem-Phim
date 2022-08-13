@@ -3,7 +3,7 @@ $(document).ready(function () {
     const footer = document.querySelector('.footer');
     head.innerHTML = `<div class="grid">
     <nav class="header-navbar row">
-        <div class="navbar__logo s-6">
+        <div class="navbar__logo s-2">
             <a href="./index.html" class="navbar__logo-link">
                 <img src="./assets/img/Panda-ngang2.png" alt="" class="navbar__logo-img">
             </a>  
@@ -24,9 +24,14 @@ $(document).ready(function () {
                 </li>
             </ul>
         </div>  
-        <div class="navbar__search-bar s-6">
+        <form class="navbar__search-bar s-7">
             <input id="navbar-search-inp" class="navbar__search-bar-inp" type="text" placeholder="Bạn tìm gì...">
             <label for="navbar-search-inp"><i class="fa-solid fa-magnifying-glass navbar__search-bar-icon"></i></label>
+        </form>
+        <div class="navbar__menu-mobile s-2">
+            <a class="navbar__menu-mobile-link" href="#">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
     </nav>
 </div>`; 

@@ -32,6 +32,10 @@
     flex shrink: shirnk relative to the rest of flex items
 */
 
+.l-0 { 
+    width: 0%;
+}
+
 .l-1 {
     flex: 0 0 8.333333%;
     width: 8.333333%;

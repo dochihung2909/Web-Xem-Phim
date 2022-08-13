@@ -24,7 +24,7 @@
 html {
     font-family: 'Lato', sans-serif;
     font-size: 62.5%;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;  
 }
 
 .old-13 {
@@ -110,9 +110,9 @@ html {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 912931999; 
+    z-index: 10; 
     transition: opacity ease-in .3s; 
-    opacity: 1; 
+    opacity: 1;  
 }
 
 
@@ -211,8 +211,7 @@ html {
     height: var(--header-height);   
 }
 
-.sticky .header-navbar {
-    height: var(--header-height);
+.sticky .header-navbar {  
 }
 
 .sticky .navbar__search-bar {
@@ -307,14 +306,16 @@ html {
     border: 0.2rem solid var(--main-color);
     border-radius: 2.4rem;
     overflow: hidden;   
-
+    justify-content: space-between; 
+    position: relative;
 }
 
 .navbar__search-bar-inp {
     height:inherit;
     border: none;
     outline: none;
-    padding: .6rem 1.6rem; 
+    padding: .6rem 1.2rem; 
+    padding-right: 0;
     font-size: 1.6rem; 
     background-color: var(--black-color);    
     color: white; 
@@ -323,7 +324,7 @@ html {
 .navbar__search-bar-inp::placeholder {
     color: white;
     opacity: 0.8; /* Firefox */
-} 
+}   
 
 .navbar__search-bar-icon {  
     font-size: 1.6rem;
@@ -331,6 +332,8 @@ html {
     cursor: pointer; 
     background-color: var(--black-color);
     color: white;
+    position: absolute;
+    right: 0;
     /* transition: background-color 0.2s; */
 } 
 
@@ -401,6 +404,7 @@ html {
     position: relative;  
     justify-content: center;
     align-items: center; 
+    height: 40px;
 }
 
 .footer__social-link > i {
@@ -506,6 +510,32 @@ html {
     width: 6px;
     height: 6px;
     background-color: var(--main-color);
-    top: 20%;
+    top: 25%;
     border-radius: 50%;
+}
+
+
+.slick-arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border: none;
+    font-size: 2.2rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 50%;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.slick-arrow:hover {
+    filter: brightness(0.8);
+}
+
+.slick-prev {
+    left: -2.4rem;
+}
+
+.slick-next {
+    right: -2.4rem;
 }

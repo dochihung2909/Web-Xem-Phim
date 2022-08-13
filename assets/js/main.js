@@ -23,12 +23,21 @@ function openModal(btns,modal,modalClose,modalContainer,reset) {
     }
 
     // Lặp qua từng thẻ button và nghe hành vi click
-    btns.click(showBuyTickets)
+    btns.click(function() {
+        showBuyTickets();
+        $('html').css('overflow-y','hidden');
+    })
 
     // Nghe hành vi click vào button close
-    modalClose.addEventListener('click', hidenBuyTickets);
+    modalClose.addEventListener('click', function() {
+        $('html').css('overflow-y','');
+        hidenBuyTickets();
+    });
     
-    modal.addEventListener('click', hidenBuyTickets); 
+    modal.addEventListener('click', function() {
+        $('html').css('overflow-y','');
+        hidenBuyTickets();
+    }); 
 
     modalContainer.addEventListener('click', function(event){ 
         event.stopPropagation();

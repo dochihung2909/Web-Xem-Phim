@@ -73,15 +73,13 @@
     margin-bottom: 3.2rem;
 }
 
-.wrapped-more {
-    display: flex;
-    justify-content: right;
-    font-size: 1.6rem;
+.wrapped-more { 
+    text-align: right;
+    font-size: 1.6rem;  
 }
-.more {
+.more { 
     text-decoration: none;
-    color: var(--main-color);
-    padding: 2rem 0;
+    color: var(--main-color); 
 }
 
 
@@ -94,8 +92,7 @@
 }
 
 .slider-wrapper {
-    position: relative;
-    overflow: hidden;    
+    position: relative; 
 } 
 
 .slider-pre,
@@ -139,8 +136,7 @@
     border-radius: .4rem;
     overflow: hidden;
 } 
-.trailer__content .film__item-img-wrapped { 
-    height: 35rem; 
+.trailer__content .film__item-img-wrapped {  
     display: flex;  
 }
 
@@ -208,8 +204,7 @@
 .film__item-info-name {
     /* min-height: 4rem; */
     color: var(--white-color) !important;
-    margin-top: 1.5rem;
-    height: 40px;
+    margin-top: 1.5rem; 
 }
 
 .film__item-info-types {
@@ -234,7 +229,7 @@
 
 /* news */
 .background-bottom {
-    background-image: linear-gradient(transparent,rgba(0,0,0,0.8) 10%),url(https://wallpaperaccess.com/full/1106958.jpg);
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.65) 10%),url(https://wallpaperaccess.com/full/1106958.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center ;   
@@ -246,8 +241,7 @@
     padding: 8.6rem 0;
 }
 
-.trailer__content-films {
-    overflow: hidden;
+.trailer__content-films { 
 }
 
 .trailer__content-film {
@@ -501,4 +495,9 @@
 
 .active-dot {
     background-color: var(--main-color);
+}
+
+
+.blog {
+    padding-bottom: 8.6rem;
 }

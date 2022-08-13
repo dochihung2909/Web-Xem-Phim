@@ -226,14 +226,17 @@ $(document).ready(function() {
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 5,  
-        arrows:false,
+        arrows:true,
         click:false, 
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         responsive: [
             {
                 breakpoint: 739,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    arrows:false,
                 }
             },
         ]
@@ -243,12 +246,15 @@ $(document).ready(function() {
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 5,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         responsive: [
             {
                 breakpoint: 739,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    arrows:false, 
                 }
             },
         ]
@@ -257,16 +263,54 @@ $(document).ready(function() {
     $('.blog__content-films > .row').slick({
         infinite:true,
         slidesToShow: 4,
-        slidesToScroll: 4, 
+        slidesToScroll: 4,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",  
         responsive: [
             {
                 breakpoint: 739,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    arrows:false,
                 }
             },
         ] 
     }) 
-})
 
+    // let trailerBottomItems = $('.film__item-img-wrapped.film-trailer-item');
+    // let trailerBottomUrls = [
+    //     'https://www.youtube.com/watch?v=KgMmy31o-OE',
+    //     'https://www.youtube.com/watch?v=fcs35Pt2SNU',
+    //     'https://www.youtube.com/watch?v=wOxakDkCPPs',
+    //     'https://www.youtube.com/watch?v=ixFHgfKr39Y',
+    //     'https://www.youtube.com/watch?v=oeRG9A6bDdY',
+    // ];
+
+    // trailerBottomItems.each(function(index) {
+    //     if (index > 4) {
+    //         index = index - 5;
+    //     } 
+    //     $(this).click(function() {  
+    //         viewTrailerJs(`${trailerBottomUrls[index]}`)
+    //     })
+    // }) 
+      
+
+    // $('.slick-slider').mousedown(function() {  
+    //     trailerBottomItems.click(function(e) {
+    //         e.stopImmediatePropagation();
+    //     })
+    //     $(this).mouseup(function(e) {  
+    //         trailerBottomItems.click(function(e) {
+    //             e.stopImmediatePropagation();
+    //         })
+    //     })
+    // }) 
+
+    // Responsive
+    var width = $(window).width();
+    if (width < 740){
+        $('.navbar__logo-img').attr('src','./assets/img/panda.png'); 
+    }
+}) 
