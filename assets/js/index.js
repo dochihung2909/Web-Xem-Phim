@@ -190,7 +190,7 @@ $(document).ready(function() {
 
     var html = `<div class="col l-2-4 slider-item">
     <div class="film__item">
-        <a href="#" class="film__item-img-wrapped film-booking"> 
+        <a href="./film.html" class="film__item-img-wrapped film-booking"> 
             <img src="https://m.media-amazon.com/images/M/MV5BMDU2ZmM2OTYtNzIxYy00NjM5LTliNGQtN2JmOWQzYTBmZWUzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="" class="film__item-img">
             <div class="film__item-tag-top">
                 <span class="film__item-old old-13">13+</span>
@@ -225,13 +225,48 @@ $(document).ready(function() {
     $('.slider-film-wrapped').slick({
         infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 5
+        slidesToScroll: 5,  
+        arrows:false,
+        click:false, 
+        responsive: [
+            {
+                breakpoint: 739,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+        ]
     });
 
     $('.trailer__content-films > .row').slick({
         infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 739,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+        ]
     })
+
+    $('.blog__content-films > .row').slick({
+        infinite:true,
+        slidesToShow: 4,
+        slidesToScroll: 4, 
+        responsive: [
+            {
+                breakpoint: 739,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+        ] 
+    }) 
 })
 

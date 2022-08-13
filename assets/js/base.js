@@ -20,7 +20,7 @@ $(window).ready(function() {
         const header = document.querySelector('.back-to-top');
         header.classList.toggle("top", window.scrollY > 120);
     })   
-    redirectPage('film__item','./film.html');     
+    // redirectPage('film__item','./film.html');     
 })  
 
 // Redirect Page jQuery 
