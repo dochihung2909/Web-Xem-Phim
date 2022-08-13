@@ -1,10 +1,20 @@
 $(document).ready(function() {
-    let filmNamePay = $('.transaction-name');
+    let filmNamePay = $('.pay-movie-name');
     filmNamePay.text(`${localStorage.filmNameLocal}`)
 
+    let timePay = $('.pay-movie-time');
+    timePay.text(`
+    ${localStorage.timeLocal} - ${localStorage.dayLocal}, ${localStorage.dateLocal}/${localStorage.monthLocal}
+    `);
 
-    let positionPay = $('.transaction-position');
+    let addressPay = $('.pay-movie-address');
+    addressPay.text(`${localStorage.addressLocal}`);
+    
+    let positionPay = $('.pay-movie-position');
     positionPay.text(`${parseInt(Math.random() * 14 + 1)}`);
+
+    let seatsPay = $('.pay-movie-seats')
+    seatsPay.text(`${localStorage.seatLocal}`);
 
     let checkText = $('.group input');
     if(checkText.val() == false);
