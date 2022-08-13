@@ -241,8 +241,8 @@ $(document).ready(function() {
 
     $('.trailer__content-films > .row').slick({
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         responsive: [
             {
                 breakpoint: 739,
