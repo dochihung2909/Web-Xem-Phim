@@ -96,13 +96,14 @@ $(document).ready(function() {
         price.text(""); 
     }) 
 
+    // Lấy seats 
     let paymentBtn = $('.pay__commit-btn');
     paymentBtn.click(function() {
         localStorage.seatLocal = $('#seat-selected').text();
         localStorage.totalLocal = money;
     }) 
     
-
+    
     let monthClient = $('#month-client');
     let dateClient = $('#date-client');
     let timeClient = $('#time-client');
@@ -110,6 +111,5 @@ $(document).ready(function() {
     timeClient.text(localStorage.timeLocal);  
     dateClient.text(localStorage.dateLocal); 
     monthClient.text(localStorage.monthLocal);
-    // Lấy seats 
 })
 

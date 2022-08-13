@@ -15,6 +15,19 @@ $(document).ready(function() {
 
     let seatsPay = $('.pay-movie-seats')
     seatsPay.text(`${localStorage.seatLocal}`);
+    
+    // total
+    let priceTicketPay = $('.price-ticket');
+    let intPriceTicketPay = parseInt(localStorage.totalLocal);
+    priceTicketPay.text(`${localStorage.totalLocal}.000đ`);
+
+    let priceOfferPay = $('.price-offer');
+    let intPriceOfferPay = parseInt(intPriceTicketPay * 5 / 100);
+    priceOfferPay.text(`${intPriceOfferPay}.000đ`);
+
+    let priceTotalPay = $('.payment-total-last-price');
+    let intPriceTotalPay = parseInt($('.payment-total-last-price').text());
+    priceTotalPay.text(`${intPriceTicketPay - intPriceOfferPay}.000đ`);
 
     let checkText = $('.group input');
     if(checkText.val() == false);
