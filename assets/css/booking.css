@@ -19,9 +19,9 @@
 
 .slider__img-wrapper {
     width: 20%;
-    position: absolute; 
-    top: 50vh;
-    transform: translateY(-50%); 
+    position: absolute;  
+    bottom: 0;
+    transform: translateY(50%); 
 }
  
 .slider__img {
@@ -65,20 +65,22 @@
     text-align: center;
     background-size: cover; 
     background-color: rgb(131, 131, 131);  
-}
+}  
 
 .seats { 
     display: flex;
     justify-content: center;
     flex-wrap: wrap; 
     margin-top: 3.2rem;
-    /* background: linear-gradient(90deg); */
+    /* background: linear-gradient(90deg); */ 
+    overflow-x: auto;
 }
+
 .seat { 
     margin: 0.3rem 0;
     display: flex;     
     width: 100%;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .seat-text {
@@ -89,7 +91,8 @@
 }
 
 .seats-number {  
-    display: flex;
+    display: flex; 
+    justify-content: center;
 }
 
 .seat-number {

@@ -25,7 +25,16 @@ $(window).ready(function() {
     // Responsive
     var width = $(window).width();
     if (width < 740){
-        $('.navbar__logo-img').attr('src','./assets/img/panda.png'); 
+        $('.navbar__logo-img').attr('src','./assets/img/panda.png');
+        $('.infor-month').text($('.infor-month').text().replace('Tháng ','/')); 
+        $('.booking__infor').prepend(`
+        <div class="booking__infor-mobile">
+            <p class="booking__infor-mobile-name">${localStorage.filmNameLocal}</p>
+        </div>
+        `);
+        $('.booking__infor-wrapper.date').prepend(`
+            <p class="booking__infor-day-mobile">${localStorage.dayLocal}</p>
+        `)
     }
 })  
 

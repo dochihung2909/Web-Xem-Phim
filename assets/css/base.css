@@ -55,15 +55,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-}
-
-.clear {
-    clear: both;
-} 
-
-.flex {
-    display: flex;
-}
+}  
 
 .buy-btn {
     display: flex;

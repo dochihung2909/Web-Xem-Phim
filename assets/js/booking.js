@@ -101,8 +101,7 @@ $(document).ready(function() {
     paymentBtn.click(function() {
         localStorage.seatLocal = $('#seat-selected').text();
         localStorage.totalLocal = money;
-    }) 
-    
+    })   
     
     let monthClient = $('#month-client');
     let dateClient = $('#date-client');

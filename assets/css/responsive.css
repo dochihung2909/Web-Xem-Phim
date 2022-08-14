@@ -5,6 +5,10 @@
 
 @media (max-width: 739px) { 
 
+    .flex-column-reverse {
+        flex-direction: column-reverse;
+    }
+
     /* Trailer btn */
     .trailer-btn-responsive {
         font-size: 1.6rem;
@@ -171,5 +175,127 @@
         padding-left: 0.4rem;
         padding-right: 0.4rem;
     }
+
+    .booking__day {
+        font-size: 1.6rem;
+    }
+
+    .booking__date {
+        font-size: 4rem;
+    }
+
+    /* Booking */
+    .booking-slider {
+        display: none;
+    }
+
+    .booking-wrapper .l-8.s-12 {
+        order: 1;
+    }
+
+    .pay {
+        margin: 0;
+    }
     
+    .booking__infor {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .screen {
+        width: 90%;
+    }
+
+    .screen-text {  
+    } 
+
+    .seat {
+        justify-content: flex-start;
+    }
+
+    .booking__infor {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center; 
+        border-top: 1px solid #ccc; 
+        border-bottom: 1px solid #ccc;
+        padding: 1.2rem 0;
+    }
+
+    .booking__infor-title {
+        display: none;
+    }
+
+    .booking__infor-wrapper {
+        margin: 0;  
+    }
+
+    .booking__infor-wrapper.date { 
+        border: none; 
+        display: flex;
+    }
+
+    .booking__infor-wrapper.type {
+        flex: 1; 
+    }
+
+    .booking__infor-main {
+        padding-left: 2rem;
+    }
+
+    .booking__infor-wrapper.time {
+        position: relative;
+    }
+
+    .booking__infor-wrapper.time::after,
+    .booking__infor-wrapper.time::before {
+        content: "";
+        position: absolute;
+        width: 0.55rem;
+        height: 0.5rem;
+        left: 0.9rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #ccc;
+        border-radius: 50%;
+    }
+
+    .booking__infor-wrapper.time::before {
+        right: -1.3rem;
+        left: auto;
+    }
+
+    .infor-date {
+        font-size: 1.8rem;
+    } 
+
+    .booking__infor-mobile {
+        width: 100%;
+    }
+
+    .booking__infor-mobile-name {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1.2rem 0;
+    }
+
+    .booking__infor-day-mobile {
+        font-size: 1.8rem;  
+        padding-right: 2.2rem;
+        position: relative;
+    }
+
+    .booking__infor-day-mobile::after {
+        content: "";
+        position: absolute;
+        width: 0.5rem;
+        height: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%); 
+        right: 0.4rem;
+        width: 1rem;
+        height: 0.2rem;
+        background-color: #ccc;
+    }
 }

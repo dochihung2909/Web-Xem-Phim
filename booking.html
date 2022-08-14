@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/main.css"> 
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/booking.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,8 +43,8 @@
             </div>     
             <div  id="seat-booking" class="booking-wrapper">
                 <div class="grid wide">
-                    <div class="row no-gutters">
-                        <div class="l-3">
+                    <div class="row no-gutters flex-column-reverse">
+                        <div class="l-3 s-12">
                             <div class="pay">
                                 <div class="pay-wrapper">
                                     <div class="pay__content">
@@ -65,7 +66,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="l-8">
+                        <div class="l-8 s-12">
                             <div class="seat-book-wrapper">
                                 <div class="seat__container">
                                     <div class="row">
@@ -129,18 +130,22 @@
                             </div>  
                         </div>
 
-                        <div class="l-1">
+                        <div class="l-1 s-12">
                             <div class="booking__infor">
+                                <!-- <div class="booking__infor-mobile">
+                                    <p class="booking__infor-mobile-name"></p>
+                                </div> -->
                                 <div class="booking__infor-day">
                                     <p class="booking__infor-title">Date:</p>
                                     <div class="booking__infor-wrapper date">
-                                        <p id="date-client" class="infor-date">06</p>
-                                        <p id="month-client" class="infor-month">Tháng 8</p>
+                                        <!-- <p class="booking__infor-day-mobile"></p> -->
+                                        <p id="date-client" class="infor-date"></p>
+                                        <p id="month-client" class="infor-month"></p>
                                     </div> 
                                 </div>
                                 <div class="booking__infor-wrapper time">
                                     <p class="booking__infor-title">Time:</p>
-                                    <div id="time-client" class="booking__infor-main">10:30 am</div>
+                                    <div id="time-client" class="booking__infor-main"></div>
                                 </div>
                                 <div class="booking__infor-wrapper type">
                                     <p class="booking__infor-title">Type:</p>
@@ -161,7 +166,7 @@
     </div>
 
     <!-- Javascript --> 
-    <script src="./assets/js/base.js"></script> 
     <script src="./assets/js/booking.js"></script>
+    <script src="./assets/js/base.js"></script>  
 </body>
 </html>
