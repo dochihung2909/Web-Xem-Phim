@@ -4,6 +4,23 @@
 }
 
 @media (max-width: 739px) { 
+
+    /* Trailer btn */
+    .trailer-btn-responsive {
+        font-size: 1.6rem;
+    }
+
+    .trailer-btn-responsive::before,
+    .trailer-btn-responsive::after {
+        width: 40px;
+        height: 40px;
+    }
+
+    .trailer-btn-responsive > i {
+        margin-left: 0.2rem;
+    }
+
+    /* Index */
     .navbar__menu {
         display: none;
     }
@@ -31,7 +48,7 @@
     .navbar__search-bar {    
         background-color: var(--white-color);   
         border: 0;
-        margin-left: 1.4rem;
+        margin-left: 1.6rem;
     }
 
     .sticky .navbar__search-bar {
@@ -87,21 +104,7 @@
 
     .ranking__infor, .ranking__slide { 
         padding: 2.2rem;
-    }
-
-    .ranking__trailer-icon {
-        font-size: 1.6rem;
-    }
-
-    .ranking__trailer-icon::before,
-    .ranking__trailer-icon::after{
-        width: 40px;
-        height: 40px;
-    }
-
-    .ranking__trailer-icon > i {
-        margin-left: 0.2rem;
-    }
+    } 
 
     .buy-btn {
         width: 80px;
@@ -137,8 +140,8 @@
 
     .content-padding {
         padding-top: 4.8rem;
-        padding-left: 0.8rem;
-        padding-right: 0.8rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
     }
 
     .modal {
@@ -156,4 +159,17 @@
     .film-link > iframe { 
         height: 211px; 
     }
+
+
+    /* Film */
+    .content-info {
+        height: 200px;
+    } 
+    
+    .booking-wrapper,
+    .detail {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+    
 }

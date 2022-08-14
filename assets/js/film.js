@@ -58,6 +58,14 @@ $(document).ready(function() {
         getLocalDayVar(this);
     })
 
+    // Slick schedule
+    $('.slide-schedule ').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows : false,
+    })
+
     // Tạo ảnh + tên phim bằng biến localStorage
     let filmNameFilm = $('.booking__infor-name');
     filmNameFilm.text(localStorage.filmNameLocal);

@@ -170,10 +170,8 @@
     font-size: 1.6rem;
 }
 
-.booking__time { 
-    padding: 1.2rem 0;
-    border-bottom: 1px solid #666;
-}
+.booking__time {  
+} 
 
 .booking__time-wrapper {
     text-decoration: none;
@@ -185,6 +183,7 @@
     text-align: center;
     font-size: 1.6rem;
     transition: all 0.2s ease-out;
+    margin-bottom: 1.2rem;
 }
 
 .booking__time-wrapper:hover {

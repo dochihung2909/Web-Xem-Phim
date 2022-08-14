@@ -228,6 +228,9 @@ $(document).ready(function() {
         slidesToScroll: 5,  
         arrows:true,
         click:false, 
+        autoplay: true,
+        speed : 1500,
+        autoplaySpeed: 2000,
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         responsive: [
@@ -245,7 +248,10 @@ $(document).ready(function() {
     $('.trailer__content-films > .row').slick({
         infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToScroll: 5, 
+        autoplay: true,
+        speed : 1500,
+        autoplaySpeed: 2000,
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         responsive: [
@@ -264,6 +270,9 @@ $(document).ready(function() {
         infinite:true,
         slidesToShow: 4,
         slidesToScroll: 4,
+        autoplay: true,
+        speed : 1500,
+        autoplaySpeed: 2000,
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",  
         responsive: [
@@ -308,9 +317,5 @@ $(document).ready(function() {
     //     })
     // }) 
 
-    // Responsive
-    var width = $(window).width();
-    if (width < 740){
-        $('.navbar__logo-img').attr('src','./assets/img/panda.png'); 
-    }
+    
 }) 

@@ -21,6 +21,12 @@ $(window).ready(function() {
         header.classList.toggle("top", window.scrollY > 120);
     })   
     // redirectPage('film__item','./film.html');     
+
+    // Responsive
+    var width = $(window).width();
+    if (width < 740){
+        $('.navbar__logo-img').attr('src','./assets/img/panda.png'); 
+    }
 })  
 
 // Redirect Page jQuery 

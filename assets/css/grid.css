@@ -99,12 +99,8 @@
 /*  mobile */
 @media (max-width: 739px)  {
     .row {
-        margin: 0 -4px;
-    } 
-
-    .row.no-gutters {
         margin: 0;
-    }
+    }  
 
     .row.no-gutters .col {
         padding: 0;
