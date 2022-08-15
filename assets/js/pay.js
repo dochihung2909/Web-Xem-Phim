@@ -58,8 +58,36 @@ $(document).ready(function() {
                 
         }
     })
-    
-    
 
+    let payBtn = $('.payment-total-btn');
+    let payModal = $('.js-pay-modal');
+    let payContainerModal = $('.js-pay-modal-container');
+
+    payBtn.click(function() {
+        payModal.addClass('pay-modal-open');
+    }) 
+
+    payModal.click(function() {
+        payModal.removeClass('pay-modal-open');
+    })
+
+    payContainerModal.click(function(event) { 
+        event.stopPropagation();
+    });
+
+    let bankDomestic = $('.bank-domestic');
+    let bankForeign = $('.bank-foreign');
+    let showDomestic = $('.js-bank-domestic');
+    let showForeign = $('.js-bank-foreign');
+
+    bankDomestic.click(function() {
+        showDomestic.addClass('bank-open');
+        showForeign.removeClass('bank-open');
+    });
+
+    bankForeign.click(function() {
+        showForeign.addClass('bank-open');
+        showDomestic.removeClass('bank-open');
+    });
 })
 

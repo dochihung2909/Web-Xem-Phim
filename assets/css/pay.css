@@ -292,7 +292,8 @@ input:focus ~ .bar:after {
 
 /* new */
 body {
-    background-color: var(--bg-color-pay);
+    /* background-color: var(--bg-color-pay); */
+    background-color: #0d0d0f;
 }
 .pay {
     padding-top: 10rem;
@@ -312,7 +313,9 @@ body {
     background-color: var(--bg-color-content);
     border-radius: var(--border-radius);
 }
-
+.pay__content-movie-wrapper {
+    display: flex;
+}
 .pay__content-payment-wrapper {
     margin-top: 2.5rem;
 }
@@ -327,8 +330,72 @@ body {
     justify-content: space-between;
     display: flex;
 }
-
-/* payment inforamtion customer */
+.pay__content-seri-wrapper {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+.pay__content-seri img {
+    width: 60%;
+}
+/*  */
+.pay-movie-title {
+    color: #8d8d8d;
+}
+/*  */
+.payment-method-bank-wrapper {
+    margin-left: 1rem;
+}
+.payment-method-bank {
+    justify-content: space-between;
+}
+.payment-method-bank-input {
+    margin-right: 1rem;
+}
+.bank-domestic,
+.bank-foreign {
+    padding: 2rem;
+    border: none;
+    border-radius: var(--borderRadius);
+    width: 100%;
+    font-size: 1.6rem;
+    box-shadow: 0.3rem 0.3rem inset #16151b;
+    background-color: #1c1922;
+    color: white;
+    transition: .25s ease;
+}
+/*  */
+.payment-method-bank-detail {
+    margin-top: 2.5rem;
+    display: none;
+    position: relative;
+    animation: bankShow ease .6s;    
+}
+.bank-img-wrapper {
+    margin-right: 3rem;
+    width: 9%;
+}
+.bank-img-wrapper:hover {
+    transform: scale(1.2);
+    transition: transform .4s ease;
+}
+.bank-img {
+    width: 80%;
+}
+.bank-open {
+    display: flex;
+}
+@keyframes bankShow {
+    from {
+        transform: translateY(-5rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* payment inforamation customer */
 .payment-info {
     padding: 2rem 0;
 }
@@ -338,7 +405,6 @@ body {
 }
 
 .payment-info-form-input {
-    /* border: .1rem solid #eee; */
     padding: 2rem;
     border: none;
     border-radius: var(--borderRadius);
@@ -380,13 +446,6 @@ body {
 /* pay content payment */
 .payment-method-title {
     padding: 2.5rem 0;
-}
-.payment-method-input {
-    display: flex;
-}
-
-.payment-method-input-card {
-    width: 40%;
 }
 
 .payment-total-content {
@@ -440,12 +499,60 @@ body {
     padding: 2rem;
     border-radius: .3rem;
     color: black;
-    text-decoration: none;
     text-align: center;
     width: 100%;
     display: block;
+    cursor: pointer;
 }
 
 
+/* modal */
+.pay-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    display: none;    
+}
+.pay-modal.pay-modal-open {display: flex;}
+.pay-modal-container {
+    position: relative;
+    max-width: calc(100% - 3.2rem);
+    width: 50rem;
+    min-height: 5rem;
+    animation: modalFaceIn ease .6s;    
+}
 
+@keyframes modalFaceIn { 
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
 
+.pay-modal-container {
+    padding: 4rem;
+}
+
+.pay-modal-header {
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+}
+.pay-modal-qrcode-wrapper {
+    margin: 0 auto;
+    width: 60%;
+}
+.pay-modal-qrcode {
+    width: 100%;
+}
+
+/* checkmark */
