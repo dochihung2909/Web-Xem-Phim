@@ -73,20 +73,22 @@ $(document).ready(function() {
             selected.text(selected.text().replace($(this).text(),'')); 
             $(this).removeClass('select'); 
         }
+        if ($('.select').length > 0) {
+            delAll.css({
+                'display':'inline-block',
+            })
+        } 
+
         if ($('.select').length == 0) {
             price.text("");
+            delAll.css({
+                'display':'none',
+            })
         } 
+        
     });    
-
-    if ($('.select').length >= 1) {
-        delAll.css({
-            'display':'block'
-        })
-    } else {
-        delAll.css({
-            'display':'none'
-        })
-    }
+    
+    
 
     delAll.click(function() {
         $('.select').each(function() {
@@ -94,13 +96,23 @@ $(document).ready(function() {
         }) 
         selected.text("");
         price.text(""); 
-    }) 
+        delAll.css({
+            'display':'none',
+        })
+    })  
 
     // Lấy seats 
     let paymentBtn = $('.pay__commit-btn');
+    paymentBtn.attr('href','#seat-booking');
     paymentBtn.click(function() {
-        localStorage.seatLocal = $('#seat-selected').text();
-        localStorage.totalLocal = money;
+        let val = $('#seat-selected');
+        if (val.text() == "") {
+            alert("Vui lòng chọn tối thiểu 1 ghế");
+        } else {
+            window.location.href = 'pay.html';
+            localStorage.seatLocal = val.text();
+            localStorage.totalLocal = money;
+        }
     })   
     
     let monthClient = $('#month-client');

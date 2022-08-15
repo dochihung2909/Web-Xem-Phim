@@ -23,7 +23,7 @@ $(document).ready(function() {
     const d = new Date();
     // date.text(`Thứ ${d.getDate() + 1}`);
     // Tạo thứ
-    let dayNow = d.getDay();
+    let dayNow = d.getDay() + 1;
     let dateNow = d.getDate();
     let monthNow = d.getMonth() + 1;  
     const month31 = [1,3,5,7,8,10,12];
@@ -35,7 +35,7 @@ $(document).ready(function() {
     $('.booking__days-wrapper').each(function() {
         let a =`${dateNow++}`;  
         let b = `Thứ ${dayNow}`; 
-        if (dayNow == 8 || dayNow == 0) {
+        if (dayNow == 8 || dayNow == 1) {
             b = "Chủ nhật";
             dayNow = 1;
         }

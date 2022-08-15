@@ -249,10 +249,11 @@
 #del-all {
     text-decoration: none;
     color: red;
-    padding: 0.4rem 0.8rem;
-    display: inline-block;
-    border: 1px solid white;
+    /* padding: 0rem 0.4rem; */
+    display: none;
+    /* border: 1px solid white; */
     border-radius: 4px; 
+    font-size: 1.6rem;
 }
 
 .booking__infor-title {
