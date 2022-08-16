@@ -29,35 +29,35 @@ $(document).ready(function() {
     let intPriceTotalPay = parseInt($('.payment-total-last-price').text());
     priceTotalPay.text(`${intPriceTicketPay - intPriceOfferPay}.000đ`);
 
-    let checkText = $('.group input');
-    if(checkText.val() == false);
+    // let checkText = $('.group input');
+    // if(checkText.val() == false);
 
-    let checkEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    // let checkEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     
-    let getInputEmail = $('.group-email');
-    getInputEmail.change(function() {
-        if(checkEmail.test(getInputEmail.val())) {
-            console.log('Dung');
+    // let getInputEmail = $('.group-email');
+    // getInputEmail.change(function() {
+    //     if(checkEmail.test(getInputEmail.val())) {
+    //         console.log('Dung');
             
-        }
-        else {
-            console.log('Sai');
-            getInputEmail.css({
-                'color': '#e92828'
-            })
+    //     }
+    //     else {
+    //         console.log('Sai');
+    //         getInputEmail.css({
+    //             'color': '#e92828'
+    //         })
             
-            let getGroupEmail = $('.wrong-email');
-            getGroupEmail.css({
-                'display': 'block'
-            })
-            setTimeout(function(){
-                getGroupEmail.css({
-                    'display': 'none'
-                })
-            }, 5000)
+    //         let getGroupEmail = $('.wrong-email');
+    //         getGroupEmail.css({
+    //             'display': 'block'
+    //         })
+    //         setTimeout(function(){
+    //             getGroupEmail.css({
+    //                 'display': 'none'
+    //             })
+    //         }, 5000)
                 
-        }
-    })
+    //     }
+    // })
 
     let payBtn = $('.payment-total-btn');
     let payModal = $('.js-pay-modal');
@@ -88,6 +88,14 @@ $(document).ready(function() {
     bankForeign.click(function() {
         showForeign.addClass('bank-open');
         showDomestic.removeClass('bank-open');
+    });
+
+    let creditCard = $('.card');
+    $('[id^="card"]').click(function() {
+        creditCard.addClass('open-card');
+    })
+    bankDomestic,bankForeign.click(function() {
+        creditCard.removeClass('open-card');
     });
 })
 

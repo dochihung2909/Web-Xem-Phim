@@ -379,6 +379,9 @@ body {
     transform: scale(1.2);
     transition: transform .4s ease;
 }
+.bank-img-wrapper [id^="b"]:checked + .bank-img {
+    transform: scale(1.2);
+}
 .bank-img {
     width: 80%;
 }
@@ -395,6 +398,74 @@ body {
         opacity: 1;
     }
 }
+/*  */
+.payment-method-bank-detail input {
+    display: none;
+}
+.payment-method-bank-detail [id^="card"]:checked + label {
+    transform: scale(1.5);
+}
+/*  */
+.card {
+    background-color: #242852;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: 2.5rem;
+    display: none;
+    animation: bankShow ease .6s;
+}
+.open-card {
+    display: flex;
+}
+.card__content {
+    display: inline-block;
+    width: 100%;
+}
+
+.card-expiry-cvv,
+.card-name,
+.card-id {
+    padding: 2rem 2rem;
+    border-bottom: .1rem solid #414554;
+    display: flex;
+}
+.card-expiry-label,
+.card-cvv-label,
+.card-label {
+    text-align: left;
+    /* display: block; */
+    color: #8f92c3;
+}
+.card-expiry-month,
+.card-expiry-year,
+.card-cvv-input,
+.card-input {
+    background-color: #242852;
+    outline: none;
+    border: none;
+    color: white;
+    /* display: block; */
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-cvv-input::placeholder,
+.card-input::placeholder {
+    color: #3a4580;
+} 
+.card-expiry-cvv {
+    justify-content: space-between;
+}
+.card-expiry-input {
+    display: flex;
+}
+.card-expiry-input,
+.card-cvv-input {
+    padding: 1.5rem 0;
+}
+.card-cvv-label {
+    /* align-items: center; */
+}
+
 /* payment inforamation customer */
 .payment-info {
     padding: 2rem 0;
@@ -404,6 +475,7 @@ body {
     padding: 2rem 0;
 }
 
+.bank-info-input-text,
 .payment-info-form-input {
     padding: 2rem;
     border: none;
@@ -439,7 +511,8 @@ body {
     color: #999;
 }
 .payment-info-form-input:not(:placeholder-shown) + .payment-info-form-label,
-.payment-info-form-input:focus + .payment-info-form-label {
+.payment-info-form-input:focus + .payment-info-form-label 
+{
     display: none;
 }
 
