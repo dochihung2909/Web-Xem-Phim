@@ -301,6 +301,9 @@ body {
     color: white;
     font-size: 2rem;
 }
+.pay__content {
+    padding: 5.6rem 0 8.6rem;
+}
 
 /* pay content movie */
 .pay__content-title {

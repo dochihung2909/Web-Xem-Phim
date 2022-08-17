@@ -94,7 +94,10 @@ $(document).ready(function() {
     $('[id^="card"]').click(function() {
         creditCard.addClass('open-card');
     })
-    bankDomestic,bankForeign.click(function() {
+    bankDomestic.click(function() {
+        creditCard.removeClass('open-card');
+    });
+    bankForeign.click(function() {
         creditCard.removeClass('open-card');
     });
 })
