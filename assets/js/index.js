@@ -168,15 +168,14 @@ function slider() {
     }
 
     pre.click(function() { 
-        prevSlide();  
-        myStop();
+        prevSlide();   
+        myStopAndReset();
     }) 
 
     next.click(function() {
-        nextSlide();  
-        myStop();
-    }) 
-    myStopAndReset();
+        nextSlide();   
+        myStopAndReset();
+    })  
     function resetInterval() {
         setTimeout(function() { 
             myInterval = setInterval(nextSlide,4000);

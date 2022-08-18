@@ -86,22 +86,23 @@
 .booking-wrapper {
     padding: 5.6rem 0 8.6rem;
 }
- 
+
 .booking__infor-name,
 .booking__infor-score {
     font-size: 1.8rem;
-    color: white;  
+    color: var(--white-color);  
     margin-bottom: 0.8rem;
-}
+} 
+
+.booking__infor-name {
+    font-size: 3.2rem; 
+    font-weight: bold;
+} 
 
 .booking__infor-kind {
     font-size: 1.6rem;
     color: #999;   
-}
-
-.booking__infor-score { 
-    float: right;
-}
+} 
 
 .booking__schedule {
     padding: 2.4rem 0;
@@ -201,51 +202,8 @@
 
 .theare__address-desc {
     font-size: 1.4rem;
-}
-
-.detail__title {
-    border-bottom: 4px solid;
-    /* border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
-    border-image-source: linear-gradient(to right,var(--main-color),var(--main-color),rgb(17, 16, 16));
-    border-image-slice: 1;
-}
-
-.detail__title-film,
-.deltail__story {
-    font-size: 2.2rem;
-    color: var(--white-color);
-}
+} 
 
 .disable-time {
     visibility: hidden;
-}
-
-.detail__paragraph {
-    padding: 3.2rem 0 5.2rem;
-}
-
-.detail__paragraph-wrapper {
-
-}
-
-.detail__paragraph-infor {
-    color: var(--text-color);
-    font-size: 1.6rem;
-    padding: 2.4rem 0 1.2rem;
-    border-bottom: 1px solid var(--navbar-color);
-    display: flex;
-    justify-content: space-between;
-}
-
-.detail__paragraph-infor:first-child {
-    padding-top:0;
-}
-
-.detail__paragraph-infor > span {
-    color: var(--white-color); 
-}
-
-.detail__paragraph-story {
-    color: var(--text-color);
-    font-size: 1.6rem;
-}
+}     

@@ -168,16 +168,15 @@
     /* Film */
     .content-info {
         height: 200px;
-    } 
-    
-    .booking-wrapper,
+    }  
+
     .detail {
         padding-left: 0.4rem;
         padding-right: 0.4rem;
-    }
+    } 
 
     .booking-wrapper {
-        padding-bottom: 4.6rem;  
+        padding: 0 0.4rem;
     }
 
     .booking__day {
@@ -202,10 +201,7 @@
 
     .detail__title > .deltail__story {
         margin-top: 4rem;
-    }
-    
-
-
+    }  
 
     /* Booking */
     .booking-slider {
@@ -301,6 +297,7 @@
         font-size: 2rem;
         font-weight: bold;
         padding: 1.2rem 0;
+        color: var(--white-color);
     }
 
     .booking__infor-day-mobile {
