@@ -8,7 +8,7 @@
 } 
 
 .content-info { 
-    background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),url(https://images3.alphacoders.com/124/1241167.png);
+    background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),url(https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/06/dragon-ball-z-super-hero.jpg);
     /* background-image: url(https://images3.alphacoders.com/124/1241167.png); */
     width: 100%;  
     height: 100vh; 
@@ -87,39 +87,77 @@
     padding: 5.6rem 0 8.6rem;
 }
 
-.booking__infor-name,
-.booking__infor-score {
+.detail__infor-wrapper { 
+    margin: 2.4rem 0;
+}
+
+.detail__infor-name,
+.detail__infor-score {
     font-size: 1.8rem;
     color: var(--white-color);  
     margin-bottom: 0.8rem;
 } 
 
-.booking__infor-name {
+.detail__infor-score {
+    display: flex;
+    align-items: center; 
+    margin: 2.4rem 0;
+}
+
+.detail__infor-name {
     font-size: 3.2rem; 
     font-weight: bold;
+    word-spacing: 0.2rem;
 } 
 
-.booking__infor-kind {
+.detail__infor-kind {
     font-size: 1.6rem;
     color: #999;   
-} 
+    margin-bottom: 0.8rem;
+}   
 
-.booking__schedule {
+.detail__infor-score-text {
+    margin-left: 1.2rem; 
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.detail__infor-score-text > span {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.detail__infor-story {
+
+}
+
+.detail__infor-story-title { 
+    color: var(--white-color);
+    font-size: 2.4rem;
+}
+
+.detail__infor-story-content {
+    color: #999;
+    font-size: 1.6rem;
+    margin: 1.2rem 0;
+}
+
+.film-booking__schedule {
     padding: 2.4rem 0;
 }
 
-.booking__schedule .l-10 {
+.film-booking__schedule .l-10 {
     align-self: center;
 } 
 
-.booking__schedule-img {
+.film-booking__schedule-img {
     width: 100%;
 }
 
-.booking__days {  
+.film-booking__days {  
 }
 
-.booking__days-wrapper {
+.film-booking__days-wrapper {
     padding-bottom: 2.2rem;
     display: block;
     text-align: center;
@@ -143,26 +181,26 @@
     background-color: var(--main-color);
 }  
 
-.booking__days-wrapper:hover {
+.film-booking__days-wrapper:hover {
     color: var(--main-color);  
 } 
 
-.booking__date { 
+.film-booking__date { 
     font-size: 4.6rem;
 }
 
-.booking__day {
+.film-booking__day {
     font-size: 2.2rem; 
 }
 
-.booking__month {
+.film-booking__month {
     font-size: 1.6rem;
 }
 
-.booking__time {  
+.film-booking__time {  
 } 
 
-.booking__time-wrapper {
+.film-booking__time-wrapper {
     text-decoration: none;
     color: var(--black-color);
     background-color: var(--white-color);
@@ -175,15 +213,15 @@
     margin-bottom: 1.2rem;
 }
 
-.booking__time-wrapper:hover {
+.film-booking__time-wrapper:hover {
     background-color: var(--main-color);
     color: var(--white-color);
 }
 
-.booking__time-text { 
+.film-booking__time-text { 
 }
 
-.booking__theatre {
+.film-booking__theatre {
     padding: 2.4rem 0;
 }
 

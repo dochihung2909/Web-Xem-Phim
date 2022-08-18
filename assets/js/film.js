@@ -3,22 +3,21 @@ $(document).ready(function() {
     for (let i = 0;i<30;i++) {
         let sliderScheduleHTML =
          `<div class="col l-2">
-            <a href="#booking" class="booking__days-wrapper">
-                <p class="booking__day"></p>
-                <p class="booking__date"></p>
-                <p class="booking__month"></p>
+            <a href="#booking-sch" class="film-booking__days-wrapper">
+                <p class="film-booking__day"></p>
+                <p class="film-booking__date"></p>
+                <p class="film-booking__month"></p>
             </a>
         </div>`;
         $('.slide-schedule.row').append(sliderScheduleHTML); 
     }
 
     // Thêm active vào block đầu tiên
-    $('.booking__days-wrapper')[0].classList.add('active-booking')
+    $('.film-booking__days-wrapper')[0].classList.add('active-booking') 
 
-
-    const day = $('.booking__day');
-    const date = $('.booking__date');
-    const month = $('.booking__month');
+    const day = $('.film-booking__day');
+    const date = $('.film-booking__date');
+    const month = $('.film-booking__month');
  
     const d = new Date();
     // date.text(`Thứ ${d.getDate() + 1}`);
@@ -32,7 +31,7 @@ $(document).ready(function() {
         
     })
     // Tạo ngày và tháng
-    $('.booking__days-wrapper').each(function() {
+    $('.film-booking__days-wrapper').each(function() {
         let a =`${dateNow++}`;  
         let b = `Thứ ${dayNow}`; 
         if (dayNow == 8 || dayNow == 1) {
@@ -66,20 +65,10 @@ $(document).ready(function() {
             }
             monthNow++; 
         } 
-    });
-    // Tạo tháng
-    
-
-    // Disable time
-    let time = $('.booking__time .l-2'); 
-    for (let i = 0;i<7;i++) {
-        let a = parseInt(Math.random() * 18);
-        let b = time[a]; 
-        b.classList.add('disable-time');
-    }
+    }); 
 
     // Tạo link cho timeBtn
-    let selectTimeBtn = $('.booking__time-wrapper');
+    let selectTimeBtn = $('.film-booking__time-wrapper');
     selectTimeBtn.each(function() { 
         $(this).attr('href','./booking.html');
     })
@@ -95,7 +84,7 @@ $(document).ready(function() {
     getLocalDayVar(currentDay);
     
     // Thêm class khi bấm 
-    let bookingItems = $('.booking__days-wrapper');
+    let bookingItems = $('.film-booking__days-wrapper');
     bookingItems.click(function() {
         let current = $('.active-booking');
         current.removeClass('active-booking');
@@ -122,15 +111,15 @@ $(document).ready(function() {
     })
 
     // Tạo ảnh + tên phim bằng biến localStorage
-    let filmNameFilm = $('.booking__infor-name');
+    let filmNameFilm = $('.detail__infor-name');
     filmNameFilm.text(localStorage.filmNameLocal);
-    $('.booking__schedule-img').attr('src',localStorage.filmImageLocal);
-    $('.booking__infor-type').text(localStorage.filmTypeLocal)
+    $('.film-booking__schedule-img').attr('src',localStorage.filmImageLocal);
+    $('.detail__infor-type').text(localStorage.filmTypeLocal)
 })  
 
 
 function getLocalDayVar(place) {
-    localStorage.dateLocal = $(place).find('.booking__date').text();
-    localStorage.dayLocal = $(place).find('.booking__day').text();
-    localStorage.monthLocal = $(place).find('.booking__month').text();
+    localStorage.dateLocal = $(place).find('.film-booking__date').text();
+    localStorage.dayLocal = $(place).find('.film-booking__day').text();
+    localStorage.monthLocal = $(place).find('.film-booking__month').text();
 }

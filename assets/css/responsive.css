@@ -175,33 +175,21 @@
         padding-right: 0.4rem;
     } 
 
-    .booking-wrapper {
+    .film-booking-wrapper {
         padding: 0 0.4rem;
     }
 
-    .booking__day {
+    .film-booking__day {
         font-size: 1.6rem;
     }
 
-    .booking__date {
+    .film-booking__date {
         font-size: 4rem;
-    }
+    } 
 
-    .detail__paragraph .row {
-        display: block;
+    .theatre-wrapper {
+        margin-bottom: 1.2rem;
     }
-
-    .detail__paragraph .col.l-7 {
-        width: 100%;
-    }
-
-    .detail__title .col.l-7 .deltail__story {
-        display: none;
-    }
-
-    .detail__title > .deltail__story {
-        margin-top: 4rem;
-    }  
 
     /* Booking */
     .booking-slider {
@@ -214,32 +202,18 @@
 
     .pay {
         margin: 0;
-    }
-    
-    .booking__infor {
-        display: flex;
-        justify-content: space-between;
-    }
+    } 
 
     .screen {
         width: 90%;
-    }
-
-    .screen-text {  
     } 
 
     .seat {
         justify-content: flex-start;
     }
 
-    .booking__infor {
-        margin-top: 2rem;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center; 
-        border-top: 1px solid #ccc; 
-        border-bottom: 1px solid #ccc;
-        padding: 1.2rem 0;
+    .booking__infor { 
+        padding: 2.2rem 0;
     }
 
     .booking__infor-title {
