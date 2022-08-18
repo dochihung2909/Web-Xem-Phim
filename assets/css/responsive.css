@@ -176,6 +176,10 @@
         padding-right: 0.4rem;
     }
 
+    .booking-wrapper {
+        padding-bottom: 4.6rem;  
+    }
+
     .booking__day {
         font-size: 1.6rem;
     }
@@ -183,6 +187,25 @@
     .booking__date {
         font-size: 4rem;
     }
+
+    .detail__paragraph .row {
+        display: block;
+    }
+
+    .detail__paragraph .col.l-7 {
+        width: 100%;
+    }
+
+    .detail__title .col.l-7 .deltail__story {
+        display: none;
+    }
+
+    .detail__title > .deltail__story {
+        margin-top: 4rem;
+    }
+    
+
+
 
     /* Booking */
     .booking-slider {
