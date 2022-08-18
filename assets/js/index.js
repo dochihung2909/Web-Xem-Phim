@@ -187,29 +187,88 @@ $(document).ready(function() {
     setRank(); 
     slider();
 
-    var html = `<div class="col l-2-4 slider-item">
-    <div class="film__item">
-        <a href="./film.html" class="film__item-img-wrapped film-booking"> 
-            <img src="https://m.media-amazon.com/images/M/MV5BMDU2ZmM2OTYtNzIxYy00NjM5LTliNGQtN2JmOWQzYTBmZWUzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="" class="film__item-img">
-            <div class="film__item-tag-top">
-                <span class="film__item-old old-13">13+</span>
-                <span class="film__item-reserve"><i class="fa-solid fa-film"></i>Đặt trước</span>
-            </div>
-        </a>
-        <a href="#" class="film__item-info">
-        <p class="film__item-info-name">
-            Sát thủ đối đầu
-        </p>
-        <div class="film__item-info-types flex">
-            <p class="film__item-info-type">Hành động, Gây cấn</p> 
+    var nowShowingImg = [
+        "https://traffic-edge52.cdn.vncdn.io/cinema/img/79249161460312584-2.jpg",
+        "https://img.cdn.vncdn.io/cinema/img/78043093813255893-hckc_-_poster_1_.jpg",
+        "https://static.mservice.io/cinema/s256x384/momo-cdn-api-220615131832-637908959129570490.jpg",
+        "https://traffic-edge19.cdn.vncdn.io/cinema/img/78041941044338498-mg_main-poster_layered_1_.jpg",
+        "https://img.cdn.vncdn.io/cinema/img/80288412176661530-3.jpg",
+        "https://static.mservice.io/cinema/momo-cdn-api-220624112839-637916669191122146.jpg",
+        "https://traffic-edge02.cdn.vncdn.io/cinema/img/79694778154684186-nh_p_h_n_-_payoff_poster_-_fb_size_-_kctr_05.08.2022_1_.jpg",
+        "https://static.mservice.io/cinema/s256x384/momo-upload-api-220715172239-637935025591723119.jpeg",
+        "https://img.cdn.vncdn.io/cinema/img/77874119354605713-muw7d3n53CcfuSvatax1FbZEDiW.jpg",
+        "https://img.cdn.vncdn.io/cinema/img/77875796904896177-292764439_1807279492942239_2686566311741764950_n.jpg"
+    ];
+    var nowShowingName = [
+        "Bảy Viên Ngọc Rồng Siêu Cấp: Siêu Anh Hùng",
+        "Hạ Cánh Khẩn Cấp",
+        "Sát Thủ Đối Đầu",
+        "Điều Ước Cuối Của Tù Nhân 2037",
+        "Duyên Ma",
+        "Dân Chơi Không Sợ Con Rơi",
+        "Nhập Hồn",
+        "ALIENOID: Cuộc Chiến Xuyên Không",
+        "Liên Minh Siêu Thú DC",
+        "Chuyện Ma Giảng Đường - Học Kỳ 2"
+    ];
+    var nowShowingType = [
+        "Khoa Học Viễn Tưởng, Hoạt Hình",
+        "Gây Cấn, Chính Kịch",
+        "Hành Động,Gay Cấn",
+        "Gia Đình",
+        "Hài,Kinh Dị",
+        "Hài, Gia Đình",
+        "Kinh Dị",
+        "Khoa Học Viễn Tưởng,Bí Ẩn,Hành Động",
+        "Hài,Khoa Học Viễn Tưởng,Hoạt Hình,Phiêu Lưu,Hành Động,Gia Đình",
+        "Hài,Kinh Dị,Gay Cấn"
+    ];
+    var html = `
+    <div class="col l-2-4 slider-item">
+        <div class="film__item">
+            <a href="./film.html" class="film__item-img-wrapped film-booking"> 
+                <img src="https://m.media-amazon.com/images/M/MV5BMDU2ZmM2OTYtNzIxYy00NjM5LTliNGQtN2JmOWQzYTBmZWUzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="" class="film__item-img">
+                <div class="film__item-tag-top">
+                    <span class="film__item-old old-13">13+</span>
+                    <span class="film__item-reserve"><i class="fa-solid fa-film"></i>Đặt trước</span>
+                </div>
+            </a>
+            <a href="#" class="film__item-info">
+                <p class="film__item-info-name">
+                    Sát thủ đối đầu
+                </p>
+                <div class="film__item-info-types flex">
+                    <p class="film__item-info-type">Hành động, Gây cấn</p> 
+                </div>
+            </a>
         </div>
-    </a>
-        
-    </div>
-</div>`;
+    </div>`;
+    
     $('.slider-film-wrapped').html("");
     for (let i = 0;i<10;i++) {
-        $('.slider-film-wrapped').append(html) ;   
+        $('.slider-film-wrapped').append(
+            `
+        <div class="col l-2-4 slider-item">
+            <div class="film__item">
+                <a href="./film.html" class="film__item-img-wrapped film-booking"> 
+                    <img src="${nowShowingImg[i]}" alt="" class="film__item-img"></iframe}">
+                    <div class="film__item-tag-top">
+                        <span class="film__item-old old-13">13+</span>
+                        <span class="film__item-reserve"><i class="fa-solid fa-film"></i>Đặt trước</span>
+                    </div>
+                </a>
+                <a href="#" class="film__item-info">
+                    <p class="film__item-info-name">
+                        ${nowShowingName[i]}
+                    </p>
+                    <div class="film__item-info-types flex">
+                        <p class="film__item-info-type">${nowShowingType[i]}</p> 
+                    </div>
+                </a>
+            </div>
+        </div>
+            `
+        ) ;   
     }  
 
     $('.film__item').click(function() {
@@ -222,7 +281,7 @@ $(document).ready(function() {
     })
 
     $('.slider-film-wrapped').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 5,
         slidesToScroll: 5,  
         arrows:true, 
@@ -244,7 +303,7 @@ $(document).ready(function() {
     });
 
     $('.trailer__content-films > .row').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 5,
         slidesToScroll: 5, 
         autoplay: true,

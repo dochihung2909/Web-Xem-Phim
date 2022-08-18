@@ -127,15 +127,21 @@
 .film__item {
     margin-bottom: 2.4rem;
 }
-
+.blog__content-film__item-img-wrapped,
 .film__item-img-wrapped {
     display: flex;
     width: 100%;
+    height: 100%;
     text-decoration: none;  
     position: relative;
     border-radius: .4rem;
     overflow: hidden;
 } 
+
+.film__item-img-wrapped {
+    height: 325px;
+}
+
 .trailer__content .film__item-img-wrapped {  
     display: flex;  
 }
