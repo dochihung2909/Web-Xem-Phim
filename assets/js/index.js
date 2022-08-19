@@ -214,14 +214,14 @@ $(document).ready(function() {
     var nowShowingType = [
         "Khoa Học Viễn Tưởng, Hoạt Hình",
         "Gây Cấn, Chính Kịch",
-        "Hành Động,Gay Cấn",
+        "Hành Động, Gay Cấn",
         "Gia Đình",
-        "Hài,Kinh Dị",
+        "Hài, Kinh Dị",
         "Hài, Gia Đình",
         "Kinh Dị",
-        "Khoa Học Viễn Tưởng,Bí Ẩn,Hành Động",
-        "Hài,Khoa Học Viễn Tưởng,Hoạt Hình,Phiêu Lưu,Hành Động,Gia Đình",
-        "Hài,Kinh Dị,Gay Cấn"
+        "Khoa Học Viễn Tưởng, Bí Ẩn, Hành Động",
+        "Hoạt Hình, Phiêu Lưu",
+        "Hài,Kinh Dị, Gay Cấn"
     ];
 
     for (let i = 0;i<10;i++) {
@@ -255,10 +255,14 @@ $(document).ready(function() {
         "https://bom.so/x4pyrb",
         "https://bom.so/DR9MPV",
         "https://bom.so/QNsNgB",
-        "https://img.cdn.vncdn.io/cinema/img/79249235769716516-uR0FopHrAjDlG5q6PZB07a1JOva.jpg",
-        "https://img.cdn.vncdn.io/cinema/img/80291602324789443-8TUb2U9GN3PonbXAQ1FBcJ4XeXu.jpg",
-        "https://img.cdn.vncdn.io/cinema/img/80291419863971184-xQeTqKcrHCR61wY7nv0zQYx1hiQ.jpg",
-        "https://img.cdn.vncdn.io/cinema/img/80291823673279070-n4Iy2cE52WsTKeNtuSD7vgu2qwf.jpg"
+        "https://static.mservice.io/cinema/s256x384/momo-cdn-api-220615131903-637908959434926870.jpg",
+        "https://static.mservice.io/cinema/momo-cdn-api-220707133408-637927976485254821.jpg",
+        "https://static.mservice.io/cinema/s256x384/momo-upload-api-220717190652-637936816125949665.jpeg",
+        "https://static.mservice.io/cinema/momo-cdn-api-220624113003-637916670038916982.jpg",
+        "https://img.cdn.vncdn.io/cinema/img/80292037883435674-9KvarmnOyYvrbeZpplvtcRb4Xlu.jpg",
+        "https://img.cdn.vncdn.io/cinema/img/78041461118766926-pMC9q7rtjkZw6TEPtCsljNX5TBE.jpg",
+        "https://img.cdn.vncdn.io/cinema/img/79669879988158132-gjp14ZxpZZLyz7hvKPeJgXbRQuX.jpg"
+        
     ]
 
     var comingName = [
@@ -266,21 +270,28 @@ $(document).ready(function() {
         "BLACK ADAM",
         "CHIẾN BINH BÁO ĐEN 2: WAKANDA BẤT DIỆT",
         "MÈO ĐI HIA: ĐIỀU ƯỚC CUỐI CÙNG",
-        "Bảy Viên Ngọc Rồng Siêu Cấp: Siêu Anh Hùng",
-        "Quái Thú",
-        "Nhà Kho Chết Chóc",
-        "Cú Rơi Tử Thần"
+        "Avatar: Dòng Chảy Của Nước",
+        "Amsterdam",
+        "Mồi Quỷ Dữ",
+        "Cười",
+        "Tấm Vé Đến Thiên Đường",
+        "Nữ Vương Huyền Thoại",
+        "Môn Phái Võ Mèo: Huyền Thoại Một Chú Chó"
     ]
 
     var comingType = [
         "Kinh dị",
-        "Hành động, Phiêu lưu",
-        "Hành động, Phiêu lưu",
+        "Giả Tượng, Phiêu Lưu",
+        "Khoa Học Viễn Tưởng, Phiêu Lưu",
         "Hoạt Hình, Phiêu lưu",
-        "Gây Cấn, Hành Động",
-        "Gây Cấn, Hành Động",
-        "Gây Cấn, Hành Động",
-        "Gây Cấn, Hành Động"
+        "Khoa Học Viễn Tưởng, Phiêu Lưu",
+        "Hình Sự, Chính Kịch",
+        "Kinh Dị, Gay Cấn",
+        "Kinh Dị",
+        "Hài, Lãng Mạn",
+        "Lịch Sử, Chính Kịch",
+        "Hài, Hoạt Hình"
+        
     ]
 
     var comingTrailer = [
@@ -288,10 +299,13 @@ $(document).ready(function() {
         "https://www.youtube.com/watch?v=fcs35Pt2SNU",
         "https://www.youtube.com/watch?v=wOxakDkCPPs",
         "https://www.youtube.com/watch?v=ixFHgfKr39Y",
-        "https://www.youtube.com/watch?v=ODcb4Kdt2zY",
-        "https://www.youtube.com/watch?v=umnc7ygtCCI",
-        "https://www.youtube.com/watch?v=Iy-t4ABo0F0",
-        "https://www.youtube.com/watch?v=6gKVtAOHfV8"
+        "https://www.youtube.com/watch?v=oeRG9A6bDdY&t=10s",
+        "https://www.youtube.com/watch?v=GLs2xxM0e78",
+        "https://www.youtube.com/watch?v=1DmNc8KKZ8g",
+        "https://www.youtube.com/watch?v=vAR8Jii3T1E",
+        "https://www.youtube.com/watch?v=CT5_ZodSvAA",
+        "https://www.youtube.com/watch?v=fqARGf-nKxM",
+        "https://www.youtube.com/watch?v=NlUpQfyECzU"
     ]
 
     for (let i = 0;i<10;i++) {
@@ -328,7 +342,8 @@ $(document).ready(function() {
         "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220602101731-637897618513827056.jpg",
         "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220531150301-637896061816285843.jpg",
         "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220517092729-637883764493378233.jpg",
-        "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220329094318-637841437983196976.jpg"
+        "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220329094318-637841437983196976.jpg",
+        "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220316121128-637830294882378239.jpg"
     ]
 
     var blogName = [
@@ -340,7 +355,8 @@ $(document).ready(function() {
         "Review Fantastic Beasts: The Secrets of Dumbledore sinh động hóa thế giới phù thủy",
         "Hướng dẫn xem phim Marvel dành cho người mới bắt đầu",
         "Doctor Strange: Đa Vũ Trụ Điên Loạn - Những sự kiện sẽ diễn ra trong phim",
-        "Án mạng trên sông Nile: bộ phim trinh thám cổ điển hấp dẫn"
+        "Án mạng trên sông Nile: bộ phim trinh thám cổ điển hấp dẫn",
+        "Top phim về trí tuệ nhân tạo đáng xem nhất"
     ]
 
     for (let i = 0;i<10;i++) {
