@@ -12,12 +12,12 @@ function resetViewTrailer() {
 function openModal(btns,modal,modalClose,modalContainer,reset) {
     // Hàm hiển thị modal mua vé (Thêm class open vào modal)
     function showBuyTickets () {
-        modal.classList.add("open")
+        modal.addClass("open")
     }
 
     // Hàm ẩn modal mua vé (gỡ bỏ class open vào modal)
     function hidenBuyTickets () {
-        modal.classList.remove("open"); 
+        modal.removeClass("open"); 
         // Reset
         reset();
     }
@@ -29,17 +29,17 @@ function openModal(btns,modal,modalClose,modalContainer,reset) {
     })
 
     // Nghe hành vi click vào button close
-    modalClose.addEventListener('click', function() {
+    modalClose.on('click', function() {
         $('html').css('overflow-y','');
         hidenBuyTickets();
     });
     
-    modal.addEventListener('click', function() {
+    modal.on('click', function() {
         $('html').css('overflow-y','');
         hidenBuyTickets();
     }); 
 
-    modalContainer.addEventListener('click', function(event){ 
+    modalContainer.on('click', function(event){ 
         event.stopPropagation();
     })
 }    
@@ -48,12 +48,12 @@ $(document).ready(function () {
 // Modal 
     // Var of modal trailer
     const buyBtns = $('.film-trailer-item') 
-    const modal = document.querySelector('.js-modal')
-    const modalclose = document.querySelector('.js-modal-close')
-    const modalcontainer = document.querySelector('.js-modal')
+    const modal = $('.js-modal')
+    const modalClose = $('.js-modal-close')
+    const modalContainer = $('.js-modal')
  
     // Modal trailer
     if (modal) {
-        openModal(buyBtns,modal,modalclose,modalcontainer,resetViewTrailer);
-    } 
+        openModal(buyBtns,modal,modalClose,modalContainer,resetViewTrailer);
+    }   
 }) 

@@ -109,7 +109,7 @@ html {
 
 
 /* Modal view trailer */
-.modal-buy-ticket.open,
+.js-pay-modal.open,
 .modal.open{
     display: flex;
     opacity: 1;

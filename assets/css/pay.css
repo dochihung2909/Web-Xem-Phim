@@ -601,6 +601,7 @@ body {
     width: 50rem;
     min-height: 5rem;
     animation: modalFaceIn ease .6s;    
+    position: relative;
 }
 
 @keyframes modalFaceIn { 
@@ -629,6 +630,11 @@ body {
 }
 .pay-modal-qrcode {
     width: 100%;
+}
+
+.pay-total-close {
+    position: absolute;
+    display: none;
 }
 
 /* checkmark */

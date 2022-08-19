@@ -1,4 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function() { 
+
+// Lấy giá trị từ localStorage
+
     let filmNamePay = $('.pay-movie-name');
     filmNamePay.text(`${localStorage.filmNameLocal}`)
 
@@ -14,9 +17,10 @@ $(document).ready(function() {
     positionPay.text(`${parseInt(Math.random() * 14 + 1)}`);
 
     let seatsPay = $('.pay-movie-seats')
-    seatsPay.text(`${localStorage.seatLocal}`);
-    
+    seatsPay.text(`${localStorage.seatLocal}`); 
+
     // total
+
     let priceTicketPay = $('.price-ticket');
     let intPriceTicketPay = parseInt(localStorage.totalLocal);
     priceTicketPay.text(`${localStorage.totalLocal}.000đ`);
@@ -28,6 +32,9 @@ $(document).ready(function() {
     let priceTotalPay = $('.payment-total-last-price');
     let intPriceTotalPay = parseInt($('.payment-total-last-price').text());
     priceTotalPay.text(`${intPriceTicketPay - intPriceOfferPay}.000đ`);
+
+
+// Validate
 
     // let checkText = $('.group input');
     // if(checkText.val() == false);
@@ -59,22 +66,15 @@ $(document).ready(function() {
     //     }
     // })
 
-    let payBtn = $('.payment-total-btn');
-    let payModal = $('.js-pay-modal');
-    let payContainerModal = $('.js-pay-modal-container');
+// Modal QR code
+    const payBtn = $('.payment-total-btn');
+    const payModal = $('.js-pay-modal');
+    const payContainerModal = $('.js-pay-modal-container');
+    const payClose = $('.pay-total-close'); 
 
-    payBtn.click(function() {
-        payModal.addClass('pay-modal-open');
-    }) 
+    openModal(payBtn,payModal,payClose,payContainerModal,false);  
 
-    payModal.click(function() {
-        payModal.removeClass('pay-modal-open');
-    })
-
-    payContainerModal.click(function(event) { 
-        event.stopPropagation();
-    });
-
+// Bank select
     let bankDomestic = $('.bank-domestic');
     let bankForeign = $('.bank-foreign');
     let showDomestic = $('.js-bank-domestic');
