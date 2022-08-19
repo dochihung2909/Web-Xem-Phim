@@ -7,7 +7,7 @@
 
 /* Slider */
 .booking-slider {
-    background-image: url(https://images3.alphacoders.com/124/1241167.png);
+    background-image: url(https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/06/dragon-ball-z-super-hero.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,6 +65,7 @@
     text-align: center;
     background-size: cover; 
     background-color: rgb(131, 131, 131);  
+    box-shadow: 0 2px 20px 10px rgba(255, 255, 255, 0.9);
 }  
 
 .seats { 

@@ -114,6 +114,8 @@ $(document).ready(function() {
             localStorage.totalLocal = money;
         }
     })   
+
+    
     
     let monthClient = $('#month-client');
     let dateClient = $('#date-client');

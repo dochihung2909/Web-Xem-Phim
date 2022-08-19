@@ -9,20 +9,6 @@
     padding-top: 8.6rem;
 }
 
-.background {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    background-image: url("../img/background.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
 /* Body content */
 .container {  
     /* padding-top: var(--header-height); */
@@ -238,84 +224,9 @@
     background-image: linear-gradient(transparent,rgba(0,0,0,0.65) 10%),url(https://wallpaperaccess.com/full/1106958.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center ;   
+    background-position: top center;   
     background-color: #000; 
     box-shadow: inset 0 120px 40px var(--black-color);
-}
-
-.background-slider { 
-    padding: 8.6rem 0;
-}
-
-.trailer__content-films { 
-}
-
-.trailer__content-film {
-    flex: 1 0 100%;
-}
-
-.slider-news-item {
-    flex: 1 0 100%;
-}
-
-.slider-news-surf {
-    display: flex;
-    justify-content: space-between;
-}
-
-.fa-solid.fa-arrow-left-long,
-.fa-solid.fa-arrow-right-long {
-    color: white;
-    padding: 1rem;
-    font-size: 2rem;
-}
-
-.slider-news {
-    display: block;
-}
-
-.slider-news-next {
-    position: relative; 
-    
-}  
-
-.slider-news-dots {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    height: 100%;
-}
-
-.slider-news-dot {
-    padding: 1rem;
-    border: .1rem solid var(--main-color);
-    margin: 1rem;
-    border-radius: 50%;
-}
-
-.fa-solid.fa-arrow-left-long:hover,
-.fa-solid.fa-arrow-right-long:hover,
-.slider-news-dot:hover {
-    cursor: pointer;
-    opacity: 0.5;
-}
-
-
-
-/* discount */
-.discount {
-
-}
-.discount__content .trailer__content-film{
-    box-shadow: 0rem 0rem .4rem var(--color-g); 
-    border-radius: .6rem;
-    overflow: hidden;
-}
-.discount__content .trailer__content-film:hover {
-    box-shadow: .0rem .0rem 1rem var(--color-g);
-}
-.discount__content .film__item-info {
-    padding: .3rem 1.5rem;
 } 
 
 /* modal */

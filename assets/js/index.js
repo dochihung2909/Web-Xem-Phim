@@ -9,6 +9,7 @@ function setRank() {
     }
 } 
 
+// Slider background top
 function slider() {
     // Slider   
     const sliderItems = $('.ranking-showing__bg-img');
@@ -21,7 +22,7 @@ function slider() {
     var srcItems = [
         'https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/image_title-a5d678326f1e-1655971698046-JtsDdAZ5.png?v=0',
         'https://terrigen-cdn-dev.marvel.com/content/prod/1x/thorlat_lob_log_def_04.png',
-        './assets/img/slider3.png',
+        'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/deyxr35-63066547-299c-40e4-804f-deed6505fc0d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGV5eHIzNS02MzA2NjU0Ny0yOTljLTQwZTQtODA0Zi1kZWVkNjUwNWZjMGQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.puYuRGPkhH9_p-aVvvokZQgta39dwUjIdQYraqcyp1c',
         'https://www.bullettrainmovie.com/images/date_portrait.png',
         'https://images.fanart.tv/fanart/dc-league-of-super-pets-61a4eb178cfe8.png'
     ];
@@ -30,7 +31,7 @@ function slider() {
     var altItems = [
         'Thám Tử Lừng Danh Conan: Nàng Dâu Halloween',
         'Thor: Tình yêu và sấm sét',
-        'Dân chơi không sợ con rơi',
+        'Bảy Viên Ngọc Rồng Siêu Cấp: Siêu Anh Hùng',
         'Sát thủ đối đầu',
         'Siêu thú DC'
     ]
@@ -146,6 +147,7 @@ function slider() {
         addAtr(pos);
     }  
 
+    // thêm thuộc tính theo vị trí
     function addAtr(pos) {
         imageItem.attr({ 
             src:srcItems[pos],
@@ -168,13 +170,11 @@ function slider() {
     }
 
     pre.click(function() { 
-        prevSlide();   
-        myStopAndReset();
+        prevSlide();    
     }) 
 
     next.click(function() {
-        nextSlide();   
-        myStopAndReset();
+        nextSlide();    
     })  
     function resetInterval() {
         setTimeout(function() { 
@@ -187,6 +187,7 @@ $(document).ready(function() {
     setRank(); 
     slider();
 
+    // Phim dang chiếu
     var nowShowingImg = [
         "https://traffic-edge52.cdn.vncdn.io/cinema/img/79249161460312584-2.jpg",
         "https://img.cdn.vncdn.io/cinema/img/78043093813255893-hckc_-_poster_1_.jpg",
@@ -250,6 +251,7 @@ $(document).ready(function() {
         ) ;   
     }  
 
+    // Phim sắp chiếu
     var comingImg = [
         "https://img.cdn.vncdn.io/cinema/img/80376153822101386-vo_dien_sat_nhan_-_teaser_poster_1_.jpg",
         "https://bom.so/x4pyrb",
@@ -333,6 +335,7 @@ $(document).ready(function() {
         ) ;   
     }
 
+    // Blog
     var blogImg = [
         "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220601104733-637896772532818780.jpg",
         "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220531091446-637895852867636350.jpg",
@@ -378,6 +381,7 @@ $(document).ready(function() {
     }
 
 
+    // Lấy biến vào local
     $('.film__item').click(function() {
         let filmName = $(this).find('.film__item-info-name').text();
         let filmImage = $(this).find('.film__item-img').attr('src');
@@ -387,8 +391,9 @@ $(document).ready(function() {
         localStorage.filmTypeLocal = filmType;
     })
 
+    // Slick slider
     $('.slider-film-wrapped').slick({
-        infinite: false,
+        infinite: true,
         slidesToShow: 5,
         slidesToScroll: 5,  
         arrows:true, 
@@ -410,7 +415,7 @@ $(document).ready(function() {
     });
 
     $('.trailer__content-films > .row').slick({
-        infinite: false,
+        infinite: true,
         slidesToShow: 5,
         slidesToScroll: 5, 
         autoplay: true,
@@ -431,7 +436,7 @@ $(document).ready(function() {
     })
 
     $('.blog__content-films > .row').slick({
-        infinite:false,
+        infinite:true,
         slidesToShow: 4,
         slidesToScroll: 4,
         autoplay: true,
@@ -449,37 +454,5 @@ $(document).ready(function() {
                 }
             },
         ] 
-    }) 
-
-    // let trailerBottomItems = $('.film__item-img-wrapped.film-trailer-item');
-    // let trailerBottomUrls = [
-    //     'https://www.youtube.com/watch?v=KgMmy31o-OE',
-    //     'https://www.youtube.com/watch?v=fcs35Pt2SNU',
-    //     'https://www.youtube.com/watch?v=wOxakDkCPPs',
-    //     'https://www.youtube.com/watch?v=ixFHgfKr39Y',
-    //     'https://www.youtube.com/watch?v=oeRG9A6bDdY',
-    // ];
-
-    // trailerBottomItems.each(function(index) {
-    //     if (index > 4) {
-    //         index = index - 5;
-    //     } 
-    //     $(this).click(function() {  
-    //         viewTrailerJs(`${trailerBottomUrls[index]}`)
-    //     })
-    // }) 
-      
-
-    // $('.slick-slider').mousedown(function() {  
-    //     trailerBottomItems.click(function(e) {
-    //         e.stopImmediatePropagation();
-    //     })
-    //     $(this).mouseup(function(e) {  
-    //         trailerBottomItems.click(function(e) {
-    //             e.stopImmediatePropagation();
-    //         })
-    //     })
-    // }) 
-
-    
+    })   
 }) 
