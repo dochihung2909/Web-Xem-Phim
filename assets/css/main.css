@@ -139,9 +139,8 @@
 } 
 
 .film__item-img-wrapped {
-    height: 325px;
+    height: 32.5rem;
 }
-
 .trailer__content .film__item-img-wrapped {  
     display: flex;  
 }
@@ -211,6 +210,7 @@
     /* min-height: 4rem; */
     color: var(--white-color) !important;
     margin-top: 1.5rem; 
+    text-transform: capitalize;
 }
 
 .film__item-info-types {

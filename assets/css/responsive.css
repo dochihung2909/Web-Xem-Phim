@@ -126,6 +126,10 @@
         padding-bottom: 2.2rem;
     }
 
+    .film__item-img-wrapped {
+        height: 27rem;
+    }
+
     .lineX {
         margin-bottom: 3rem;
     }

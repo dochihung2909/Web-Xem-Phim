@@ -223,28 +223,7 @@ $(document).ready(function() {
         "Hài,Khoa Học Viễn Tưởng,Hoạt Hình,Phiêu Lưu,Hành Động,Gia Đình",
         "Hài,Kinh Dị,Gay Cấn"
     ];
-    var html = `
-    <div class="col l-2-4 slider-item">
-        <div class="film__item">
-            <a href="./film.html" class="film__item-img-wrapped film-booking"> 
-                <img src="https://m.media-amazon.com/images/M/MV5BMDU2ZmM2OTYtNzIxYy00NjM5LTliNGQtN2JmOWQzYTBmZWUzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="" class="film__item-img">
-                <div class="film__item-tag-top">
-                    <span class="film__item-old old-13">13+</span>
-                    <span class="film__item-reserve"><i class="fa-solid fa-film"></i>Đặt trước</span>
-                </div>
-            </a>
-            <a href="#" class="film__item-info">
-                <p class="film__item-info-name">
-                    Sát thủ đối đầu
-                </p>
-                <div class="film__item-info-types flex">
-                    <p class="film__item-info-type">Hành động, Gây cấn</p> 
-                </div>
-            </a>
-        </div>
-    </div>`;
-    
-    $('.slider-film-wrapped').html("");
+
     for (let i = 0;i<10;i++) {
         $('.slider-film-wrapped').append(
             `
@@ -270,6 +249,118 @@ $(document).ready(function() {
             `
         ) ;   
     }  
+
+    var comingImg = [
+        "https://img.cdn.vncdn.io/cinema/img/80376153822101386-vo_dien_sat_nhan_-_teaser_poster_1_.jpg",
+        "https://bom.so/x4pyrb",
+        "https://bom.so/DR9MPV",
+        "https://bom.so/QNsNgB",
+        "https://img.cdn.vncdn.io/cinema/img/79249235769716516-uR0FopHrAjDlG5q6PZB07a1JOva.jpg",
+        "https://img.cdn.vncdn.io/cinema/img/80291602324789443-8TUb2U9GN3PonbXAQ1FBcJ4XeXu.jpg",
+        "https://img.cdn.vncdn.io/cinema/img/80291419863971184-xQeTqKcrHCR61wY7nv0zQYx1hiQ.jpg",
+        "https://img.cdn.vncdn.io/cinema/img/80291823673279070-n4Iy2cE52WsTKeNtuSD7vgu2qwf.jpg"
+    ]
+
+    var comingName = [
+        "VÔ DIỆN SÁT NHÂN",
+        "BLACK ADAM",
+        "CHIẾN BINH BÁO ĐEN 2: WAKANDA BẤT DIỆT",
+        "MÈO ĐI HIA: ĐIỀU ƯỚC CUỐI CÙNG",
+        "Bảy Viên Ngọc Rồng Siêu Cấp: Siêu Anh Hùng",
+        "Quái Thú",
+        "Nhà Kho Chết Chóc",
+        "Cú Rơi Tử Thần"
+    ]
+
+    var comingType = [
+        "Kinh dị",
+        "Hành động, Phiêu lưu",
+        "Hành động, Phiêu lưu",
+        "Hoạt Hình, Phiêu lưu",
+        "Gây Cấn, Hành Động",
+        "Gây Cấn, Hành Động",
+        "Gây Cấn, Hành Động",
+        "Gây Cấn, Hành Động"
+    ]
+
+    var comingTrailer = [
+        "https://www.youtube.com/watch?v=KgMmy31o-OE",
+        "https://www.youtube.com/watch?v=fcs35Pt2SNU",
+        "https://www.youtube.com/watch?v=wOxakDkCPPs",
+        "https://www.youtube.com/watch?v=ixFHgfKr39Y",
+        "https://www.youtube.com/watch?v=ODcb4Kdt2zY",
+        "https://www.youtube.com/watch?v=umnc7ygtCCI",
+        "https://www.youtube.com/watch?v=Iy-t4ABo0F0",
+        "https://www.youtube.com/watch?v=6gKVtAOHfV8"
+    ]
+
+    for (let i = 0;i<10;i++) {
+        $('.trailer__conent-film-wrapped').append(
+        `
+        <div class="col l-2-4">
+            <div class="trailer__content-film">
+                <a href="#product-pop-up" onclick="viewTrailerJs('${comingTrailer[i]}');" class="film__item-img-wrapped film-trailer-item">
+                    <img class="film__item-img" src="${comingImg[i]}" alt="movie">
+                    <span class="trailer__content-film-icon">
+                        <i class="fa-solid fa-play"></i>
+                    </span> 
+                </a>
+                <a href="" class="film__item-info">
+                    <p class="film__item-info-name">
+                        ${comingName[i]}
+                    </p>
+                    <div class="film__item-info-types flex">
+                        <p class="film__item-info-type">${comingType[i]}</p>
+                    </div>
+                </a> 
+            </div>
+        </div>
+        `
+        ) ;   
+    }
+
+    var blogImg = [
+        "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220601104733-637896772532818780.jpg",
+        "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220531091446-637895852867636350.jpg",
+        "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220607210130-637902324900234426.jpg",
+        "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220614113939-637908035797577305.jpg",
+        "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220607134938-637902065784846992.jpg",
+        "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220602101731-637897618513827056.jpg",
+        "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220531150301-637896061816285843.jpg",
+        "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220517092729-637883764493378233.jpg",
+        "https://static.mservice.io/blogscontents/s770x370/momo-upload-api-220329094318-637841437983196976.jpg"
+    ]
+
+    var blogName = [
+        "Review Sonic 2: hài hước, duyên dáng không kém phần đầu",
+        "Review Jujutsu Kaisen 0: Bom tấn Anime 2022 bùng nổ",
+        "Top phim xã hội đen Thái Lan cực mãn nhãn",
+        "Em và Trịnh: Nhẹ nhàng và đậm chất lãng mạn",
+        "Những tác phẩm điện ảnh về La Mã cổ đại không thể bỏ lỡ",
+        "Review Fantastic Beasts: The Secrets of Dumbledore sinh động hóa thế giới phù thủy",
+        "Hướng dẫn xem phim Marvel dành cho người mới bắt đầu",
+        "Doctor Strange: Đa Vũ Trụ Điên Loạn - Những sự kiện sẽ diễn ra trong phim",
+        "Án mạng trên sông Nile: bộ phim trinh thám cổ điển hấp dẫn"
+    ]
+
+    for (let i = 0;i<10;i++) {
+        $('.blog__content-film-wrapped').append(
+        `
+        <div class="col l-3">
+            <div class="trailer__content-film">
+                <a href="#" class="blog__content-film__item-img-wrapped">
+                    <img class="film__item-img" src="${blogImg[i]}" alt="movie">
+                </a>
+                <a href="" class="film__item-info">
+                    <p class="film__item-info-name paragraph-color">
+                        ${blogName[i]}
+                    </p>
+                </a>
+            </div>
+        </div>`
+        ) ;   
+    }
+
 
     $('.film__item').click(function() {
         let filmName = $(this).find('.film__item-info-name').text();
@@ -324,7 +415,7 @@ $(document).ready(function() {
     })
 
     $('.blog__content-films > .row').slick({
-        infinite:true,
+        infinite:false,
         slidesToShow: 4,
         slidesToScroll: 4,
         autoplay: true,
