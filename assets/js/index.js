@@ -393,13 +393,13 @@ $(document).ready(function() {
 
     // Slick slider
     $('.slider-film-wrapped').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 5,
         slidesToScroll: 5,  
         arrows:true, 
         autoplay: true,
-        speed : 1500,
-        autoplaySpeed: 2000,
+        // speed : 1500,
+        autoplaySpeed: 4000,
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         responsive: [
@@ -415,12 +415,12 @@ $(document).ready(function() {
     });
 
     $('.trailer__content-films > .row').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 5,
         slidesToScroll: 5, 
         autoplay: true,
-        speed : 1500,
-        autoplaySpeed: 2000,
+        // speed : 1500,
+        autoplaySpeed: 4000,
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         responsive: [
@@ -436,20 +436,20 @@ $(document).ready(function() {
     })
 
     $('.blog__content-films > .row').slick({
-        infinite:true,
+        infinite: false,
         slidesToShow: 4,
         slidesToScroll: 4,
         autoplay: true,
-        speed : 1500,
-        autoplaySpeed: 2000,
+        // speed : 1500,
+        autoplaySpeed: 4000,
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",  
         responsive: [
             {
                 breakpoint: 739,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                     arrows:false,
                 }
             },

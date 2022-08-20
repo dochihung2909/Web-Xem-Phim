@@ -246,20 +246,20 @@
     left: 0;
     right: 0;
     bottom: 0;     
-    overflow: hidden;  
+    overflow: hidden;    
 }
 
 .ranking-showing__bg-wrapper { 
     position: absolute;    
-    transition: transform 0.5s ease; 
+    transition: transform 0.5s ease;   
 }
 
 .ranking-showing__bg-img {    
     position: absolute;    
-    width: 100vw;      
+    width: 100vw;       
     filter: brightness(80%);
     opacity: 0;
-    z-index: 10;
+    z-index: 10; 
 }
 
 

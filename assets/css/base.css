@@ -535,6 +535,14 @@ html {
     right: -2.4rem;
 }
 
+.slick-prev:hover {
+    left: -3rem; 
+}
+
+.slick-next:hover {
+    right: -3rem;
+}
+
 /* Modal mobile */
 .modal-header-mobile { 
     display: flex;

@@ -12,10 +12,10 @@ $(window).ready(function() {
         <div class="navbar__menu s-0">
             <ul class="navbar__menu-list">
                 <li class="navbar__menu-item">
-                    <a href="" class="navbar__menu-item-link top-dot">Trang Chủ</a> 
+                    <a href="./index.html" class="navbar__menu-item-link">Trang Chủ</a> 
                 </li>
                 <li class="navbar__menu-item">
-                    <a href="" class="navbar__menu-item-link">Phim</a>
+                    <a href="./moreFilm.html" class="navbar__menu-item-link">Phim</a>
                 </li>
                 <li class="navbar__menu-item">
                     <a href="" class="navbar__menu-item-link">Lịch chiếu</a>
@@ -107,6 +107,12 @@ $(window).ready(function() {
         </div>
     </div>`)
 
+// Add back to top
+    bodyContainer.append(`
+    <a href="#" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>`);
+
 // Scroll header
     $(window).scroll(function() {
         var header = $(".header");
@@ -119,15 +125,20 @@ $(window).ready(function() {
         else {
             headerWide.removeClass("wide");
             header.removeClass("sticky");
-        }
+        } 
 
+        if (scroll >= 120) {
+            $('.back-to-top').addClass('top');
+        } else {
+            $('.back-to-top').removeClass('top');
+        }
     })
     
     // Back to top btn
-    window.addEventListener('scroll', function () { 
-        const header = document.querySelector('.back-to-top');
-        header.classList.toggle("top", window.scrollY > 120);
-    })   
+    // window.addEventListener('scroll', function () { 
+    //     const header = document.querySelector('.back-to-top');
+    //     header.classList.toggle("top", window.scrollY > 120);
+    // })   
     // redirectPage('film__item','./film.html');     
 
     // Responsive
@@ -165,6 +176,21 @@ $(window).ready(function() {
 
     if (modalMobileMenu) {
         openModal(mobileMenuBtn,modalMobileMenu,modalMobileClose,modalMobileContainer,function(){});
+    }
+
+
+    let srcPage = $(location).attr("href");
+    let headerPage = $('.navbar__menu-item-link');
+    if (srcPage.includes("moreFilm.html")) {
+        headerPage[1].classList.add('top-dot');
+    } else if (srcPage.includes("film.html")) {
+        headerPage[1].classList.add('top-dot'); 
+    } else if (srcPage.includes("booking.html")) {
+        headerPage[2].classList.add('top-dot'); 
+    } else if (srcPage.includes("pay.html")) {
+        headerPage[3].classList.add('top-dot'); 
+    } else {
+        headerPage[0].classList.add('top-dot');
     }
 })  
 

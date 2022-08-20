@@ -50,7 +50,13 @@ $(document).ready(function() {
         let a = parseInt(Math.random() * seat.length);
         $('.seat-number')[a].classList.add('selected');
     }
+    
+    let seatSelected = $('#seat-selected');
+    let paymentBtn = $('.pay__commit-btn');
 
+    if (seatSelected.text() == false) {
+        paymentBtn.addClass('selected')
+    } 
 
     seat.click(function() {  
         if (!$(this).hasClass('select')) {
@@ -86,6 +92,11 @@ $(document).ready(function() {
             })
         } 
         
+        if (seatSelected.text() == false) {
+            paymentBtn.addClass('selected')
+        } else {
+            paymentBtn.removeClass('selected');
+        }
     });    
     
     
@@ -99,22 +110,23 @@ $(document).ready(function() {
         delAll.css({
             'display':'none',
         })
+        paymentBtn.addClass('selected')
     })  
 
     // Lấy seats 
-    let paymentBtn = $('.pay__commit-btn');
-    paymentBtn.attr('href','#seat-booking');
-    paymentBtn.click(function() {
-        let val = $('#seat-selected');
-        if (val.text() == "") {
-            alert("Vui lòng chọn tối thiểu 1 ghế");
-        } else {
-            window.location.href = 'pay.html';
-            localStorage.seatLocal = val.text();
-            localStorage.totalLocal = money;
-        }
-    })   
-
+    // let paymentBtn = $('.pay__commit-btn');
+    // paymentBtn.attr('href','#seat-booking');
+    // paymentBtn.click(function() {
+    //     let val = $('#seat-selected');
+    //     if (val.text() == "") {
+    //         $(this).addClass('selected');
+    //     } else {
+    //         window.location.href = 'pay.html';
+    //         localStorage.seatLocal = val.text();
+    //         localStorage.totalLocal = money;
+    //     }
+    // })   
+    
     
     
     let monthClient = $('#month-client');
