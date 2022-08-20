@@ -352,6 +352,9 @@ body {
 .payment-method-bank {
     justify-content: space-between;
 }
+.payment-method-bank label:hover {
+    cursor: pointer;
+}
 .payment-method-bank-input {
     margin-right: 1rem;
 }
@@ -367,12 +370,18 @@ body {
     color: white;
     transition: .25s ease;
 }
+.bank-domestic {
+    /* border: .1rem solid red; */
+}
 /*  */
 .payment-method-bank-detail {
     margin-top: 2.5rem;
     display: none;
     position: relative;
     animation: bankShow ease .6s;    
+}
+.payment-method-bank-detail label:hover{
+    cursor: pointer;
 }
 .bank-img-wrapper {
     margin-right: 3rem;
@@ -433,6 +442,9 @@ body {
     border-bottom: .1rem solid #414554;
     display: flex;
 }
+.card-name label {
+    pointer-events: none;
+}
 .card-expiry-label,
 .card-cvv-label,
 .card-label {
@@ -476,6 +488,7 @@ body {
 .payment-info-row {
     display: flex;
     padding: 2rem 0;
+    position: relative;
 }
 
 .bank-info-input-text,
@@ -491,6 +504,10 @@ body {
     color: white;
     transition: .25s ease;
 }
+.payment-info-form-input {
+    /* border: .1rem solid red; */
+    outline: none;
+}
 
 /* lỗi */
 .payment-info-form-input:focus {
@@ -498,7 +515,7 @@ body {
 }
 
 .payment-info-form {
-    position: relative;
+    /* position: relative; */
 }
 
 .payment-info-form-label {
@@ -637,4 +654,16 @@ body {
     display: none;
 }
 
-/* checkmark */
+/* Validate */
+.warning {
+    border: .1rem solid transparent;
+    animation: doibien .5s 3;
+}
+@keyframes doibien {
+    from {
+        border: gray;
+    }
+    to {
+        border-color: red;
+    }
+}
