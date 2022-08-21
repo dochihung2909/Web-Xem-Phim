@@ -319,8 +319,16 @@ $(document).ready(function() {
                     <img class="film__item-img" src="${comingImg[i]}" alt="movie">
                     <span class="trailer__content-film-icon">
                         <i class="fa-solid fa-play"></i>
-                    </span> 
+                    </span>  
+                    <div class="film__item-tag-top">
+                        <span class="film__item-old old-13">13+</span>
+                        <span class="film__item-reserve"><i class="fa-solid fa-film"></i>Đặt trước</span>
+                    </div>
+                    <span class="trailer-film-bage">
+                        8 Tháng 9
+                    </span>
                 </a>
+                
                 <a href="" class="film__item-info">
                     <p class="film__item-info-name">
                         ${comingName[i]}

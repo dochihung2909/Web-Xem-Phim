@@ -17,8 +17,7 @@
     top: 0; 
 }
 
-.slider__img-wrapper {
-    width: 20%;
+.slider__img-wrapper { 
     position: absolute;  
     bottom: 0;
     transform: translateY(50%); 
@@ -32,7 +31,9 @@
     /* width: 80%; */
     position: absolute;  
     bottom: 10%;  
-    margin-left: 400px;
+    /* margin-left: 400px; */
+    display: flex;
+    justify-content: center;
 }
 
 .slider__name-img { 
@@ -126,7 +127,7 @@
 }
 
 /* Pay */
-.pay {
+.booking-pay {
     padding: 1.8rem 0;
     font-size: 1.6rem;  
     display: flex;
@@ -136,14 +137,14 @@
     margin-top: 4.8rem;
 }
 
-.pay-wrapper { 
+.booking-pay-wrapper { 
     width: 100%;
 }
 
-.pay__content { 
+.booking-pay__content { 
 }
 
-.pay-data { 
+.booking-pay-data { 
     width: 100%;   
     display: flex;
     flex-wrap: wrap;
@@ -153,22 +154,22 @@
     padding: 1.2rem 0.8rem;
 } 
 
-.pay-data-header {
+.booking-pay-data-header {
     font-weight: bold;
     width: 100%;
 }
 
-.pay-data-content {
+.booking-pay-data-content {
     padding: .6rem 0;
     width: 50%;
 }
 
-.pay__commit {
+.booking-pay__commit {
     width: 100%;
     padding: 12px 0;
 }
 
-.pay__commit-btn {
+.booking-pay__commit-btn {
     text-decoration: none;
     color: var(--white-color);
     background-color: var(--main-color);
@@ -179,7 +180,7 @@
     transition: all 0.3s;
 }
 
-.pay__commit-btn:hover {
+.booking-pay__commit-btn:hover {
     filter: brightness(160%); 
 }
 
@@ -218,12 +219,12 @@
     background-color: gray;
 }
 
-.payment { 
+.booking-payment { 
     border: 1px solid var(--white-color); 
     border-radius: .6rem;
 }
  
-.payment > p {
+.booking-payment > p {
     padding: 1.2rem 0;
     margin: 0 1.2rem; 
 }
@@ -233,7 +234,7 @@
 } 
 
 .your-seat,
-.payment-total { 
+.booking-payment-total { 
     font-weight: bold; 
 } 
 

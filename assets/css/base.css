@@ -29,6 +29,9 @@ html {
 
 .old-13 {
     background-color: var(--old-color-13); 
+    padding: .4rem .8rem;
+    border-radius: .2rem;
+    font-size: 1.4rem;
 }
 
 .old-16 {
@@ -120,8 +123,8 @@ html {
 
 
 /* Modal view trailer */
-.modal-header-mobile.open,
 .js-pay-modal.open,
+.modal-header-mobile.open,
 .modal.open{
     display: flex;
     opacity: 1;
@@ -453,37 +456,6 @@ html {
 .film__item-info-names {  
 
 }
- 
-.trailer__content-film-icon {
-    display: flex;
-    border: .28rem solid white;
-    color: white;
-    position: absolute;
-    font-size: 2rem;
-    padding: .8rem 1rem;
-    border-radius: 50%; 
-    z-index: 10; 
-    left: 45%;
-    bottom: 40%;
-    opacity: 0;
-    transition: opacity ease 0.3s;
-}
-
-.film__item-img-wrapped:hover .trailer__content-film-icon {
-    opacity: 1;
-}
-
-.trailer__content-film-icon i {
-    padding-left: .2rem;
-} 
-
-.trailer__content-film { 
-    font-size: 1.6rem;  
-}  
-
-.trailer__content-film-name { 
-
-}
 
 .trailer__content-film-type {
     color: #ccc;
@@ -555,8 +527,7 @@ html {
 }
 
 /* Modal mobile */
-.modal-header-mobile { 
-    display: flex;
+.modal-header-mobile {  
     width: 100%;
     position: fixed;
     top: 0;
@@ -565,12 +536,16 @@ html {
     left: 0;
     background-color: #000;
     z-index: 1000; 
+    transition: all 0.25s ease-in;
     display: none;
 }
 
-.modal-mobile-container {
+.modal-mobile-container {    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     width: 100%;
-    position: relative;
 }
 
 .modal-mobile-close {
@@ -584,12 +559,9 @@ html {
 }
 
 .list-menu-mobile {
-    list-style-type: none;
+    list-style-type: none; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 }
 
 .menu-mobile__item {
