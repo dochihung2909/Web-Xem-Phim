@@ -1,4 +1,3 @@
-
 // Create seats
 const seatWrapper = document.querySelector('.seats')
 
@@ -52,7 +51,7 @@ $(document).ready(function() {
     }
     
     let seatSelected = $('#seat-selected');
-    let paymentBtn = $('.pay__commit-btn');
+    let paymentBtn = $('.booking-pay__commit-btn');
 
     if (seatSelected.text() == false) {
         paymentBtn.addClass('selected')
@@ -114,15 +113,8 @@ $(document).ready(function() {
     })  ;
 
     // Lấy seats 
-    paymentBtn = $('.pay__commit-btn');
-    // paymentBtn.attr('href','#seat-booking');
-    paymentBtn.click(function() {
-        let val = $('#seat-selected');
-        // if (val.text() == "") {
-        //     $(this).addClass('selected');
-        // } else {
-        //     window.location.href = 'pay.html';
-        // }
+    paymentBtn = $('.booking-pay__commit-btn'); 
+    paymentBtn.click(function() { 
         localStorage.seatLocal = val.text();
         localStorage.totalLocal = money;
     })   

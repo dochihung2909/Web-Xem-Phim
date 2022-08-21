@@ -4,7 +4,7 @@ $(window).ready(function() {
     const footer = document.querySelector('.footer'); 
     head.innerHTML = `<div class="grid">
     <nav class="header-navbar row">
-        <div class="navbar__logo s-2 m-2">
+        <div class="navbar__logo s-2 m-1">
             <a href="./index.html" class="navbar__logo-link">
                 <img src="./assets/img/Panda-ngang2.png" alt="" class="navbar__logo-img">
             </a>  
@@ -25,11 +25,11 @@ $(window).ready(function() {
                 </li>
             </ul>
         </div>  
-        <form class="navbar__search-bar s-7 m-7">
+        <form class="navbar__search-bar s-7 m-8">
             <input id="navbar-search-inp" class="navbar__search-bar-inp" type="text" placeholder="Bạn tìm gì...">
             <label for="navbar-search-inp"><i class="fa-solid fa-magnifying-glass navbar__search-bar-icon"></i></label>
         </form>
-        <div class="navbar__menu-mobile s-2 m-2">
+        <div class="navbar__menu-mobile s-2 m-1">
             <a class="navbar__menu-mobile-link" href="#">
                 <i class="fa-solid fa-bars"></i>
             </a>
@@ -51,7 +51,7 @@ $(window).ready(function() {
                         <a href="./index.html" class="footer__menu-item-link">Trang chủ</a>
                     </div>
                     <div class="footer__menu-item">
-                        <a href="#" class="footer__menu-item-link">Phim</a>
+                        <a href="./moreFilm.html" class="footer__menu-item-link">Phim</a>
                     </div>
                     <div class="footer__menu-item">
                         <a href="#" class="footer__menu-item-link">Lịch chiếu</a>
@@ -98,13 +98,13 @@ $(window).ready(function() {
     <div class="modal-header-mobile">
         <div class="modal-mobile-container">
             <ul class="list-menu-mobile">
-            <li class="menu-mobile__item"><a href="./index.html" class="menu-mobile__link">Trang chủ</a></li>
-            <li class="menu-mobile__item"><a href="./moreFilm.html" class="menu-mobile__link">Phim</a></li>
-            <li class="menu-mobile__item"><a href="" class="menu-mobile__link">Lịch chiếu</a></li>
-            <li class="menu-mobile__item"><a href="" class="menu-mobile__link">Tin Tức</a></li> 
+                <li class="menu-mobile__item"><a href="./index.html" class="menu-mobile__link">Trang chủ</a></li>
+                <li class="menu-mobile__item"><a href="./moreFilm.html" class="menu-mobile__link">Phim</a></li>
+                <li class="menu-mobile__item"><a href="" class="menu-mobile__link">Lịch chiếu</a></li>
+                <li class="menu-mobile__item"><a href="" class="menu-mobile__link">Tin Tức</a></li> 
             </ul>
-            <div class="modal-mobile-close js-mobile-close"><i class="fa-solid fa-xmark"></i></div>
         </div>
+        <div class="modal-mobile-close js-mobile-close"><i class="fa-solid fa-xmark"></i></div>
     </div>`)
 
 // Add back to top
@@ -126,25 +126,24 @@ $(window).ready(function() {
             headerWide.removeClass("wide");
             header.removeClass("sticky");
         } 
-
+        // Back to top btn
         if (scroll >= 120) {
             $('.back-to-top').addClass('top');
         } else {
             $('.back-to-top').removeClass('top');
         }
-    })
-    
-    // Back to top btn
-    // window.addEventListener('scroll', function () { 
-    //     const header = document.querySelector('.back-to-top');
-    //     header.classList.toggle("top", window.scrollY > 120);
-    // })   
-    redirectPage('film__item','./film.html');     
+    }) 
+
+
+// Tạo link cho film item
+    redirectPage('film__item-info','./film.html');     
 
     // Responsive
     var width = $(window).width();
     if (width < 1024){
+        // Thay ảnh logo header
         $('.navbar__logo-img').attr('src','./assets/img/panda.png');
+        // Đổi tháng
         $('.infor-month').text($('.infor-month').text().replace('Tháng ','/')); 
         $('.booking__infor').prepend(`
         <div class="booking__infor-mobile">
@@ -178,7 +177,7 @@ $(window).ready(function() {
         openModal(mobileMenuBtn,modalMobileMenu,modalMobileClose,modalMobileContainer,function(){});
     }
 
-
+// Tạo dot cho header
     let srcPage = $(location).attr("href");
     let headerPage = $('.navbar__menu-item-link');
     if (srcPage.includes("moreFilm.html")) {

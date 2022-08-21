@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css"> 
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/booking.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,46 +24,48 @@
     </a>
     <!-- Background --> 
     <div class="app-booking">
-        <header class="header"> 
-             
-        </header> 
+        <!-- Header -->
+        <header class="header"></header> 
+        
         <div class="container__booking"> 
             <div class="booking-slider">
                 <div class="grid wide">
-                    <div class="slider__img-wrapper">
-                        <img src="https://traffic-edge52.cdn.vncdn.io/cinema/img/79249161460312584-2.jpg" alt="" class="slider__img">
+                    <div class="row">
+                        <div class="slider__img-wrapper l-2-4 m-3">
+                            <img src="https://traffic-edge52.cdn.vncdn.io/cinema/img/79249161460312584-2.jpg" alt="" class="slider__img">
+                        </div>
+                        <div class="slider__name l-9 m-12">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/deyxr35-63066547-299c-40e4-804f-deed6505fc0d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGV5eHIzNS02MzA2NjU0Ny0yOTljLTQwZTQtODA0Zi1kZWVkNjUwNWZjMGQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.puYuRGPkhH9_p-aVvvokZQgta39dwUjIdQYraqcyp1c" alt="" class="slider__name-img">
+                        </div> 
                     </div>
-                    <div class="slider__name">
-                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/deyxr35-63066547-299c-40e4-804f-deed6505fc0d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGV5eHIzNS02MzA2NjU0Ny0yOTljLTQwZTQtODA0Zi1kZWVkNjUwNWZjMGQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.puYuRGPkhH9_p-aVvvokZQgta39dwUjIdQYraqcyp1c" alt="" class="slider__name-img">
-                    </div> 
                 </div>
             </div>     
             <div  id="seat-booking" class="booking-wrapper">
                 <div class="grid wide">
                     <div class="row no-gutters flex-column-reverse">
-                        <div class="l-3 s-12">
-                            <div class="pay">
-                                <div class="pay-wrapper">
-                                    <div class="pay__content">
-                                        <div class="pay-data">
-                                            <p class="pay-data-header">Vé</p>
-                                            <p class="pay-data-content ticket-selected">Đã chọn</p> 
-                                            <p class="pay-data-content ticket-normal">Thường</p>
-                                            <p class="pay-data-content ticket-vip">Vip</p>
-                                            <p class="pay-data-content your-selected">Ghế bạn chọn</p>
+                        <div class="l-3 s-12 m-3"> 
+                            <div class="booking-pay">
+                                <div class="booking-pay-wrapper">
+                                    <div class="booking-pay__content">
+                                        <div class="booking-pay-data">
+                                            <p class="booking-pay-data-header">Vé</p>
+                                            <p class="booking-pay-data-content ticket-selected">Đã chọn</p> 
+                                            <p class="booking-pay-data-content ticket-normal">Thường</p>
+                                            <p class="booking-pay-data-content ticket-vip">Vip</p>
+                                            <p class="booking-pay-data-content your-selected">Ghế bạn chọn</p>
                                         </div> 
-                                        <div class="payment">
+                                        <div class="booking-payment">
                                             <p class="your-seat">Chỗ ngồi <span id="seat-selected"></span><a href="#seat-booking" id="del-all"><i class="fa-solid fa-xmark"></i></a> </p>
-                                            <p class="payment-total">Tổng <span id="total-price"></span></p>  
+                                            <p class="booking-payment-total">Tổng <span id="total-price"></span></p>  
                                         </div>
-                                        <div class="pay__commit">
-                                            <a href="pay.html" class="pay__commit-btn">Thanh toán</a>
+                                        <div class="booking-pay__commit">
+                                            <a href="pay.html" class="booking-pay__commit-btn">Thanh toán</a>
                                         </div>
                                     </div> 
                                 </div>
                             </div>
                         </div>
-                        <div class="l-8 s-12">
+                        <div class="l-8 s-12 m-9">
                             <div class="seat-book-wrapper">
                                 <div class="seat__container">
                                     <div class="row">
@@ -127,7 +129,7 @@
                             </div>  
                         </div>
 
-                        <div class="l-1 s-12">
+                        <div class="l-1 s-12 m-0">
                             <div class="booking__infor">
                                 <!-- <div class="booking__infor-mobile">
                                     <p class="booking__infor-mobile-name"></p>
@@ -157,9 +159,7 @@
         </div>
 
         <!-- Footer -->
-        <footer class="footer">
-             
-        </footer>
+        <footer class="footer"></footer>
     </div>
 
     <!-- Javascript -->  

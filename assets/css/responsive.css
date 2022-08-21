@@ -1,9 +1,4 @@
-@media (max-width: 740px) { 
-
-    .flex-column-reverse {
-        flex-direction: column-reverse;
-    }
-
+@media (max-width: 1024px) {
     /* Trailer btn */
     .trailer-btn-responsive {
         font-size: 1.6rem;
@@ -11,14 +6,18 @@
 
     .trailer-btn-responsive::before,
     .trailer-btn-responsive::after {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
 
     .trailer-btn-responsive > i {
         margin-left: 0.2rem;
     }
 
+    .trailer__content-film-icon {
+        opacity: 1;
+    }
+ 
     /* Index */
     .navbar__menu {
         display: none;
@@ -85,7 +84,7 @@
 
     .ranking__infor,
     .ranking__slide {
-        height: 200px;
+        height: 400px;
     }
 
     .ranking-showing__bg {
@@ -93,24 +92,30 @@
     }
 
     .ranking-showing__bg-img {
-        height: 200px;
+        height: 400px;
     }
 
-    .ranking__social,
-    .ranking__number {
+    .ranking__social {
         display: none;
     }
 
-    .ranking__infor, .ranking__slide { 
-        padding: 2.2rem 1.6rem;
-    } 
-
-    .ranking-trailer {
-        align-items: center;
+    .ranking__number { 
     }
 
+    .ranking__number-link {
+        width: 6rem;
+    }
+
+    .ranking-active {
+        font-size: 4rem;
+    }
+
+    .ranking__infor, .ranking__slide { 
+        padding: 2.2rem 4.8rem;
+    }  
+
     .buy-btn {
-        width: 100px;
+        width: 120px;
         padding: 0.8rem 0; 
         margin-top: 1.2rem; 
     }
@@ -163,9 +168,108 @@
     }
 
     .film-link > iframe { 
-        height: 211px; 
+        height: 500px; 
+    }  
+
+    /* Film */
+    .content-info {
+        height: 400px;
     }
 
+    /* More Film */  
+    .all-film {
+        margin: 0;
+    }
+
+    .moreFilm-item {
+        padding: 0 2.8rem;
+    } 
+
+    .moreFilm__item-buy {
+        display: flex;
+        width: 100%;
+        padding: 1.4rem 0;
+        font-size: 1.6rem;
+    }  
+
+    .all-film-wrapper {
+        padding: 2rem 0;
+    }  
+
+    .moreFilm-trailer__content {
+        display: flex;
+    }
+
+    .moreFilm-body {
+        padding-left: 1.6rem;
+    }
+    
+    .moreFilm-body .film__item-info-name { 
+        margin: 0;
+    } 
+
+    .all-film-page-wrapper {
+        font-size: 2.6rem;
+    }
+
+    .all-film-pages {
+        margin: 0 1rem;
+    }
+
+    /* Booking */
+    .booking-slider {
+        height: 30vh;
+    }  
+     
+    .booking-wrapper {
+        padding: 7.2rem 0.8rem;
+    }  
+
+    .booking-pay {
+        margin: 0;
+    }
+
+    .slider__img-wrapper {
+        left: .8rem;
+    }
+}
+
+@media (max-width: 740px) { 
+
+    .flex-column-reverse {
+        flex-direction: column-reverse;
+    }  
+
+    /* Index */     
+    .ranking__infor,
+    .ranking__slide {
+        height: 200px;
+    } 
+
+    .ranking-showing__bg-img {
+        height: 200px;
+    }
+
+    .ranking__social,
+    .ranking__number {
+        display: none;
+    }
+
+    .ranking__infor, .ranking__slide { 
+        padding: 2.2rem 1.6rem;
+    } 
+
+    .ranking-trailer {
+        align-items: center;
+    }
+
+    .buy-btn {
+        width: 100px; 
+    }  
+
+    .film-link > iframe { 
+        height: 211px; 
+    } 
 
     /* Film */
     .content-info {
@@ -198,17 +302,13 @@
         display: none;
     }
 
-    .booking-wrapper {
-        padding: 0 0.4rem;
-    }
-
     .booking-wrapper .l-8.s-12 {
         order: 1;
     }
 
-    .pay {
-        margin: 0;
-    } 
+    .booking-wrapper {
+        padding: 3.2rem 0.8rem;
+    }
 
     .screen {
         width: 90%;
@@ -349,48 +449,13 @@
     /* More Film */ 
     .moreFilm-item {
         padding: 0;
-    }
-
-    .all-film-wrapper {
-        padding: 2rem 0;
-    }
-
-    .all-film {
-        margin: 0;
-    }
+    } 
 
     .all-film {
         padding: 0 0.8rem;
-    }
-
-    .moreFilm-trailer__content {
-        display: flex;
-    }
-
-    .moreFilm-body {
-        padding-left: 1.6rem;
-    }
-    
-    .moreFilm-body .film__item-info-name { 
-        margin: 0;
-    }
+    } 
 
     .moreFilm__item-buy {
         width: 100%;
-        display: flex;
-        padding: 1.4rem 0;
-        font-size: 1.6rem;
-    }  
-
-    .all-film-page-wrapper {
-        font-size: 2.6rem;
     }
-
-    .all-film-pages {
-        margin: 0 1rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    
-}
+} 
