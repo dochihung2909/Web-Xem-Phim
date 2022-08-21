@@ -4,12 +4,12 @@ $(window).ready(function() {
     const footer = document.querySelector('.footer'); 
     head.innerHTML = `<div class="grid">
     <nav class="header-navbar row">
-        <div class="navbar__logo s-2">
+        <div class="navbar__logo s-2 m-2">
             <a href="./index.html" class="navbar__logo-link">
                 <img src="./assets/img/Panda-ngang2.png" alt="" class="navbar__logo-img">
             </a>  
         </div>
-        <div class="navbar__menu s-0">
+        <div class="navbar__menu s-0 m-0">
             <ul class="navbar__menu-list">
                 <li class="navbar__menu-item">
                     <a href="./index.html" class="navbar__menu-item-link">Trang Chủ</a> 
@@ -25,11 +25,11 @@ $(window).ready(function() {
                 </li>
             </ul>
         </div>  
-        <form class="navbar__search-bar s-7">
+        <form class="navbar__search-bar s-7 m-7">
             <input id="navbar-search-inp" class="navbar__search-bar-inp" type="text" placeholder="Bạn tìm gì...">
             <label for="navbar-search-inp"><i class="fa-solid fa-magnifying-glass navbar__search-bar-icon"></i></label>
         </form>
-        <div class="navbar__menu-mobile s-2">
+        <div class="navbar__menu-mobile s-2 m-2">
             <a class="navbar__menu-mobile-link" href="#">
                 <i class="fa-solid fa-bars"></i>
             </a>
@@ -40,12 +40,12 @@ $(window).ready(function() {
     footer.innerHTML =  `<div class="grid wide">
     <div class="footer-wrapper">
         <div class="row no-gutters">
-            <div class="col l-2 s-6">
+            <div class="col l-2 s-6 m-4">
                 <a href="./index.html" class="footer__logo">
                     <img src="./assets/img/Panda-doc2.png" alt="" class="footer__logo-img">
                 </a>
             </div>
-            <div class="col l-8 s-6">
+            <div class="col l-8 s-6 m-4">
                 <div class="footer__menu-wrapper">
                     <div class="footer__menu-item">
                         <a href="./index.html" class="footer__menu-item-link">Trang chủ</a>
@@ -61,7 +61,7 @@ $(window).ready(function() {
                     </div>
                 </div>
             </div>
-            <div class="col l-2 s-12">
+            <div class="col l-2 s-12 m-4">
                 <div class="footer__social">
                     <div class="footer__social-wrapper">
                         <a href="" class="footer__social-link">
@@ -85,7 +85,7 @@ $(window).ready(function() {
     </div>
     <div class="copyright-wrapper">
         <div class="row no-gutters">
-            <div class="l-12 s-12">
+            <div class="l-12 s-12 m-12">
                 <p class="copyright">Copyright 2022 by HowT</p>
             </div>
         </div>
@@ -99,7 +99,7 @@ $(window).ready(function() {
         <div class="modal-mobile-container">
             <ul class="list-menu-mobile">
             <li class="menu-mobile__item"><a href="./index.html" class="menu-mobile__link">Trang chủ</a></li>
-            <li class="menu-mobile__item"><a href="" class="menu-mobile__link">Phim</a></li>
+            <li class="menu-mobile__item"><a href="./moreFilm.html" class="menu-mobile__link">Phim</a></li>
             <li class="menu-mobile__item"><a href="" class="menu-mobile__link">Lịch chiếu</a></li>
             <li class="menu-mobile__item"><a href="" class="menu-mobile__link">Tin Tức</a></li> 
             </ul>
@@ -139,11 +139,11 @@ $(window).ready(function() {
     //     const header = document.querySelector('.back-to-top');
     //     header.classList.toggle("top", window.scrollY > 120);
     // })   
-    // redirectPage('film__item','./film.html');     
+    redirectPage('film__item','./film.html');     
 
     // Responsive
     var width = $(window).width();
-    if (width < 740){
+    if (width < 1024){
         $('.navbar__logo-img').attr('src','./assets/img/panda.png');
         $('.infor-month').text($('.infor-month').text().replace('Tháng ','/')); 
         $('.booking__infor').prepend(`

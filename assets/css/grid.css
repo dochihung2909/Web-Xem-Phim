@@ -58,7 +58,7 @@
 
 .l-2-4 {
     flex: 0 0 20%;
-    max-width: 20%;
+    width: 20%;
 } 
 
 .l-5 {
@@ -176,7 +176,7 @@
 } 
 
 /* Tablet */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     .row {
         margin: 0 -8px;
     } 

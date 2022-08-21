@@ -132,11 +132,15 @@
 }
 
 .film__item-img-wrapped:hover .film__item-img {
-    transform: scale(105%);
+    transform: scale(105%); 
+}
+
+.film-trailer-item:hover .film__item-img {
+    filter: brightness(0.7);
 }
 
 .film__item-img {
-    transition: transform 0.2s linear; 
+    transition: all 0.2s linear; 
     width: 100%;  
     height: auto;
     border-radius: .4rem;
@@ -181,8 +185,7 @@
     margin-right: .6rem;
 }
 
-.film__item-info { 
-    margin-top: .6rem; 
+.film__item-info {   
     display: block;
     text-decoration: none;
     /* color: white; */
@@ -299,7 +302,8 @@
 }
 
 .slider-buy-btn { 
-    margin-top: 24px;  
+    margin-top: 24px; 
+    padding: 1rem 0;
 }
 
 .ranking-trailer {

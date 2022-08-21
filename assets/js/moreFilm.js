@@ -2,26 +2,28 @@ $(document).ready(function() {
     let allFilm = $('.all-film');
     for (let i = 0;i<15;i++) {
         allFilm.append(`
-        <div class="col l-2-4 slider-item">
-            <div class="film__item">
-                <a href="./film.html" class="film__item-img-wrapped film-booking"> 
-                    <img src="./assets/img/film_1.webp" alt="" class="film__item-img">
-                    <div class="film__item-tag-top">
-                        <span class="film__item-old old-13">13+</span>
-                        <span class="film__item-reserve"><i class="fa-solid fa-film"></i>Đặt trước</span>
-                    </div>
+        <div class="l-3 s-12 moreFilm-item">
+            <div class="moreFilm-trailer__content">
+                <a href="#product-pop-up" onclick="viewTrailerJs('https://www.youtube.com/watch?v=JAV_YRopxYs');" class="film__item-img-wrapped film-trailer-item">
+                    <img class="film__item-img" src="https://traffic-edge52.cdn.vncdn.io/cinema/img/79249161460312584-2.jpg" alt="movie">
+                    <span class="trailer__content-film-icon">
+                        <i class="fa-solid fa-play"></i>
+                    </span> 
                 </a>
-                <a href="" class="film__item-info">
-                <p class="film__item-info-name">
-                    Thám Tử Lừng Danh Conan: Nàng Dâu Halloween 
-                </p>
-                <div class="film__item-info-types flex">
-                    <p class="film__item-info-type">Hoạt Hình
-
-                    Hình Sự</p>
+                <div class="moreFilm-body">
+                    <a href="./film.html" class="film__item-info">
+                        <p class="film__item-info-name">
+                            Bảy Viên Ngọc Rồng Siêu Cấp: Siêu Anh Hùng
+                        </p>
+                        <div class="film__item-info-types flex">
+                            <p class="film__item-info-type">Khoa Học Viễn Tưởng, Hoạt Hình, Hành Động</p>
+                        </div>
+                    </a> 
+                    <a href="./film.html" class="moreFilm__item-buy buy-btn">Mua vé
+                        <i class="fa-solid fa-ticket"></i>
+                    </a>
                 </div>
-            </a>
             </div>
-        </div> `)
+        </div>`);
     } 
 })

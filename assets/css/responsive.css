@@ -1,9 +1,4 @@
-
-.navbar__menu-mobile {
-    display: none;
-}
-
-@media (max-width: 739px) { 
+@media (max-width: 740px) { 
 
     .flex-column-reverse {
         flex-direction: column-reverse;
@@ -107,13 +102,16 @@
     }
 
     .ranking__infor, .ranking__slide { 
-        padding: 2.2rem;
+        padding: 2.2rem 1.6rem;
     } 
 
+    .ranking-trailer {
+        align-items: center;
+    }
+
     .buy-btn {
-        width: 80px;
-        padding: 0.8rem 0;
-        font-size: 1.2rem;  
+        width: 100px;
+        padding: 0.8rem 0; 
         margin-top: 1.2rem; 
     }
 
@@ -348,5 +346,51 @@
         width: 100%;
     }
     
+    /* More Film */ 
+    .moreFilm-item {
+        padding: 0;
+    }
+
+    .all-film-wrapper {
+        padding: 2rem 0;
+    }
+
+    .all-film {
+        margin: 0;
+    }
+
+    .all-film {
+        padding: 0 0.8rem;
+    }
+
+    .moreFilm-trailer__content {
+        display: flex;
+    }
+
+    .moreFilm-body {
+        padding-left: 1.6rem;
+    }
+    
+    .moreFilm-body .film__item-info-name { 
+        margin: 0;
+    }
+
+    .moreFilm__item-buy {
+        width: 100%;
+        display: flex;
+        padding: 1.4rem 0;
+        font-size: 1.6rem;
+    }  
+
+    .all-film-page-wrapper {
+        font-size: 2.6rem;
+    }
+
+    .all-film-pages {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
     
 }
