@@ -16,7 +16,7 @@ $(document).ready(function() {
     let positionPay = $('.pay-movie-position');
     positionPay.text(`${parseInt(Math.random() * 14 + 1)}`);
 
-    let seatsPay = $('.pay-movie-seats')
+    let seatsPay = $('.pay-movie-seats');
     seatsPay.text(`${localStorage.seatLocal}`); 
 
     // total

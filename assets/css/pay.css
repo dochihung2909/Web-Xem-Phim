@@ -617,8 +617,7 @@ body {
     max-width: calc(100% - 3.2rem);
     width: 50rem;
     min-height: 5rem;
-    animation: modalFaceIn ease .6s;    
-    position: relative;
+    animation: modalFaceIn ease .6s;
 }
 
 @keyframes modalFaceIn { 

@@ -111,21 +111,21 @@ $(document).ready(function() {
             'display':'none',
         })
         paymentBtn.addClass('selected')
-    })  
+    })  ;
 
     // Lấy seats 
-    // let paymentBtn = $('.pay__commit-btn');
+    paymentBtn = $('.pay__commit-btn');
     // paymentBtn.attr('href','#seat-booking');
-    // paymentBtn.click(function() {
-    //     let val = $('#seat-selected');
-    //     if (val.text() == "") {
-    //         $(this).addClass('selected');
-    //     } else {
-    //         window.location.href = 'pay.html';
-    //         localStorage.seatLocal = val.text();
-    //         localStorage.totalLocal = money;
-    //     }
-    // })   
+    paymentBtn.click(function() {
+        let val = $('#seat-selected');
+        // if (val.text() == "") {
+        //     $(this).addClass('selected');
+        // } else {
+        //     window.location.href = 'pay.html';
+        // }
+        localStorage.seatLocal = val.text();
+        localStorage.totalLocal = money;
+    })   
     
     
     
