@@ -232,6 +232,11 @@
     .slider__img-wrapper {
         left: .8rem;
     }
+
+    /* News */
+    .container-news {
+        padding: 5rem 1.6rem;
+    }
 }
 
 @media (max-width: 740px) { 
@@ -270,6 +275,11 @@
     .film-link > iframe { 
         height: 211px; 
     } 
+
+    .trailer-film-bage {
+        padding: 0.6rem 1.6rem;
+        font-size: 1.4rem;
+    }
 
     /* Film */
     .content-info {
@@ -462,6 +472,6 @@
 
     /* News */
     .container-news {
-        padding: 4rem 0.4rem;
+        padding: 4rem 0.8rem;
     }
 } 
