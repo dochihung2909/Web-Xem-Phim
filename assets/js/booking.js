@@ -115,6 +115,8 @@ $(document).ready(function() {
     // Lấy seats 
     paymentBtn = $('.booking-pay__commit-btn'); 
     paymentBtn.click(function() { 
+        let val = $('#seat-selected');
+        window.location.href = "./pay.html";
         localStorage.seatLocal = val.text();
         localStorage.totalLocal = money;
     })   

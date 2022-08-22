@@ -10,7 +10,7 @@
     --color-g: gray;
     --color-brown: #3e2917;
     --paragraph-color:#2a2a2a;
-    --main-color: #ff3f00;
+    --main-color: rgb(255, 64, 0);
     --second-color: #3EC1D3;
     --body-color:#0D0D0F;
 }
@@ -484,7 +484,8 @@ html {
     content: "";
     position: absolute; 
     left: 50%;
-    right: 50%; 
+    right: 50%;
+    transform: translate(-50%,-50%); 
     width: 6px;
     height: 6px;
     background-color: var(--main-color);

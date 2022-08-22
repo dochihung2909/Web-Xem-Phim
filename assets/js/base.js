@@ -21,7 +21,7 @@ $(window).ready(function() {
                     <a href="" class="navbar__menu-item-link">Lịch chiếu</a>
                 </li>
                 <li class="navbar__menu-item">
-                    <a href="" class="navbar__menu-item-link">Tin tức</a>
+                    <a href="./news.html" class="navbar__menu-item-link">Tin tức</a>
                 </li>
             </ul>
         </div>  
@@ -57,7 +57,7 @@ $(window).ready(function() {
                         <a href="#" class="footer__menu-item-link">Lịch chiếu</a>
                     </div>
                     <div class="footer__menu-item">
-                        <a href="#" class="footer__menu-item-link">Tin tức</a>
+                        <a href="./news.html" class="footer__menu-item-link">Tin tức</a>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@ $(window).ready(function() {
                 <li class="menu-mobile__item"><a href="./index.html" class="menu-mobile__link">Trang chủ</a></li>
                 <li class="menu-mobile__item"><a href="./moreFilm.html" class="menu-mobile__link">Phim</a></li>
                 <li class="menu-mobile__item"><a href="" class="menu-mobile__link">Lịch chiếu</a></li>
-                <li class="menu-mobile__item"><a href="" class="menu-mobile__link">Tin Tức</a></li> 
+                <li class="menu-mobile__item"><a href="./news.html" class="menu-mobile__link">Tin Tức</a></li> 
             </ul>
         </div>
         <div class="modal-mobile-close js-mobile-close"><i class="fa-solid fa-xmark"></i></div>
@@ -186,10 +186,12 @@ $(window).ready(function() {
         headerPage[1].classList.add('top-dot'); 
     } else if (srcPage.includes("booking.html")) {
         headerPage[2].classList.add('top-dot'); 
-    } else if (srcPage.includes("pay.html")) {
+    } else if (srcPage.includes("news.html")) {
         headerPage[3].classList.add('top-dot'); 
+    } else if (srcPage.includes("pay.html")) {
+        headerPage[1].classList.add('top-dot');
     } else {
-        headerPage[0].classList.add('top-dot');
+        headerPage[0].classList.add('top-dot'); 
     }
 })  
 
