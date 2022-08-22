@@ -416,46 +416,12 @@
     .pay__content-movie-wrapper {
         display: block;
     }
-    .pay__content-movie {
-        width: 100%;
-    }
-    .pay__content-seri-wrapper {
-        padding-bottom: 2rem;
-    }
-    .pay__content-payment .row {
-        display: block;
-    }
-    .col.l-8,
-    .col.l-4 {
-        width: 100%;
-    }
-    .payment-total-container {
-        width: 100%;
-        padding: 0;
-    }
-    .payment-total-content {
-        /* padding: 0; */
-    }
-    .payment-method-bank.row {
-        display: flex;
-        justify-content: space-between;
-    }
     .pay__content-title {
-        font-size: 2.6rem;
+        font-size: 3.6rem;
     }
-    .pay__content-movie {
-        font-size: 1.6rem;
+    .payment-method-img-wrapper {
+        width: 21%;
     }
-    .bank-img-wrapper {
-        width: 15%;
-    }
-    .bank-img {
-        width: 100%;
-    }
-    .card.l-8  {
-        width: 100%;
-    }
-    
     /* More Film */ 
     .moreFilm-item {
         padding: 0;
@@ -467,7 +433,7 @@
 
     .moreFilm__item-buy {
         width: 100%;
-    }
+    } */
 
 
     /* News */
