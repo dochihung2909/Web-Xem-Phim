@@ -475,7 +475,8 @@ body {
 .payment-info-row {
     display: flex;
     padding: 2rem 0;
-    position: relative;
+    position: relative; 
+    flex-direction: column;
 }
 
 .bank-info-input-text,
@@ -496,9 +497,21 @@ body {
     outline: none;
 }
 
+.payment-info-title { 
+    color:#ccc;
+    margin: 1.2rem 0;
+}
+
 .payment-info-form {
     position: relative;
     /* position: relative; */
+    width: 100%;
+} 
+
+.payment-error {
+    color:var(--main-color); 
+    margin-left:1rem; 
+    font-size: 1.6rem;
 }
 
 .payment-info-form-label {

@@ -43,7 +43,7 @@ function slider() {
     var trailerItems = [
         'https://www.youtube.com/watch?v=V6qby0eZzlA',
         'https://www.youtube.com/watch?v=UBgPypHGAqE',
-        'https://www.youtube.com/watch?v=2BOCZ5ax5qk',
+        'https://www.youtube.com/watch?v=JAV_YRopxYs',
         'https://www.youtube.com/watch?v=fiEG-Y9vB00',
         'https://www.youtube.com/watch?v=L2umMe5uRnk'
     ]
@@ -375,7 +375,7 @@ $(document).ready(function() {
         `
         <div class="col l-3">
             <div class="trailer__content-film">
-                <a href="#" class="blog__content-film__item-img-wrapped">
+                <a href="./news.html" class="blog__content-film__item-img-wrapped">
                     <img class="film__item-img" src="${blogImg[i]}" alt="movie">
                 </a>
                 <a href="" class="film__item-info">
@@ -401,7 +401,7 @@ $(document).ready(function() {
 
     // Slick slider
     $('.slider-film-wrapped').slick({
-        infinite: false,
+        infinite: true,
         slidesToShow: 5,
         slidesToScroll: 5,  
         arrows:true, 
@@ -431,7 +431,7 @@ $(document).ready(function() {
     });
 
     $('.trailer__content-films > .row').slick({
-        infinite: false,
+        infinite: true,
         slidesToShow: 5,
         slidesToScroll: 5, 
         autoplay: true,
@@ -460,7 +460,7 @@ $(document).ready(function() {
     })
 
     $('.blog__content-films > .row').slick({
-        infinite: false,
+        infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
         autoplay: true,

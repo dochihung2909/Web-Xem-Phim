@@ -73,175 +73,44 @@
                                     
                                     <form class="payment-info" action="#" name="form">
                                         <div class="payment-info-row">
-                                            <div class="l-12">
-                                                <div class="payment-info-form">
-                                                    <input type="text" class="payment-info-form-input" id="paymentname" required placeholder=" ">
-                                                    <label for="name" class="payment-info-form-label" >Tên / Name</label>
-                                                </div>
+                                            <span class="payment-info-title">Tên <span class="payment-error" id="name-error"></span></span>
+
+                                            <div class="payment-info-form">
+                                                <input type="text" class="payment-info-form-input" id="paymentname" required placeholder=" ">
+                                                <label for="name" class="payment-info-form-label" >Tên / Name</label>
                                             </div>
+                                            
                                         </div>                                                                      
                                         <div class="payment-info-row">
-                                            <div class="l-12">
-                                                <div class="payment-info-form">
-                                                    <input type="text" class="payment-info-form-input" id="paymentphone" required placeholder=" ">
-                                                    <label for="name" class="payment-info-form-label" >Số điện thoại / Phone number</label>
-                                                </div>
+                                            <span class="payment-info-title">Số điện thoại <span class="payment-error" id="phone-error"></span></span>
+                                            <div class="payment-info-form">
+                                                <input type="text" class="payment-info-form-input" id="paymentphone" required placeholder=" ">
+                                                <label for="name" class="payment-info-form-label" >Số điện thoại / Phone number</label>
                                             </div>
+                                            
                                         </div>
+                                        <div class="payment-info-row"> 
+                                            <span class="payment-info-title">Email <span class="payment-error" id="email-error"></span></span>
+                                            <div class="payment-info-form">
+                                                <input type="text" class="payment-info-form-input" id="paymentemail" required placeholder=" ">
+                                                <label for="name" class="payment-info-form-label"  name="validateemail" >Email</label>
+                                            </div>
+                                            
+                                        </div> 
                                         <div class="payment-info-row">
-                                            <div class="l-12">
-                                                <div class="payment-info-form">
-                                                    <input type="text" class="payment-info-form-input" id="paymentemail" required placeholder=" ">
-                                                    <label for="name" class="payment-info-form-label"  name="validateemail" >Email</label>
-                                                </div>
+                                            <span class="payment-info-title">Ghi chú</span></span> 
+                                            <div class="payment-info-form">
+                                                <input type="text" class="payment-info-form-input" id="paymentnote" placeholder=" ">
+                                                <label for="name" class="payment-info-form-label" >Ghi chú / Note</label>
                                             </div>
-                                        </div>
-                                        <!-- <div class="payment-info-row">
-                                            <div class="l-12">
-                                                <div class="payment-info-form">
-                                                    <input type="text" class="payment-info-form-input" id="paymentidentity" required placeholder=" ">
-                                                    <label for="name" class="payment-info-form-label" >Số CMND / Identity card</label>
-                                                </div>
-                                            </div>
-                                        </div> -->
-                                        <div class="payment-info-row">
-                                            <div class="l-12">
-                                                <div class="payment-info-form">
-                                                    <input type="text" class="payment-info-form-input" id="paymentnote" placeholder=" ">
-                                                    <label for="name" class="payment-info-form-label" >Ghi chú / Note</label>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                         <!-- <button type="submit" style="display: none"></button> -->
                                     </form>
                                     <div class="payment-method-container">
                                         <div class="payment-method-wrapper">
-                                            <p class="payment-method-title">Phương thức thanh toán</p>
+                                            <p class="payment-method-title">Phương thức thanh toán <span class="payment-error" id="bank-error"></span></p>
                                             <div class="payment-method-bank-wrapper">
-                                                <!-- <div class="row payment-method-bank">
-                                                    <label for="domestic" class="l-5 bank-domestic">
-                                                        <input id="domestic" type="radio" class="payment-method-bank-input" name="bank" required>
-                                                        Nội địa
-                                                    </label>
-                                                    <label for="foreign" class="l-5 bank-foreign">
-                                                        <input id="foreign" type="radio" class="payment-method-bank-input" name="bank" required>
-                                                        Quốc tế
-                                                    </label>
-                                                </div> -->
-
-                                                <!-- <div class="payment-method-bank-detail js-bank-domestic">
-
-                                                    <input id="card-1" type="radio" name="card">
-                                                    <input id="card-1" type="radio" name="card" required>
-                                                    <label class="bank-img-wrapper" for="card-1">
-                                                        <img class="bank-img" src="https://bom.so/UjtdaY" alt="image">
-                                                    </label>
-
-                                                    <input id="card-2" type="radio" name="card">
-                                                    <input id="card-2" type="radio" name="card" required>
-                                                    <label class="bank-img-wrapper" for="card-2">
-                                                        <img class="bank-img" src="https://bom.so/EgbWoh" alt="image">
-                                                    </label>
-
-                                                    <input id="card-3" type="radio" name="card">
-                                                    <input id="card-3" type="radio" name="card" required>
-                                                    <label class="bank-img-wrapper" for="card-3">
-                                                        <img class="bank-img" src="https://bom.so/EM6LuW" alt="image">
-                                                    </label>
-
-                                                    <input id="card-4" type="radio" name="card">
-                                                    <input id="card-4" type="radio" name="card" required>
-                                                    <label class="bank-img-wrapper" for="card-4">
-                                                        <img class="bank-img" src="https://thebank.vn/uploads/2018/06/25/thebank_ynghialogonganhangnamabanklagimin_1529860486.jpg" alt="image">
-                                                    </label>
-                                                </div> -->
-
-                                                <!-- <div class="payment-method-bank-detail js-bank-foreign">
-                                                    
-                                                    <input id="card-5" type="radio" name="card">
-                                                    <input id="card-5" type="radio" name="card" required>
-                                                    <label class="bank-img-wrapper" for="card-5">
-                                                        <img class="bank-img" src="https://bom.so/sZqM3C" alt="image">
-                                                    </label>
-                                                    <input id="card-6" type="radio" name="card">
-                                                    <input id="card-6" type="radio" name="card" required>
-                                                    <label class="bank-img-wrapper" for="card-6">
-                                                        <img class="bank-img" src="https://bom.so/t1DfsJ" alt="image">
-                                                    </label>
-                                                </div> -->
-
-                                                <!-- <div class="card l-8">
-                                                    <div class="card__content">
-                                                        <div class="card-name">
-                                                            <label class="card-label l-4" for="cardname">Tên</label>
-                                                            <input class="card-input l-8" type="text" id="cardname" placeholder="NGUYEN VAN A" required>
-                                                        </div>
-                                                        <div class="card-id">
-                                                            <label class="card-label l-4" for="cardid">Số thẻ</label>
-                                                            <input class="card-input l-8" type="text" id="cardid" placeholder="666-666-666" required>
-                                                        </div>
-                                                        <div class="card-expiry-cvv">
-                                                            <div class="card-expiry l-5">
-                                                                <label class="card-expiry-label">Hạn thẻ (Tháng / Năm)</label>
-                                                                <div class="card-expiry-input">
-                                                                    <select class="card-expiry-month l-6">
-                                                                        <option selected>Tháng</option>
-                                                                        <option>01</option>
-                                                                        <option>02</option>
-                                                                        <option>03</option>
-                                                                        <option>04</option>
-                                                                        <option>05</option>
-                                                                        <option>06</option>
-                                                                        <option>07</option>
-                                                                        <option>08</option>
-                                                                        <option>09</option>
-                                                                        <option>10</option>
-                                                                        <option>11</option>
-                                                                        <option>12</option>
-                                                                    </select>
-                                                                    <select class="card-expiry-year l-6">
-                                                                        <option selected>Năm</option>
-                                                                        <option>2023</option>
-                                                                        <option>2024</option>
-                                                                        <option>2025</option>
-                                                                        <option>2026</option>
-                                                                        <option>2027</option>
-                                                                        <option>2028</option>
-                                                                        <option>2029</option>
-                                                                        <option>2030</option>
-                                                                        <option>2031</option>
-                                                                        <option>2032</option>
-                                                                        <option>2033</option>
-                                                                        <option>2034</option>
-                                                                        <option>2035</option>
-                                                                        <option>2036</option>
-                                                                        <option>2037</option>
-                                                                        <option>2038</option>
-                                                                        <option>2039</option>
-                                                                        <option>2040</option>
-                                                                        <option>2041</option>
-                                                                        <option>2042</option>
-                                                                        <option>2043</option>
-                                                                        <option>2044</option>
-                                                                        <option>2045</option>
-                                                                        <option>2046</option>
-                                                                        <option>2047</option>
-                                                                        <option>2048</option>
-                                                                        <option>2049</option>
-                                                                        <option>2050</option>
-                                                                        <option>2051</option>
-                                                                        <option>2052</option>
-                                                                        <option>2053</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-cvv l-5">
-                                                                <label class="card-cvv-label">Số CVV</label>
-                                                                <input class="card-cvv-input" id="cardcvv" type="text" placeholder="CVV code" required>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> -->
                                             
                                                 <label for="bidv" class="payment-method-bank-label">
                                                     <div class="payment-method-img-wrapper">
