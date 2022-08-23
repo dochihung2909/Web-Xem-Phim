@@ -619,7 +619,10 @@ body {
     z-index: 200;
 }
 
-.pay-modal.pay-modal-open {display: flex;}
+.pay-modal-open {
+    display: flex;
+} 
+
 .pay-modal-container {
     position: absolute;
     /* max-width: calc(100% - 3.2rem);   */
@@ -632,6 +635,7 @@ body {
     height: auto; 
     border-radius: 8px; 
     overflow: hidden;
+    justify-content: center;
 }
 
 .pay-modal-header {
@@ -705,7 +709,7 @@ body {
     vertical-align: sub;
 }
 
-.pay-total-close {
+.pay-close {
     position: absolute;
     /* display: none; */
     top: 0rem;
@@ -718,12 +722,35 @@ body {
     background-color:var(--main-color);
     padding: 48px;
     position: relative;
+    display: none;
+    animation: showQR 1s ease;
+}
+.modal-right.open-qrcode {display: block;}
+@keyframes showQR {
+    from{
+        transform: translateX(-10rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .modal-left {
     background-color: rgb(90, 67, 183);
     padding: 2.4rem 1.8rem;
 }
-
+.modal-left.move-left {
+    animation: moveLeft .5s ease;
+}
+@keyframes moveLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-5rem);
+    }
+}
 .modal-left-heading {
     display: flex; 
 }
@@ -765,7 +792,7 @@ body {
 .left-body {
     display: flex;
     flex-wrap: wrap;
-    margin: 32px 0;
+    margin: 32px 0 0;
 }
 .left-body-info {
     width: 50%;
@@ -784,17 +811,33 @@ body {
     color: var(--white-color);
 }
 
-/* checkmark */
-/* Validate */
-.warning {
-    border: .1rem solid transparent;
-    animation: doibien .5s 3;
+
+.left-body-info-last {
+    margin-top: 2rem;
 }
-@keyframes doibien {
-    from {
-        border: gray;
-    }
-    to {
-        border-color: red;
-    }
+.modal-info-about-detail {
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.modal-btn-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.modal-btn {
+    padding: 1.5rem 0;
+    cursor: pointer;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+}
+
+.modal-btn:hover {
+    opacity: 0.8;
+}
+
+.close-modal {
+    display: none !important;
 }

@@ -115,4 +115,14 @@ $(document).ready(function() {
             return false; 
         }  
     });
+
+// modal qr xuất hiện
+    $('.modal-btn').click(function() {
+        $('.modal-right').addClass('open-qrcode');
+    });
+
+    $('.pay-close').click(function(){
+        $('.pay-modal').addClass('close-modal');
+    });
+
 }); 

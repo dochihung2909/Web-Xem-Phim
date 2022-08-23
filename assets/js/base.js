@@ -153,6 +153,13 @@ $(window).ready(function() {
         $('.booking__infor-wrapper.date').prepend(`
             <p class="booking__infor-day-mobile">${localStorage.dayLocal}</p>
         `)
+
+        $('.modal-btn').click(function() {
+            $('.modal-left').addClass('close-modal');
+            $('.modal-right').addClass('open-qrcode');
+        });
+
+        // Ẩn hiện modal pay
     }  
 
     // Modal 
