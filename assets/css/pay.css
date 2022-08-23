@@ -615,38 +615,23 @@ body {
     background-color: rgb(0, 0, 0, 0.6);
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: none;
+    z-index: 200;
 }
-.modal-right {
-    background-color:rgb(144, 40, 97);
-}
-.modal-left {
-    background-color: rgb(90, 67, 183);
-}
+
 .pay-modal.pay-modal-open {display: flex;}
 .pay-modal-container {
-    position: relative;
-    max-width: calc(100% - 3.2rem);
-    max-width: 50%;
+    position: absolute;
+    /* max-width: calc(100% - 3.2rem);   */
+    /* max-width: 50%; */
+    width: 50%;
     /* width: 50rem; */
     /* min-height: 5rem; */
     animation: modalFaceIn ease .6s;    
-    display: flex;
-}
-
-@keyframes modalFaceIn { 
-    from {
-        transform: translateY(-200px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-} 
-
-.pay-modal-container {
-    padding: 4rem;
+    display: flex; 
+    height: auto; 
+    border-radius: 8px; 
+    overflow: hidden;
 }
 
 .pay-modal-header {
@@ -654,43 +639,151 @@ body {
     color: white;
     padding: 1rem 0;
 }
-.pay-modal-qrcode-wrapper {
-    margin: 0 auto;
-    width: 60%;
+.pay-modal-qrcode-wrapper { 
+    width: 100%;  
 }
-.pay-modal-qrcode {
+.pay-modal-qrcode { 
+    background-color: var(--white-color);
     width: 100%;
+    padding: 18px;
+    border-radius: 1.4rem; 
+}
+
+.pay-modal-qrcode-background {
+    padding: 12px;
+    width: 100%;
+    background: linear-gradient(#000, #000) left top,
+		linear-gradient(#000, #000) left top,
+		linear-gradient(#000, #000) right top,
+		linear-gradient(#000, #000) right top,
+		linear-gradient(#000, #000) left bottom,
+		linear-gradient(#000, #000) left bottom,
+		linear-gradient(#000, #000) right bottom,
+		linear-gradient(#000, #000) right bottom;
+    background-repeat: no-repeat;
+    background-size: 2px 24px, 24px 2px;
+    position: relative;
+    overflow: hidden;
+} 
+
+.pay-modal-qrcode-background::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, transparent, rgba(228,49,49,.3) 100%);
+    animation: scan ease-in 3s infinite; 
+}
+
+@keyframes scan {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(200%);  
+    }
+  }
+
+.pay-modal-qrcode-img {
+    width: 100%;  
+    display: flex; 
+    justify-content: center;  
+}
+
+.pay-modal-title {  
+    font-size: 1.6rem;   
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 2.2rem; 
+}
+
+.pay-modal-title > svg { 
+    width: 25px; 
+    display: inline;
+    vertical-align: sub;
 }
 
 .pay-total-close {
     position: absolute;
-    display: none;
+    /* display: none; */
+    top: 0rem;
+    right: 1rem;
+    padding: 1.2rem;
+    cursor: pointer;
+}
+
+.modal-right {
+    background-color:var(--main-color);
+    padding: 48px;
+    position: relative;
+}
+.modal-left {
+    background-color: rgb(90, 67, 183);
+    padding: 2.4rem 1.8rem;
 }
 
 .modal-left-heading {
-    display: flex;
+    display: flex; 
 }
 .left-heading-img {
-    width: 30%;
+    width: 40%; 
 }
 
 .left-heading-img img{
     width: 100%;
+    border-radius: 4px;
 }
 
-.left-heading-info {
-    margin-left: 2rem;
+.left-heading-info { 
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} 
+
+.left-heading-name {
+    font-size: 2rem;
 }
 
-.left-heading-info > p{
-    padding: .5rem 0;
+.left-heading-type {
+    color: #ccc;
+    font-size: 1.4rem;
 }
+
+.left-heading-rate {
+    font-size: 1.4rem;
+}
+
+.left-heading-rate > i {
+    color: rgb(7, 255, 7);
+    margin-right: 8px;
+}
+
+
 .left-body {
-    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 0;
 }
 .left-body-info {
-    width: 100%;
+    width: 50%;
+    margin: 12px 0;
 }
+
+.modal-info-title {
+    font-size: 1.2rem;
+    color: #ccc;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+}
+
+.modal-info-about {
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
 /* checkmark */
 /* Validate */
 .warning {

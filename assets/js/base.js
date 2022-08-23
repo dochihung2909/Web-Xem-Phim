@@ -238,8 +238,8 @@ function redirectPage(className,pageUrl) {
 
         // Nghe hành vi click vào button close
         modalClose.on('click', function() {
-            hidenBuyTickets();
             $('html').css('overflow-y','');
+            hidenBuyTickets();
         });
         
         modal.on('click', function() {

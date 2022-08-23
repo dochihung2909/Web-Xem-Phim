@@ -415,13 +415,38 @@
     /* pay */
     .pay__content-movie-wrapper {
         display: block;
+        padding-bottom: 2.6rem;
     }
     .pay__content-title {
-        font-size: 3.6rem;
+        font-size: 2.8rem;
     }
     .payment-method-img-wrapper {
         width: 21%;
+    } 
+
+    .pay {
+        padding: 2rem 0.8rem;
     }
+
+    .pay__content {
+        padding: 0;
+    }
+
+    .payment-total-container {
+        padding: 0;
+    }
+
+    .pay__content-payment,
+    .pay__content-movie {
+        padding: 2rem;
+    }
+
+    .pay-modal-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     /* More Film */ 
     .moreFilm-item {
         padding: 0;

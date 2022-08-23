@@ -230,7 +230,7 @@
                                                 </div>
 
                                                 <div class="payment-total-btn-wrapper">
-                                                    <button type="submit" class="payment-total-btn">
+                                                    <button type="submit" class="payment-total-btn imediate">
                                                         Thanh toán
                                                     </button>
                                                 </div>
@@ -246,13 +246,13 @@
                 
                 <div class="pay-modal js-pay-modal">
                     <div class="pay-modal-container js-pay-modal-container">
-                        <div class="modal-left l-6">
+                        <div class="modal-left l-6 s-12">
                             <div class="modal-left-heading">
                                 <div class="left-heading-img">
                                     <img src="https://traffic-edge52.cdn.vncdn.io/cinema/img/79249161460312584-2.jpg" alt="7vien">
                                 </div>
                                 <div class="left-heading-info">
-                                    <p class="left-heading-age">16 +</p>
+                                    <p class="left-heading-age"><span class="old-16">16+</span></p>
                                     <p class="left-heading-name">Bảy viên ngọc rồng siêu cấp</p>
                                     <p class="left-heading-type">Kinh dị, gay cấn</p>
                                     <p class="left-heading-rate"><i class="fa-solid fa-thumbs-up"></i>80%</p>
@@ -262,33 +262,41 @@
                                 <!-- <div class="row">
                                 </div> -->
                                 <div class="left-body-info">
-                                    <div class="info-title">thời gian</div>
-                                    <div class="info-about">19:00</div>
+                                    <div class="modal-info-title">thời gian</div>
+                                    <div class="modal-info-about">19:00</div>
                                 </div>
                                 <div class="left-body-info">
-                                    <div class="info-title">ngày chiếu</div>
-                                    <div class="info-about">19:00</div>
+                                    <div class="modal-info-title">ngày chiếu</div>
+                                    <div class="modal-info-about">19:00</div>
                                 </div>
                                 <!-- <div class="row">
                                 </div> -->
                                 <div class="left-body-info">
-                                    <div class="info-title">độ tuổi</div>
-                                    <div class="info-about">16+</div>
+                                    <div class="modal-info-title">độ tuổi</div>
+                                    <div class="modal-info-about">16+</div>
                                 </div>
                                 <div class="left-body-info">
-                                    <div class="info-title">loại</div>
-                                    <div class="info-about">2D</div>
+                                    <div class="modal-info-title">loại</div>
+                                    <div class="modal-info-about">2D</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-right l-6">
+                        <div class="modal-right l-6 s-12">
                             <p class="pay-modal-header">
                                 Mời bạn quét mã QR để thanh toán
                             </p>
                             <div class="pay-modal-qrcode-wrapper">
-                                <img src="./assets/img/QRcode.png" alt="QRcode" class="pay-modal-qrcode">
+                                <div class="pay-modal-qrcode">
+                                    <div class="pay-modal-qrcode-background">
+                                        <img src="./assets/img/QRcode.png" alt="QRcode" class="pay-modal-qrcode-img">
+                                    </div>
+                                </div>
                             </div> 
-                            <div class="pay-total-close"></div>
+                            <div class="pay-modal-title"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="jsx-2d0bf11af0f1d0b9 inline w-6 h-6 mr-1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" class="jsx-2d0bf11af0f1d0b9"></path></svg>
+                                Sử dụng ứng dụng Camera hỗ trợ QR code để quét mã.
+                            </div>
+                            <div class="pay-total-close"><i class="fa-solid fa-xmark"></i></div>
                         </div>
                     </div>
                 </div>

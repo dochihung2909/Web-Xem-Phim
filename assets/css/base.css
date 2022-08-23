@@ -36,6 +36,10 @@ html {
 
 .old-16 {
     background-color: var(--old-color-16); 
+    padding: .4rem .8rem;
+    border-radius: .2rem;
+    font-size: 1.4rem;
+    display: inline-block;
 }
 
 .old-p {
@@ -588,3 +592,17 @@ html {
 .navbar__menu-mobile {
     display: none;
 }
+
+
+
+
+@keyframes modalFaceIn { 
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}  
