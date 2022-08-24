@@ -723,32 +723,39 @@ body {
     padding: 48px;
     position: relative;
     display: none;
-    animation: showQR 1s ease;
+    animation: showQR 0.5s ease; 
 }
-.modal-right.open-qrcode {display: block;}
+
+.modal-right.open-qrcode {display: block;} 
+
 @keyframes showQR {
     from{
-        transform: translateX(-10rem);
+        transform: translateX(-10rem); 
         opacity: 0;
     }
     to {
-        transform: translateX(0);
+        transform: translateX(0); 
         opacity: 1;
     }
 }
 .modal-left {
     background-color: rgb(90, 67, 183);
     padding: 2.4rem 1.8rem;
+    position: relative;
+    z-index: 10;      
+    transform: translateX(0);       
+
 }
 .modal-left.move-left {
-    animation: moveLeft .5s ease;
+    animation: moveLeft .5s ease; 
 }
+
 @keyframes moveLeft {
     from {
-        transform: translateX(0);
+        transform: translateX(50%); 
     }
     to {
-        transform: translateX(-5rem);
+        transform: translateX(0%); 
     }
 }
 .modal-left-heading {

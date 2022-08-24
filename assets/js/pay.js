@@ -37,7 +37,7 @@ $(document).ready(function() {
     const payBtn = $('.payment-total-btn');
     const payModal = $('.js-pay-modal');
     const payContainerModal = $('.js-pay-modal-container');
-    const payClose = $('.pay-total-close');  
+    const payClose = $('.pay-close');  
     
     $('.radio').click(function() { 
         $("#bank-error").text("");  
@@ -98,31 +98,39 @@ $(document).ready(function() {
 
         if (!stillError) {
             payModal.addClass('open');
-            $('html').css('overflow-y','hidden'); 
+            $('html').css('overflow-y','hidden');  
+
             payClose.click(function(){
-                payModal.removeClass('open');
+                payModal.removeClass('open');  
+                $('.modal-left').removeClass('close-modal'); 
+                $('.modal-right').removeClass('open-qrcode'); 
+                $('.modal-left').removeClass('move-left'); 
                 $('html').css('overflow-y',''); 
             })
-
+        
             payModal.click(function() {
-                payModal.removeClass('open');
+                payModal.removeClass('open'); 
+                $('.modal-left').removeClass('close-modal');  
+                $('.modal-right').removeClass('open-qrcode'); 
+                $('.modal-left').removeClass('move-left'); 
                 $('html').css('overflow-y','');  
             })
             
             payContainerModal.click(function(event) {
                 event.stopPropagation();
             }) 
+
+            $('.modal-btn').click(function() {
+                $('.modal-right').addClass('open-qrcode'); 
+                $('.modal-left').addClass('move-left');
+            }); 
+
             return false; 
         }  
     });
 
+
+    
 // modal qr xuất hiện
-    $('.modal-btn').click(function() {
-        $('.modal-right').addClass('open-qrcode');
-    });
-
-    $('.pay-close').click(function(){
-        $('.pay-modal').addClass('close-modal');
-    });
-
+   
 }); 

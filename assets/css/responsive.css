@@ -448,7 +448,9 @@
     }
 
     /* pay modal */
-    
+    .modal-right { 
+        animation:  modalFaceIn 0.5s; 
+    }
 
 
     /* More Film */ 
