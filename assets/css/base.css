@@ -50,11 +50,7 @@ html {
 /* acitve */
 .active-show {
     color: var(--main-color);
-}
-
-.active-show::after {
-
-}
+} 
 
 /* common */ 
 .center {
@@ -105,9 +101,7 @@ html {
 .back-to-top {
     opacity: 0;  
     position: absolute;
-    background-color: var(--white-color);
-    /* background-color: #ff8906; */
-    /* transform: opacity .5s; */
+    background-color: var(--white-color); 
     text-decoration: none;
     font-size: 2rem;
     border-radius: 50%;
@@ -182,12 +176,6 @@ html {
     font-size: 3.2rem;
     padding: 8px 0;
     text-align: center;
-}
-
-.film-link {  
-}
-
-.film-link iframe{
 } 
 
 /* stick */
@@ -220,10 +208,7 @@ html {
     width: 100%;  
     box-shadow: .0rem .1rem 0 .1rem rgba(0, 0, 0, 0.1); 
     height: var(--header-height);   
-}
-
-.sticky .header-navbar {  
-}
+} 
 
 .sticky .navbar__search-bar {
     border-color: #000 ;    
@@ -379,10 +364,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.footer__menu-item { 
-}
+} 
 
 .footer__menu-item-link {
     display: flex;
@@ -445,39 +427,10 @@ html {
     text-align: center;
 }
 
-/* trailer */
-.trailer {
-
-}
-
-.trailer__content { 
-    /* background: url("https://static.mservice.io/img/momo-upload-api-211001091715-637686766356856456.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
-} 
-
-.film__item-info-names {  
-
-}
-
+/* trailer */     
 .trailer__content-film-type {
     color: #ccc;
-} 
-
-
-/* Animation */
-
-@keyframes pulse-border {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-        opacity: 0;
-    }
-}
+}  
 
 /* Top dot */
 .top-dot{
@@ -593,6 +546,19 @@ html {
     display: none;
 } 
 
+/* Animation */
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
 
 @keyframes modalFaceIn { 
     from {
@@ -604,3 +570,11 @@ html {
         opacity: 1;
     }
 }  
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+    } to {
+        opacity: 1;
+    }
+}

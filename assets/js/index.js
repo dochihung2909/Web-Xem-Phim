@@ -1,5 +1,6 @@
 // Clear all localStorage
 localStorage.clear();
+localStorage.filmNameLocal = "Bảy Viên Ngọc Rồng Siêu Cấp: Siêu Anh Hùng"
 
 // Set rank 
 function setRank() {
@@ -162,12 +163,7 @@ function slider() {
 
     function myStop() {
         window.clearInterval(myInterval);
-    }
-
-    function myStopAndReset() {
-        window.clearInterval(myInterval);
-        resetInterval();
-    }
+    }  
 
     pre.click(function() { 
         prevSlide();    
@@ -176,6 +172,9 @@ function slider() {
     next.click(function() {
         nextSlide();    
     })  
+
+    resetInterval(); 
+
     function resetInterval() {
         setTimeout(function() { 
             myInterval = setInterval(nextSlide,4000);

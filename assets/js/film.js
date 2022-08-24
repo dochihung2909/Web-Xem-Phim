@@ -1,14 +1,14 @@
 $(document).ready(function() {
     // Tạo block ngày 30 block
+    var sliderScheduleHTML =
+     `<div class="col l-2">
+        <a href="#booking-sch" class="film-booking__days-wrapper">
+            <p class="film-booking__day"></p>
+            <p class="film-booking__date"></p>
+            <p class="film-booking__month"></p>
+        </a>
+    </div>`;
     for (let i = 0;i<30;i++) {
-        let sliderScheduleHTML =
-         `<div class="col l-2">
-            <a href="#booking-sch" class="film-booking__days-wrapper">
-                <p class="film-booking__day"></p>
-                <p class="film-booking__date"></p>
-                <p class="film-booking__month"></p>
-            </a>
-        </div>`;
         $('.slide-schedule.row').append(sliderScheduleHTML); 
     }
 
@@ -19,18 +19,14 @@ $(document).ready(function() {
     const date = $('.film-booking__date');
     const month = $('.film-booking__month');
  
-    const d = new Date();
-    // date.text(`Thứ ${d.getDate() + 1}`);
-    // Tạo thứ
+    const d = new Date(); 
+    
     let dayNow = d.getDay() + 1;
     let dateNow = d.getDate();
     let monthNow = d.getMonth() + 1;  
     const month31 = [1,3,5,7,8,10,12];
-    const month30 = [4,6,9,11]; 
-    day.each(function() {   
-        
-    })
-    // Tạo ngày và tháng
+    const month30 = [4,6,9,11];  
+    // Tạo thứ ngày và tháng
     $('.film-booking__days-wrapper').each(function() {
         let a =`${dateNow++}`;  
         let b = `Thứ ${dayNow}`; 
