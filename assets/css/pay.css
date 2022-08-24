@@ -1,288 +1,3 @@
-/* common */
-/* .header-h1 {
-    padding: 2rem 0;
-    color: var(--main-color);
-} */
-
-/* .pay__container {
-    background-image: linear-gradient(transparent,rgba(0,0,0,0.8) 10%),url(https://wallpaperaccess.com/full/1106958.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-color: #000;
-    box-shadow: inset 0 120px 40px var(--black-color);
-} */
-
-/* transaction */
-/* .transaction {
-    padding-top: 10rem;
-    font-size: 1.6rem;
-    border-radius: .5rem;
-    color: white;
-} */
-
-/* .transaction__content {
-    border-radius: .5rem;
-    padding-top: 4rem;
-} */
-
-/* .transaction-info-title,
-.transaction-info-about {
-    width: 100%;
-    font-size: 1.7rem;
-    padding: 1.5rem;
-}
-
-.transaction-info-title {
-    font-weight: bold;
-}
-
-.transaction-info {
-    display: flex;
-    border-bottom: .1rem solid rgba(209, 209, 224, 0.4);
-}
-
-.transaction-info:last-child {
-    border-bottom: none;
-}
-
-.transaction-info-about {
-    text-align: right;
-} */
-
-/* total transaction*/
-/* .transaction-total-wrapper {
-    height: 100%;
-    border-radius: 0.5rem;
-} */
-
-/* .transaction-total-content {
-    padding: 4rem 2rem; 
-} */
-
-/* .transaction-total {
-    justify-content: space-between;
-    padding: 2rem 0;
-}
-
-.cost .transaction-total-name {
-}
-
-.cost {
-    border-radius: .5rem;
-} */
-
-/* .cost .transaction-total-name {
-    text-transform: uppercase;
-    margin: auto 0;
-
-}
-
-.cost .transaction-total-price {
-    font-size: 3rem;
-} */
-
-
-/* customer information */
-/* .customer-info {
-    padding-top: 4rem;
-}
-.customer-info-title {
-    padding-top: 2rem;
-}
-
-.rules {
-    padding: 2rem 0;
-}
-
-.rules-input {
-    margin-right: 1rem;
-}
-
-.rules-link {
-    color: green;
-}
-
-.group { 
-    position:relative; 
-    margin-bottom:45px; 
-}
-.group input {
-    font-size:18px;
-    padding:10px 10px 10px 5px;
-    border-radius: .5rem;
-    display:block;
-    width:300px;
-    border:none;
-    background-color: #222c4c;
-    color: white;
-}
-.group input:focus { 
-    outline:none; 
-}
- 
-.group label {
-    color:white; 
-    font-size:18px;
-    font-weight:normal;
-    position:absolute;
-    pointer-events:none;
-    left: 2rem;
-    top: 1rem;
-    transition:0.2s ease all; 
-} */
-
-/* Label move up */
-/* .group input:placeholder-shown ~ label,
-.group input:focus ~ label, 
-.group input:valid ~ label {
-    top:-20px;
-    left: 0;
-    font-size:14px;
-    color:#5264AE;
-} */
-
-/* BOTTOM BARS  */
-/* .bar { 
-    position:relative; 
-    display:block; 
-    width:300px; 
-}
-.bar:before, .bar:after 	{
-  content:'';
-  height:2px; 
-  width:0;
-  bottom:1px; 
-  position:absolute;
-  background:#5264AE; 
-  transition:0.2s ease all; 
-}
-.bar:before {
-  left:50%;
-}
-.bar:after {
-  right:50%; 
-} */
-
-/* animation bar */
-/* input:focus ~ .bar:before, 
-input:focus ~ .bar:after {
-    width:50%;
-} */
-
-/* HIGHLIGHTER */
-/* .highlight {
-    position:absolute;
-    height:60%; 
-    width:100px; 
-    top:25%; 
-    left:0;
-    pointer-events:none;
-    opacity:0.5;
-  } */
-  
-  /* active state */
-/* .group input:focus ~ .highlight {
-    animation:inputHighlighter 0.3s ease;
-} */
-
-/* ANIMATIONS */
-/* @keyframes inputHighlighter {
-    from { 
-        background:#5264AE; 
-    }
-    to 	{ 
-        width:0; background:transparent; 
-    }
-}
-
-.wrong-email {
-    background-color: white;
-    color: black;
-    display: none;
-
-}
-.wrong-email-content {
-    padding: 1rem;
-    align-items: center;
-}
-.wrong-email-content::before {
-    border: 2rem solid red green blue yellow;
-}
-.wrong-email-exclamation {
-    color: white;
-    background-color: yellow;
-    padding: .5rem 1rem;
-}
-
-.wrong-email-text {
-    margin-left: 1rem;
-} */
-
-/* pay for */
-/* .pay-for {
-
-}
-
-.pay__container {
-    font-size: 1.6rem;
-    color: white;
-    background-color: var(--body-color);
-}
-
-.pay-for-content {
-    padding-top: 4rem;
-}
-
-.payment-method-label,
-.payment-method {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.payment-method {
-    padding: .3rem 0;
-    border-bottom: 0.1rem solid rgba(209, 209, 224, 0.4);
-}
-
-.pay-for-content-header {
-    padding: 2rem 0;
-    color: var(--main-color);
-}
-
-.payment-method-img {
-    width: 10%;
-    border-radius: .3rem ;
-    overflow: hidden;
-}
-
-.payment-method-img img {
-    width: 100%;
-}
-
-.payment-method-name {
-    padding-left: 3rem;
-}
-
-.payment-method-input {
-    justify-content: left;
-}
-
-.pay-btns {
-    justify-content: center;
-}
-
-.pay-btn {
-    padding: 1.5rem .5rem;
-    color: white;
-    background-color: red;
-    text-transform: uppercase;
-    margin: 0 1rem;
-    text-decoration: none;
-    border-radius: .5rem; 
-} */
-
 /* variable */
 :root {
     --border-radius: .5rem;
@@ -292,12 +7,10 @@ input:focus ~ .bar:after {
 
 /* new */
 body {
-    /* background-color: var(--bg-color-pay); */
     background-color: #0d0d0f;
 }
 .pay {
     padding-top: 10rem;
-    /* tạm thời */
     color: white;
     font-size: 2rem;
 }
@@ -360,8 +73,6 @@ body {
     margin: 2rem 0;
     border-bottom: .1rem solid #ddd;
     justify-content: space-between;
-
-    /* display: block; */
 }
 .payment-method-bank {
     text-align: left;
@@ -374,7 +85,6 @@ body {
     transition: all 0.15s ease-out 0s;
     background: #cbd1d8;
     cursor: pointer;
-    /* z-index: 1; */
   }
   .option-input:hover {
     background: #9faab7;
@@ -493,7 +203,6 @@ body {
     transition: .25s ease;
 }
 .payment-info-form-input {
-    /* border: .1rem solid red; */
     outline: none;
 }
 
@@ -504,7 +213,6 @@ body {
 
 .payment-info-form {
     position: relative;
-    /* position: relative; */
     width: 100%;
 } 
 
@@ -531,7 +239,6 @@ body {
     left: 2.1rem;
     user-select: none;
     pointer-events: none;
-    /* tạm */
     font-size: 1.6rem;
     color: #999;
 }
@@ -625,11 +332,7 @@ body {
 
 .pay-modal-container {
     position: absolute;
-    /* max-width: calc(100% - 3.2rem);   */
-    /* max-width: 50%; */
     width: 50%;
-    /* width: 50rem; */
-    /* min-height: 5rem; */
     animation: modalFaceIn ease .6s;    
     display: flex; 
     height: auto; 
@@ -711,7 +414,6 @@ body {
 
 .pay-close {
     position: absolute;
-    /* display: none; */
     top: 0rem;
     right: 1rem;
     padding: 1.2rem;

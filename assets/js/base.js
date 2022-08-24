@@ -157,7 +157,7 @@ $(window).ready(function() {
         $('.modal-btn').click(function() {
             $('.modal-left').addClass('close-modal');
             $('.modal-right').addClass('open-qrcode');
-        }); 
+        });
         // Ẩn hiện modal pay
     }  
 

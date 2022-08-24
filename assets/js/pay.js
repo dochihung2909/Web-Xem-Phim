@@ -1,6 +1,6 @@
-$(document).ready(function() { 
+$(document).ready(function () {
 
-// Lấy giá trị từ localStorage
+    // Lấy giá trị từ localStorage
 
     let filmNamePay = $('.pay-movie-name');
     filmNamePay.text(`${localStorage.filmNameLocal}`)
@@ -12,14 +12,14 @@ $(document).ready(function() {
 
     let addressPay = $('.pay-movie-address');
     addressPay.text(`${localStorage.addressLocal}`);
-    
+
     let positionPay = $('.pay-movie-position');
     positionPay.text(`${parseInt(Math.random() * 14 + 1)}`);
 
     let seatsPay = $('.pay-movie-seats');
-    seatsPay.text(`${localStorage.seatLocal}`); 
+    seatsPay.text(`${localStorage.seatLocal}`);
 
-// total
+    // total
 
     let priceTicketPay = $('.price-ticket');
     let intPriceTicketPay = parseInt(localStorage.totalLocal);
@@ -33,19 +33,19 @@ $(document).ready(function() {
     let intPriceTotalPay = parseInt($('.payment-total-last-price').text());
     priceTotalPay.text(`${intPriceTicketPay - intPriceOfferPay}.000đ`);
 
-// Modal QR code
+    // Modal QR code
     const payBtn = $('.payment-total-btn');
     const payModal = $('.js-pay-modal');
     const payContainerModal = $('.js-pay-modal-container');
-    const payClose = $('.pay-close');  
-    
-    $('.radio').click(function() { 
-        $("#bank-error").text("");  
-    }) 
+    const payClose = $('.pay-close');
 
-    payBtn.click(function() { 
-        const regexEmail =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        const regexPhone =  /(84|0[3|5|7|8|9])+([0-9]{8})\b/g; 
+    $('.radio').click(function () {
+        $("#bank-error").text("");
+    })
+
+    payBtn.click(function () {
+        const regexEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const regexPhone = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
 
         let nameInput = $('#paymentname');
         let phoneInput = $('#paymentphone');
@@ -58,12 +58,12 @@ $(document).ready(function() {
         let bankError = $('#bank-error');
         let stillError = false;
         let error = "";
-        
+
         if (nameInput.val() != false) {
             error = "";
         } else {
-            error = "Vui lòng không để chống tên"; 
-            stillError=true;
+            error = "Vui lòng không để chống tên";
+            stillError = true;
         }
 
         nameError.text(error);
@@ -72,7 +72,7 @@ $(document).ready(function() {
             error = "";
         } else {
             error = "Vui lòng nhập một email hợp lệ";
-            stillError=true;
+            stillError = true;
         }
 
         emailError.text(error);
@@ -82,55 +82,52 @@ $(document).ready(function() {
             error = "";
         } else {
             error = "Vui lòng nhập một số điện thoại hợp lệ";
-            stillError=true; 
+            stillError = true;
         }
-        
-        phoneError.text(error);  
+
+        phoneError.text(error);
 
 
-        if(bankInput.is(':checked')) {
-            error = ""; 
-        } else  {
+        if (bankInput.is(':checked')) {
+            error = "";
+        } else {
             error = "Vui lòng chọn 1 phương thức thanh toán";
-            stillError=true; 
-            bankError.text(error);   
-        }  
+            stillError = true;
+            bankError.text(error);
+        }
 
         if (!stillError) {
             payModal.addClass('open');
-            $('html').css('overflow-y','hidden');  
+            $('html').css('overflow-y', 'hidden');
 
-            payClose.click(function(){
-                payModal.removeClass('open');  
-                $('.modal-left').removeClass('close-modal'); 
-                $('.modal-right').removeClass('open-qrcode'); 
-                $('.modal-left').removeClass('move-left'); 
-                $('html').css('overflow-y',''); 
+            payClose.click(function () {
+                payModal.removeClass('open');
+                $('.modal-left').removeClass('close-modal');
+                $('.modal-right').removeClass('open-qrcode');
+                $('.modal-left').removeClass('move-left');
+                $('html').css('overflow-y', '');
             })
-        
-            payModal.click(function() {
-                payModal.removeClass('open'); 
-                $('.modal-left').removeClass('close-modal');  
-                $('.modal-right').removeClass('open-qrcode'); 
-                $('.modal-left').removeClass('move-left'); 
-                $('html').css('overflow-y','');  
+
+            payModal.click(function () {
+                payModal.removeClass('open');
+                $('.modal-left').removeClass('close-modal');
+                $('.modal-right').removeClass('open-qrcode');
+                $('.modal-left').removeClass('move-left');
+                $('html').css('overflow-y', '');
             })
-            
-            payContainerModal.click(function(event) {
+
+            payContainerModal.click(function (event) {
                 event.stopPropagation();
-            }) 
+            })
 
-            $('.modal-btn').click(function() {
-                $('.modal-right').addClass('open-qrcode'); 
+            $('.modal-btn').click(function () {
+                $('.modal-right').addClass('open-qrcode');
                 $('.modal-left').addClass('move-left');
-            }); 
+            });
 
-            return false; 
-        }  
+            return false;
+        }
     });
 
 
-    
-// modal qr xuất hiện
-   
 }); 
